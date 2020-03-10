@@ -12,11 +12,14 @@
 @import "components/index";
 @import "components/banner";
 @import "pages/index";
-
+@import "components/button";
+@import "pages/lets_go";
+@import "pages/waiting";
 
 h1 {
   font-size: 36px;
   color: black;
+  text-align: center;
 }
 
 h2 {
@@ -26,7 +29,7 @@ h2 {
   text-align: center;
 }
 
-h3 {
+p {
   font-size: 18px;
   color: #454343; // gris //
   font-style: bold;
@@ -43,4 +46,11 @@ h5 {
 
 h6 {
   font-size: 9px;
+}
+
+span {
+   background-image: linear-gradient( $yellow 0%, $yellow 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
 }
