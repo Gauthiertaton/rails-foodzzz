@@ -1,5 +1,7 @@
 .container_home_etapes {
-  margin: 40px;
+  margin-top: 40px;
+  margin-right: 70px;
+  margin-left: 70px;
 }
 
 h3 {
@@ -7,12 +9,37 @@ h3 {
 
 }
 
-h4 {
+.home_title {
+  // text-align: center;
+  // display: inline-block;
+  // position: relative;
+}
+
+.home_etape h4 {
+  font-size: 17px;
   text-align: center;
 
 }
 
-p {
-  text-align: justify;
-  font-size: 12px;
+.home_etape p {
+  text-align: center;
+  font-size: 15px;
+}
+
+i {
+  font-size: 40px;
+}
+
+.home_fleche {
+  color: $yellow;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home_icones {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 }
