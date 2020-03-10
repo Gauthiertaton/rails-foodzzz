@@ -1,0 +1,16 @@
+.waiting-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fa-hourglass-half {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+.titre-popup {
+  color: $yellow;
+}
+
