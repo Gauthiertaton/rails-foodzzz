@@ -80,3 +80,24 @@ menu_33 = Menu.create!(name: "LA VEGGIE",description: 'Jeunes pousses, avocat, p
 menu_34 = Menu.create!(name: "Satay Sushi",description: 'crevette, sauce à la cacahuète et noix de coco, le tout relevé par la fraicheur d’un zeste de citron vert et de noix de coco râpée', restaurant_id: 12, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
 menu_35 = Menu.create!(name: "Saumon tsukudani",description: 'Sauce tsukudani, algue nori et sauce soja', restaurant_id: 12, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
 menu_36 = Menu.create!(name: "Maki carotte",description: 'Carotte cuite et crue, coriandre, mayonnaise aux agrumes', restaurant_id: 12, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# user_1 = User.create!(first_name: "Gauthier", last_name: "Taton", email: 'gauthier_taton@yahoo.fr', password: 'cheezze')
+# avatar_file_1 = File.open(Rails.root.join('db/fixtures/avatar/avatar_1.jpg'))
+# user_1.photo.attach(io: avatar_file_1, filename: 'avatar_1.jpg', content_type: 'image/jpg')
