@@ -6,14 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
-User.destroy_all
 puts "🧹Cleaning Users"
-Restaurant.destroy_all
+User.destroy_all
+
 puts "🧹Cleaning Restaurants"
-Menu.destroy_all
+Restaurant.destroy_all
+
 puts "🧹Cleaning Menus"
+Menu.destroy_all
+
 puts 'Creating restaurants 🍽️ '
+
 restaurant_1 = Restaurant.create!(name: "Mc Donald's",address: '3 Rue de Gorges, 44000 Nantes', category: 'burger', stock: 0)
 restaurant_2 = Restaurant.create!(name: "Pita Pit",address: '29 Rue de Verdun, 44000 Nantes', category: 'sandwich', stock: 0)
 restaurant_3 = Restaurant.create!(name: "Supply Factory",address: '1 Rue de l Arche Sèche, 44000 Nantes', category: 'italien', stock: 0)
@@ -26,11 +29,15 @@ restaurant_9 = Restaurant.create!(name: "Eat Salad",address: '19 BIS Rue Scribe,
 restaurant_10 = Restaurant.create!(name: "O'Tacos",address: '2 Cours Olivier de Clisson, 44000 Nantes', category: 'tacos', stock: 0)
 restaurant_11 = Restaurant.create!(name: "Bagel Corner",address: '3 Rue des Halles, 44000 Nantes', category: 'bagels', stock: 0)
 restaurant_12 = Restaurant.create!(name: "Sushi Shop",address: '13 Rue de Strasbourg, 44000 Nantes', category: 'japonais', stock: 0)
+
+
 puts 'Creating users 🦹 '
+
 user_1 = User.create!(first_name: 'Marion',last_name: 'Henrio',email: "marion.henrio@gmail.com",id: 1, restaurant_id: 6, menu_release: false)
 user_2 = User.create!(first_name: 'Gauthier',last_name: 'Taton',email: "gauthier_taton@yahoo.fr",id: 2, restaurant_id: 5, menu_release: false)
 user_3 = User.create!(first_name: 'Armel',last_name: 'Ahehehinnou',email: "ahehehinnouarmel8@gmail.com",id: 3, restaurant_id: 10, menu_release: false)
 user_4 = User.create!(first_name: 'Justine',last_name: 'Barbault',email: "justinehsd@gmail.com",id: 4, restaurant_id: 1, menu_release: false)
+
 puts 'Creating menus 🍔'
 # mcdo
 menu_1 = Menu.create!(name: "LE TENNESSEE BBQ & SMOKY CHEDDAR",description: 'une tranche de cheddar fumé au bois de chêne, deux tranches de long bacon fumé au bois de hêtre, un steak haché de viande charolaise', restaurant_id: 1, vegetarien: false, vegan: false, sans_gluten: false, halal: false)
