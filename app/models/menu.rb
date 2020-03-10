@@ -4,6 +4,6 @@ class Menu < ApplicationRecord
 
   has_one_attached :photo
 
-  validates :nom, presence: true
+  validates :name, presence: true
   validates :description, presence: true
 end

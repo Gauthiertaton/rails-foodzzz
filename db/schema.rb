@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_10_135432) do
+ActiveRecord::Schema.define(version: 2020_03_10_205005) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2020_03_10_135432) do
   end
 
   create_table "menus", force: :cascade do |t|
-    t.string "nom"
+    t.string "name"
     t.text "description"
     t.boolean "vegetarien"
     t.boolean "vegan"
@@ -60,9 +60,9 @@ ActiveRecord::Schema.define(version: 2020_03_10_135432) do
   end
 
   create_table "restaurants", force: :cascade do |t|
-    t.string "nom"
-    t.string "adresse"
-    t.string "categorie"
+    t.string "name"
+    t.string "address"
+    t.string "category"
     t.integer "stock"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
