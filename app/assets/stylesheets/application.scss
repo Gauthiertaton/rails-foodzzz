@@ -10,6 +10,7 @@
 
 // Your CSS partials
 @import "components/index";
+@import "components/banner";
 @import "pages/index";
 @import "components/button";
 @import "pages/lets_go";
@@ -25,6 +26,7 @@ h2 {
   font-size: 24px;
   color: white;
   font-style: bold;
+  text-align: center;
 }
 
 p {
