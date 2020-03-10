@@ -11,3 +11,34 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+h1 {
+  font-size: 36px;
+  color: black;
+}
+
+h2 {
+  font-size: 24px;
+  color: white;
+  font-style: bold;
+}
+
+h3 {
+  font-size: 18px;
+  color: #454343; // gris //
+  font-style: bold;
+}
+
+h4 {
+  font-size: 13px;
+  color: black;
+}
+
+h5 {
+  font-size: 11px;
+}
+
+h6 {
+  font-size: 9px;
+}
