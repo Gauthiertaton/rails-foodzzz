@@ -1,4 +1,4 @@
 class Order < ApplicationRecord
   belongs_to :user
-  belongs_to :menu, dependent: :destroy
+  belongs_to :menu
 end
