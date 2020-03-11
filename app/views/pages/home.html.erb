@@ -51,8 +51,12 @@
         <p>Présente le QR code qui figure sur le recap’ de ta commande et récupère ton repas.
         C’est l’heure de se régaler !</p>
         </div>
-  <div class = home_button>
-    <%=link_to "C'est parti !", new_user_session_path, class: "button mt-3" %>
+  <div class ="home_button">
+    <% if user_signed_in? %>
+      <%=link_to "C'est parti !", restaurants_path, class: "button mt-3" %>
+    <% else %>
+      <%=link_to "C'est parti !", new_user_session_path, class: "button mt-3" %>
+    <% end %>
   </div>
     </div>
 </div>
