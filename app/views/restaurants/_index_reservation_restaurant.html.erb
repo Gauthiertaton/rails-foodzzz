@@ -1,18 +1,37 @@
+<div class="banner">
+  <h2>Prêt à changer tes habitudes ?</h2>
+</div>
+
+<%= simple_form_for :search, url: root_path, method: :get do |f| %>
+  <div class="search-form-control form-group">
+    <input class="form-control string required" type="text" placeholder="Rechercher..." name="search[query]" id="search_query" />
+    <button name="button" type="submit" class="btn btn-flat">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+<% end %>
+
 <div class ="cards-restaurant">
+
   <% @restaurants.each do |restaurant| %>
-    <div class="card-restaurant">
-      <div class = "image-restaurant">
-        <%= cl_image_tag restaurant.photo.key, height: 300, width: 390, crop: :fill %>
-      </div>
-      <div class="card-restaurant-infos">
+    <%= link_to restaurant_path(restaurant) do %>
+      <div class="card-restaurant">
         <div>
-          <div class ="name-restaurant">
-            <h5> <%= restaurant.nom %> </h5>
-          </div>
-          <p> <%= restaurant.categorie %> </p>
+          <%= cl_image_tag restaurant.photo.key, height: 120, width: 170, crop: :fill %>
         </div>
-        <h2 class="card-restaurant-location">3 min</h2>
+        <div class="card-restaurant-infos">
+          <div>
+            <div class ="name-restaurant">
+              <h5> <%= restaurant.name %> </h5>
+            </div>
+            <p> <%= restaurant.category %> </p>
+            <p>Il te reste 3 repas disponibles</p>
+          </div>
+          <h2 class="card-restaurant-location"><i class="fas fa-walking"></i>3 min</h2>
+        </div>
       </div>
-    </div>
+    <% end %>
   <% end %>
 </div>
+
+
