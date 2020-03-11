@@ -11,4 +11,9 @@
       </div>
     <% end %>
   </div>
+  <div id="map" style="width: 50%; height: 300px;"data-markers="<%= @markers.to_json %>"data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+  <div class="question_title">
+    <h3>Alors, prêt à changer tes habitudes ?</h3>
+  </div>
+  <%=link_to "Oui je libère mon repas !", restaurants_path, class: "button" %>
 </div>
