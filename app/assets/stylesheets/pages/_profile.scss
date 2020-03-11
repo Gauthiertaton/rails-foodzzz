@@ -1,0 +1,52 @@
+
+.container_profil {
+  padding-top: 50px;
+}
+
+.profil_user_infos {
+  padding-top: 10px;
+}
+
+
+.profil_user_buttons {
+  padding: 40px;
+  margin-top: 70px;
+}
+
+
+.profil_user_avatar {
+  margin-left: 40px;
+}
+
+
+.profil_user_avatar img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.profil_user_personal_infos p {
+   overflow-wrap: break-word;
+   line-height: 5px;
+   color: black;
+   font-weight: bold;
+   margin-left: 15px;
+   padding-left: 2px;
+}
+
+
+.button p {
+  margin-left: 50px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+
+.far, .fas {
+  font-size: 18px;
+  color: black;
+}
+
+
