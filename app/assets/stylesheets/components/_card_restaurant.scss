@@ -1,5 +1,7 @@
 .cards-restaurant {
   display: flex;
+  align-items: flex-end;
+  flex-direction: row;
 }
 
 .card-restaurant {
@@ -47,8 +49,8 @@
   top: -6px;
   right: 50px;
   min-width: 70px;
-  // box-shadow: 2px 1px 1px 0px #F5F5F5;
-  box-shadow: 0px 1px 3px grey ;
+  box-shadow: 0 5px 15px hsla(0, 0%, 0%, .2);
+  border-radius: 2px;
 }
 
 .banner h2 {
@@ -62,3 +64,4 @@
 .fa-search {
   font-size: 12px;
 }
+
