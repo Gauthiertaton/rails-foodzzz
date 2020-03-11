@@ -1,0 +1,33 @@
+<div class="container_profil">
+  <div class="profil_user_infos d-flex flex-row">
+    <div class="profil_user_avatar">
+        <img src="https://images.unsplash.com/photo-1503235930437-8c6293ba41f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar">
+    </div>
+    <div class="profil_user_personal_infos d-flex flex-column justify-content-end">
+        <p> <%= @user.first_name %> </p>
+        <p> <%= @user.last_name %> </p>
+        <p> <%= @user.email %> </p>
+    </div>
+  </div>
+  <div class="profil_user_buttons">
+    <div class="profil_user_button_assistance mb-4">
+        <div class="button d-flex flex-row align-items-center">
+          <i class="fas fa-phone-volume"></i>
+          <p> Assistance en ligne </p>
+        </div>
+    </div>
+    <div class="profil_user_button_FAQ mb-4">
+        <div class="button d-flex flex-row align-items-center">
+          <i class="far fa-question-circle"></i>
+          <p class="pl-4"> FAQ </p>
+        </div>
+    </div>
+    <div class="profil_user_button_logout mb-4">
+        <div class="button d-flex flex-row align-items-center">
+          <i class="fas fa-sign-out-alt"></i>
+          <p class="pl-4"> Logout </p>
+        </div>
+    </div>
+  </div>
+  <div class="profil_order_navbar"></div>
+</div>
