@@ -1,7 +1,29 @@
+div.scrollmenu {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  padding:0;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  // padding: 14px;
+  // margin: 10px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: white;
+}
+
+
 .cards-restaurant {
   display: flex;
   align-items: flex-end;
   flex-direction: row;
+  margin-top: 23px
 }
 
 .card-restaurant {
@@ -16,7 +38,7 @@
 }
 
 .card-restaurant p {
-  font-size: 8px;
+  font-size: 13px;
 }
 
 .card-restaurant h2 {
@@ -30,28 +52,33 @@
 }
 
 .card-restaurant .card-restaurant-infos {
-  padding: 10px;
+  padding: 30px 10px 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+  .remove-mb {
+    margin-bottom: 0px;
+  }
 }
 
 .card-restaurant-location {
   text-align: left;
-  margin-bottom: 14px;
+  margin-bottom: 2px;
 }
 
 
 .name-restaurant {
   background-color: white;
   position: absolute;
-  top: -6px;
-  right: 50px;
-  min-width: 70px;
+  min-width: 130px;
   box-shadow: 0 5px 15px hsla(0, 0%, 0%, .2);
   border-radius: 2px;
-  bottom: 68px;
+  bottom: 80px;
+  right: 19px;
+  h5 {
+    padding-top: 7px;
+  }
 }
 
 .banner h2 {
@@ -68,11 +95,12 @@
 
 .category-restaurant {
   background-color: #FFD4C8;
-  max-width: 30px;
+  max-width: 60px;
   text-align: center;
   border-radius: 1px;
   p {
-    color: #BD654B
+    color: #BD654B;
+    font-size: 14px;
   }
 
 }

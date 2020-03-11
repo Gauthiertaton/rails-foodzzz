@@ -19,7 +19,8 @@
   data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
 ></div>
 
-<div class ="cards-restaurant d-flex">
+<div class ="cards-restaurant d-flex scrollmenu">
+
   <% @restaurants.each do |restaurant| %>
     <%= link_to restaurant_path(restaurant) do %>
       <div class="card-restaurant">
@@ -27,16 +28,16 @@
           <%= cl_image_tag restaurant.photo.key, height: 120, width: 170, crop: :fill %>
         </div>
         <div class="card-restaurant-infos">
-          <div>
             <div class ="name-restaurant">
               <h5> <%= restaurant.name %> </h5>
             </div>
+          <div>
             <div class="category-restaurant">
             <p> <%= restaurant.category %> </p>
           </div>
-            <p><span>3 repas disponibles</span></p>
+            <p class="remove-mb"><span>3 repas </span>disponibles</p>
           </div>
-          <h2 class="card-restaurant-location"><i class="fas fa-walking"></i> 3 min</h2>
+          <h2 class="card-restaurant-location "><i class="fas fa-walking"></i> 3 min</h2>
         </div>
       </div>
     <% end %>
