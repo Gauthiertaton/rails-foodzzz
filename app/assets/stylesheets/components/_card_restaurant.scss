@@ -39,7 +39,7 @@
 
 .card-restaurant-location {
   text-align: left;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 }
 
 
@@ -51,6 +51,7 @@
   min-width: 70px;
   box-shadow: 0 5px 15px hsla(0, 0%, 0%, .2);
   border-radius: 2px;
+  bottom: 68px;
 }
 
 .banner h2 {
@@ -63,5 +64,16 @@
 
 .fa-search {
   font-size: 12px;
+}
+
+.category-restaurant {
+  background-color: #FFD4C8;
+  max-width: 30px;
+  text-align: center;
+  border-radius: 1px;
+  p {
+    color: #BD654B
+  }
+
 }
 
