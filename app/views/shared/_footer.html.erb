@@ -1,11 +1,34 @@
 <div class="footer_container">
-  <div class="button_home">
-    <p>Accueil</p>
-  </div>
-  <div class="button_commandes">
-   <p>Commandes</p>
-  </div>
+  <%= link_to restaurants_path do %>
+    <div class="button_home">
+      <div class="button_home_icone">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="button_home_text">
+        <p>Accueil</p>
+      </div>
+    </div>
+  <%end%>
+
+  <%= link_to restaurants_path do %>
+    <div class="button_commandes">
+      <div class="button_commandes_icone">
+        <i class="fas fa-store"></i>
+      </div>
+      <div class="button_commandes_text">
+        <p>Commandes</p>
+      </div>
+    </div>
+  <%end%>
+
+  <%= link_to restaurants_path do %>
   <div class="button_compte">
-    <p>Compte</p>
-  </div>
+      <div class="button_compte_icone">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="button_compte_text">
+        <p>Compte</p>
+      </div>
+    </div>
+  <%end%>
 </div>

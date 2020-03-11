@@ -1,10 +1,42 @@
 .footer_container{
   display: flex;
   justify-content: space-between;
-  margin-right: 15px;
-  margin-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #ebe6e6;
+  height: 55px;
 }
 
 .footer_container p{
-  font-size: 13px;
+  font-size: 11px;
+}
+
+.fa-home{
+  font-size: 28px;
+  color: black;
+}
+
+.fa-store{
+  font-size: 28px;
+  color: black;
+}
+
+.fa-user{
+  font-size: 28px;
+  color: black;
+}
+
+.button_home{
+  text-align: center;
+  padding-top: 6px;
+}
+
+.button_commandes{
+  text-align: center;
+  padding-top: 6px;
+}
+
+.button_compte{
+  text-align: center;
+  padding-top: 6px;
 }
