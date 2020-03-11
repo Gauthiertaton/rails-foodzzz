@@ -9,9 +9,9 @@
           <%if menu.vegetarien == true%>
             <h4>Végétarien</h4>
           <%elsif menu.vegan == true %>
-            <h4>Vegan</h4>
+            <h4><i class="fas fa-seeding"> </i>Vegan</h4>
           <%elsif menu.sans_gluten == true %>
-            <h4>Sans Gluten</h4>
+            <h4><i class="fas fa-bread-slice"> </i>Sans Gluten</h4>
           <%elsif menu.halal == true %>
             <h4>Halal</h4>
           <%else%>
@@ -23,7 +23,7 @@
         <h6><%=menu.description.downcase%></h6>
       </div>
       <div class="menu_img">
-        <%= cl_image_tag menu.photo.key, height: 100, width: 130, crop: :fill %>
+        <%= cl_image_tag menu.photo.key, height: 70, width: 90, crop: :fill %>
       </div>
     </div>
   <% end %>
