@@ -1,7 +1,19 @@
-<div class= "container_home">
+<div class= "container_index_partenaires_restaurants">
   <div class = "banner">
-    <div class = "home_title d-flex">
+    <div class = "index_partenaires_title">
       <h2><strong>Les restaurants partenaires autour de toi</strong></h2>
-
     </div>
+  </div>
+  <div class ="index_logos_partenaires d-flex display-block">
+    <% @restaurants.each do |restaurant| %>
+      <div class = "logo_partenaire">
+        <%= cl_image_tag restaurant.logo.key, height: 60, width: 60, crop: :fill %>
+      </div>
+    <% end %>
+  </div>
+  <div id="map" style="width: 50%; height: 300px;"data-markers="<%= @markers.to_json %>"data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+  <div class="question_title">
+    <h3>Alors, prêt à changer tes habitudes ?</h3>
+  </div>
+  <%=link_to "Oui je libère mon repas !", restaurants_path, class: "button" %>
 </div>

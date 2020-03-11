@@ -18,7 +18,7 @@
 @import "components/footer";
 
 body{
-
+  background-color: white;
 }
 
 h1 {
@@ -49,6 +49,7 @@ h5 {
   font-size: 11px;
   text-transform: uppercase;
   text-align: center;
+  color: black;
 }
 
 h6 {
@@ -60,4 +61,10 @@ span {
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 88%;
+}
+
+a {
+  text-decoration: none !important;
+  // color: white;
+  // &
 }
