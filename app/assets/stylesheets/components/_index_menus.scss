@@ -1,14 +1,19 @@
-  .container_menu{
-  padding: 15px;
+.container_menu{
+  padding: 10px;
+  margin-top: -11px;
+  margin-bottom: 60px
 }
 .card_menu{
   display: flex;
   position: justify-content-between;
-  background-color: $yellow-card;
-  margin-top: 5px;
+  background-color: white;
+  margin-top: 15px;
   margin-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
   position: relative;
+  height: 100px;
 }
 
 .menu_name_type{
@@ -19,27 +24,53 @@
 .menu_name{
   margin-right: 5px;
   text-align: center;
+  padding-top: 15px;
+}
+
+.menu_style h4{
+  text-align: center;
+  color: $gray;
+}
+
+// .fa-carrot .fa-seeding .fa-bread-slice{
+//   color: #DADDD8; // gris //
+// }
+
+h4 i{
+  color: $gray;
 }
 
 .menu_style{
+  background-color: $yellow-span;
+  max-width: 60px;
   text-align: center;
+  border-radius: 1px;
+  margin-left: 10px;
 }
 
 .menu_description{
   // padding-right: 15px;
   // padding-left: 3px;
-  padding: 6.5px 15px 0 3px;
+  padding: 20px 15px 0 3px;
   width: 145px;
   text-align: left;
+  vertical-align: middle;
 
+}
+
+.menu_description h6{
+  font-size: 12px;
 }
 
 .menu_img{
   position: absolute;
   right: 0;
+  padding-top: 15px;
+  padding-right: 10px;
 }
 
 .menu_name p{
   font-size: 15px;
   color: $yellow;
+  padding-left: 5px;
 }
