@@ -1,0 +1,51 @@
+.index_orders_icone{
+  text-align: center;
+  // margin-top: 25px;
+}
+
+.index_orders_card_order{
+  border: solid 1px;
+  margin-bottom: 5px;
+}
+
+.index_orders_card_title_date{
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.index_orders_card_status{
+  // background-color: #f67280;
+}
+
+.index_orders_card_status, .index_orders_card_sigle {
+  display: flex;
+  align-items: center;
+}
+
+.index_orders_card_sigle{
+  margin-top: 10px;
+  width: 25px;
+  align-items: right;
+
+}
+
+.index_orders_count p{
+  color: $yellow;
+}
+
+
+
+.index_orders_card_sigle h6{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+
+.index_orders_title{
+  text-align: left;
+  // padding-top: 8px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
