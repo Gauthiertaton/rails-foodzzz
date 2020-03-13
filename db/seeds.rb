@@ -15,6 +15,9 @@ Restaurant.destroy_all
 puts "🧹Cleaning Menus"
 Menu.destroy_all
 
+puts "🧹Cleaning Orders"
+Order.destroy_all
+
 puts 'Creating restaurants 🍽️ '
 
 restaurant_1 = Restaurant.create!(name: "Mc Donald's",address: '3 Rue de Gorges, 44000 Nantes', category: 'Burger', stock: 0)
