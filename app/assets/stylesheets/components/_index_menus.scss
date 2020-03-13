@@ -17,7 +17,8 @@
 }
 
 .menu_name_type{
-  width: 180px;
+  width: 100px;
+  padding-left: 5px;
   // flex-direction: column;
   // justify-content: space-between;
 
@@ -44,8 +45,10 @@ h4 i{
   max-width: 60px;
   text-align: center;
   border-radius: 1px;
-  margin-left: 10px;
-  margin-bottom: 5px;
+  // margin-left: 10px;
+  // margin-bottom: 5px;
+  // position: relative;
+  // position: bottom;
 }
 
 .menu_description{
@@ -74,3 +77,9 @@ h4 i{
   color: $yellow;
   padding-left: 1px;
 }
+
+.button_click_order{
+  background: white;
+  width: 100%;
+}
+
