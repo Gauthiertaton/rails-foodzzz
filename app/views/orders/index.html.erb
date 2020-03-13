@@ -1,3 +1,40 @@
-<h1>Orders#index</h1>
-<p>Find me in app/views/orders/index.html.erb</p>
+<div class="container_index_orders">
+  <div class="banner">
+    <div class="index_orders_title">
+      <h2><strong>Mes commandes</strong></h2>
+    </div>
+  </div>
+  <div class="index_orders_icone_listing mt-4 mx-4">
+    <div class="index_orders_icone">
+      <i class="fas fa-concierge-bell"></i>
+    </div>
+    <div class="index_orders_count mt-5">
+      <p>Mes commandes (<%= @orders.count%>) :</p>
+    </div>
+    <div class="index_orders_listing">
+      <%@orders.each do |order| %>
+        <div class="index_orders_card_order d-flex justify-content-between">
+          <div class="index_orders_card_title_date">
+            <div class="index_orders_card_title">
+              <h5><strong><%=order.menu.restaurant.name%></strong></h5>
+            </div>
+            <div class="index_orders_card_date">
+              <p>Commandé le <%=order.created_at.strftime("%d.%m.%Y")%></p>
+            </div>
+          </div>
+          <div class="index_orders_card_status_sigle d-flex justify-content-between">
+            <div class="index_orders_card_status">
+              <%=order.status%>
+            </div>
+            <div class="index_orders_card_sigle">
+              <h6><strong> > </strong></h6>
+            </div>
+          </div>
+        </div>
+      <%end%>
+    </div>
+  </div>
+</div>
+
+
 
