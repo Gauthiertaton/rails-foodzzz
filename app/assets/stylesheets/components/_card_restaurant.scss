@@ -57,9 +57,10 @@ div.scrollmenu a:hover {
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-  .remove-mb {
-    margin-bottom: 0px;
-  }
+}
+
+.remove-mb {
+  margin-bottom: 0px;
 }
 
 .card-restaurant-location {
