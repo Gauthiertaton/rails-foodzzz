@@ -19,8 +19,6 @@
 .menu_name_type{
   width: 100px;
   padding-left: 5px;
-  // flex-direction: column;
-  // justify-content: space-between;
 
 }
 
@@ -63,6 +61,7 @@ h4 i{
 
 .menu_description h6{
   font-size: 12px;
+  color: black;
 }
 
 .menu_img{
@@ -72,14 +71,9 @@ h4 i{
   padding-right: 10px;
 }
 
-.menu_name p{
+.menu_name p {
   font-size: 15px;
   color: $yellow;
   padding-left: 1px;
-}
-
-.button_click_order{
-  background: white;
-  width: 100%;
 }
 
