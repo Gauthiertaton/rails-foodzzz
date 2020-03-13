@@ -28,6 +28,7 @@
 
 
 .profil_user_personal_infos p {
+   height: 20px;
    overflow-wrap: break-word;
    line-height: 5px;
    color: black;
@@ -44,9 +45,15 @@
 }
 
 
-// .far, .fas {
-//   font-size: 18px;
-//   color: black;
-// }
+.fa-phone-volume, .fa-sign-out-alt {
+  font-size: 18px;
+  color: black;
+}
+
+.faqicone {
+  font-size: 18px;
+  color: black;
+  display: flex;
+}
 
 
