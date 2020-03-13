@@ -1,1 +1,29 @@
-<%= render 'restaurants/index_partenaires_restaurant' %>
+<!--Si je n'ai pas encore libéré mon repas -->
+
+
+<!-- Si menu_realease == true + 30secondes CONDITION A PRECISER -->
+<%# elsif %>
+<!-- La page pages/letsgo apparait -->
+  <%#= render 'pages/lets_go'%>
+<!-- Si on clique sur le bouton 'Goooo' CONDITION A PRECISER -->
+<%# elsif %>
+<!-- La page restaurants/index_reservations_restaurants s'affiche -->
+  <%# render 'restaurants/index_reservation_restaurant' %>
+<%# end %>
+
+
+<%#= render 'shared/footer' %>
+
+
+
+<!-- PAGE DE OUUUUUUUUUF-->
+
+<% if @menu_released == false %>
+  <!-- La page restaurants/index_partenaires s'affiche -->
+  <%= render 'restaurants/index_partenaires_restaurant' %>
+<% else @menu_released == true %>
+  <!-- La page pages/waiting s'affiche -->
+  <%= render 'restaurants/index_reservation_restaurant' %>
+  <!-- Si j'ai libéré mon repas -->
+
+<% end %>
