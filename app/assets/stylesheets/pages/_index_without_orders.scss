@@ -1,13 +1,13 @@
-.fa-clipboard-list {
-  font-size: 50px;
-}
 
 .container_orders {
   display: flex;
   flex-direction: column;
+
+  h1 {
+  color: black;
+  text-align: center;
+  }
 }
-
-
 
 .h1-ban {
   font-weight: bold;
@@ -41,4 +41,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  p {
+  margin: 0px;
+}
+
+.fa-clipboard-list {
+  font-size: 50px;
+}
 }
