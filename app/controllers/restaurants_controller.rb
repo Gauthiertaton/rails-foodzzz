@@ -2,7 +2,7 @@ class RestaurantsController < ApplicationController
   def index
     @restaurants = Restaurant.all
     # @meals = Meal.new
-    @restaurants_geocoded = Restaurant.geocoded #returns flats with coordinates
+    @restaurants_geocoded = Restaurant.geocoded #returns restaurants with coordinates
 
     @markers = @restaurants_geocoded.map do |restaurant|
       {

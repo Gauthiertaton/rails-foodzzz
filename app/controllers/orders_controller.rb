@@ -5,6 +5,14 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+    @Restaurant = Restaurant.geocoded
+
+    @markers = [
+      {
+        lat: @order.menu.restaurant.latitude,
+        lng: @order.menu.restaurant.longitude
+      }
+    ]
   end
 
   def create
@@ -17,3 +25,12 @@ class OrdersController < ApplicationController
     redirect_to order_path(@order)
   end
 end
+
+
+# @raclette_machines = RacletteMachine.geocoded #returns flats with coordinates
+
+#     @markers = @raclette_machines.map do |raclette_machine|
+#       {
+#         lat: raclette_machine.latitude,
+#         lng: raclette_machine.longitude
+#       }
