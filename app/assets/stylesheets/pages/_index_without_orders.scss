@@ -1,0 +1,56 @@
+.fa-clipboard-list {
+  font-size: 50px;
+}
+
+.container_orders {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  color:white;
+  font-size: 20px;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  margin: 0px;
+}
+
+.h1-ban {
+  font-weight: bold;
+}
+
+.orders_icone {
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.orders_list {
+  height: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.orders_list p {
+  margin-left: 30px;
+  font-size: 12px;
+}
+
+.order_card_content {
+  height: 240px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
