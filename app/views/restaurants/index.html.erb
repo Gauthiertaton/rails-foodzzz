@@ -1,1 +1,12 @@
-<%=render "restaurants/index_reservation_restaurant" %>
+
+<!-- PAGE DE OUUUUUUUUUF-->
+
+<% if @menu_released == false %>
+  <!-- La page restaurants/index_partenaires s'affiche -->
+  <%= render 'restaurants/index_partenaires_restaurant' %>
+<% else @menu_released == true %>
+  <!-- La page pages/waiting s'affiche -->
+  <%= render 'restaurants/index_reservation_restaurant' %>
+  <!-- Si j'ai libéré mon repas -->
+
+<% end %>

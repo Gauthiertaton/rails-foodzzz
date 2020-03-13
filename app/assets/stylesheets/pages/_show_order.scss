@@ -1,57 +1,38 @@
-div.scrollmenu {
-  background-color: white;
-  overflow: auto;
-  white-space: nowrap;
-  padding:0;
-}
 
-div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  // padding: 14px;
-  // margin: 10px;
-  text-decoration: none;
-}
-
-div.scrollmenu a:hover {
-  background-color: white;
-}
-
-
-.cards-restaurant {
+.show_cards_restaurant {
   display: flex;
   align-items: flex-end;
   flex-direction: row;
-  margin-top: 23px
 }
 
-.card-restaurant {
+.show_card_restaurant {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  min-width: 150px;
-  margin: 12px;
+  min-width: 300px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-left: 55px;
 }
 
-.card-restaurant > img {
+.show_card_restaurant > img {
 }
 
-.card-restaurant p {
+.show_card_restaurant p {
   font-size: 13px;
 }
 
-.card-restaurant h2 {
+.show_card_restaurant h2 {
   font-size: 14px;
   color: $yellow;
 }
 
-.card-restaurant .fa-walking {
+.show_card_restaurant .fa-walking {
   font-size: 11px;
   color: #DADDD8; // gris //
 }
 
-.card-restaurant .card-restaurant-infos {
+.show_card_restaurant .show_card_restaurant_infos {
   padding: 30px 10px 10px 10px;
   display: flex;
   justify-content: space-between;
@@ -62,38 +43,34 @@ div.scrollmenu a:hover {
   }
 }
 
-.card-restaurant-location {
+.show_card_restaurant_location {
   text-align: left;
   margin-bottom: 2px;
 }
 
-
-.name-restaurant {
+.show_card_name_restaurant {
   background-color: white;
   position: absolute;
   min-width: 130px;
   box-shadow: 0 5px 15px hsla(0, 0%, 0%, .2);
   border-radius: 2px;
-  bottom: 80px;
-  right: 19px;
+  bottom: 60px;
+  right: 90px;
   h5 {
-    padding-top: 7px;
+  padding-top: 7px;
   }
 }
 
-.banner h2 {
-  padding-top: 46px;
-}
+// .banner h2 {
+//   padding-top: 46px;
+// }
 
-.btn-flat {
-  font-size: 12px;
-}
+// .btn-flat {
+//   font-size: 12px;
+// }
 
-.fa-search {
-  font-size: 12px;
-}
 
-.category-restaurant {
+.show_card_category_restaurant {
   background-color: #FFD4C8;
   max-width: 60px;
   text-align: center;

@@ -4,6 +4,18 @@
       <h2><strong>Les restaurants partenaires autour de toi</strong></h2>
     </div>
   </div>
+
+<div class = index_search_bar>
+  <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+    <div class="search-form-control form-group">
+      <input class="form-control string required" type="text" placeholder="Rechercher..." name="search[query]" id="search_query" />
+      <button name="button" type="submit" class="btn btn-flat">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  <% end %>
+</div>
+
   <div class ="index_logos_partenaires d-flex display-block">
     <% @restaurants.each do |restaurant| %>
       <div class = "logo_partenaire">
@@ -11,9 +23,10 @@
       </div>
     <% end %>
   </div>
-  <div id="map" style="width: 50%; height: 300px;"data-markers="<%= @markers.to_json %>"data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+  <div id="map" style="width: 100%; height: 250px;"data-markers="<%= @markers.to_json %>"data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
   <div class="question_title">
     <h3>Alors, prêt à changer tes habitudes ?</h3>
   </div>
-  <%=link_to "Oui je libère mon repas !", restaurants_path, class: "button" %>
+  <%= render 'meals/release' %>
+
 </div>
