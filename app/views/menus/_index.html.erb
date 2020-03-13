@@ -1,30 +1,32 @@
 <div class="container_menu">
   <% @restaurant.menus.each do |menu| %>
-    <div class="card_menu">
-      <div class="menu_name_type">
-        <div class="menu_name">
-          <p><strong><%= menu.name %></strong></p>
+   <%= button_to orders_path(menu_id: menu.id), method: :post do %>
+      <div class="card_menu">
+        <div class="menu_name_type">
+          <div class="menu_name">
+            <p><strong><%= menu.name %></strong></p>
+          </div>
+          <div class="menu_style">
+            <%if menu.vegetarien == true%>
+              <h4><i class="fas fa-carrot"></i> Végétarien</h4>
+            <%elsif menu.vegan == true %>
+              <h4><i class="fas fa-seeding"></i> Vegan</h4>
+            <%elsif menu.sans_gluten == true %>
+              <h4><i class="fas fa-bread-slice"> </i>Sans Gluten</h4>
+            <%elsif menu.halal == true %>
+              <h4>Halal</h4>
+            <%else%>
+            <h4> </h4>
+            <%end%>
+          </div>
         </div>
-        <div class="menu_style">
-          <%if menu.vegetarien == true%>
-            <h4><i class="fas fa-carrot"></i> Végétarien</h4>
-          <%elsif menu.vegan == true %>
-            <h4><i class="fas fa-seeding"></i> Vegan</h4>
-          <%elsif menu.sans_gluten == true %>
-            <h4><i class="fas fa-bread-slice"> </i>Sans Gluten</h4>
-          <%elsif menu.halal == true %>
-            <h4>Halal</h4>
-          <%else%>
-          <h4> </h4>
-          <%end%>
+        <div class="menu_description">
+          <h6><%=menu.description%></h6>
+        </div>
+        <div class="menu_img">
+          <%= cl_image_tag menu.photo.key, height: 70, width: 70, crop: :fill %>
         </div>
       </div>
-      <div class="menu_description">
-        <h6><%=menu.description%></h6>
-      </div>
-      <div class="menu_img">
-        <%= cl_image_tag menu.photo.key, height: 70, width: 70, crop: :fill %>
-      </div>
-    </div>
+    <% end %>
   <% end %>
 </div>

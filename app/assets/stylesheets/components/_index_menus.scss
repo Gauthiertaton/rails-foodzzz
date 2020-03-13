@@ -17,13 +17,14 @@
 }
 
 .menu_name_type{
-  width: 100px;
+  width: 180px;
+  // flex-direction: column;
+  // justify-content: space-between;
 
 }
 
 .menu_name{
   margin-right: 5px;
-  text-align: center;
   padding-top: 15px;
 }
 
@@ -32,9 +33,7 @@
   color: $gray;
 }
 
-// .fa-carrot .fa-seeding .fa-bread-slice{
-//   color: #DADDD8; // gris //
-// }
+
 
 h4 i{
   color: $gray;
@@ -46,6 +45,7 @@ h4 i{
   text-align: center;
   border-radius: 1px;
   margin-left: 10px;
+  margin-bottom: 5px;
 }
 
 .menu_description{
@@ -72,5 +72,5 @@ h4 i{
 .menu_name p{
   font-size: 15px;
   color: $yellow;
-  padding-left: 5px;
+  padding-left: 1px;
 }
