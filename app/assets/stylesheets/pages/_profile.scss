@@ -11,6 +11,7 @@
 .profil_user_buttons {
   padding: 40px;
   margin-top: 70px;
+  margin-left: 20px;
 }
 
 
@@ -32,21 +33,21 @@
    line-height: 5px;
    color: black;
    font-weight: bold;
-   margin-left: 15px;
-   padding-left: 2px;
+   margin-left: 9px;
 }
 
 
-.button p {
-  margin-left: 50px;
+.texticone p {
   color: black;
   margin-bottom: 0px;
 }
 
 
-// .far, .fas {
-//   font-size: 18px;
-//   color: black;
-// }
+.button {
 
+  .fa-phone-volume, .fa-sign-out-alt, .fa-question-circle {
+  font-size: 18px;
+  color: black;
+}
+}
 
