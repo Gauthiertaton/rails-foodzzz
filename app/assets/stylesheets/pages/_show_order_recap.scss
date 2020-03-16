@@ -7,7 +7,7 @@ margin-top: 20px;
 }
 
 .recap_bar{
-  text-align: center;
+  // text-align: center;
 }
 
 .nav-pills {
@@ -34,3 +34,51 @@ margin-top: 20px;
   font-size: 20px;
 
 }
+
+.card_menu{
+  background-color: white;
+  min-height: 111px;
+  // box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
+}
+
+.menu_description{
+  // padding-right: 15px;
+  // padding-left: 3px;
+  width: 250px;
+
+}
+
+.menu_style{
+  background-color: $yellow-span;
+  border-radius: 1px;
+  width: 80px;
+  // margin-left: 10px;
+  // margin-bottom: 5px;
+  // position: relative;
+  // position: bottom;
+}
+
+.menu_img{
+
+  padding-top: 20px;
+  padding-right: 6px;
+
+}
+
+.menu_description h6{
+  font-size: 12px;
+  color: black;
+}
+
+.menu_name p {
+  font-size: 15px;
+  color: $yellow;
+}
+
+
+.menu_style h4{
+  text-align: center;
+  color: $gray;
+}
+
+
