@@ -4,8 +4,8 @@
 }
 
 .index_orders_card_order{
-  border: solid 1px;
-  margin-bottom: 5px;
+  // border: solid 1px;
+  margin-bottom: 2px;
 }
 
 .index_orders_card_title_date{
@@ -13,13 +13,13 @@
   padding-left: 10px;
 }
 
-.index_orders_card_status{
+.index_orders_card_status_en_cours, .index_orders_card_status_terminee{
   // background-color: #f67280;
   padding-top: 13px;
 
 }
 
-.index_orders_card_status, .index_orders_card_sigle {
+.index_orders_card_status_en_cours, .index_orders_card_sigle, .index_orders_card_status_terminee {
   display: flex;
   width: 70px;
   align-items: center;
@@ -30,12 +30,14 @@
   margin-top: 10px;
   width: 25px;
   align-items: right;
+  padding-left: 13px;
 
 }
 
 .index_orders_count p{
   color: $yellow;
   font-size: 15px;
+  text-decoration: underline;
 }
 
 
@@ -59,12 +61,23 @@
   font-size: 16px;
 }
 
-.index_orders_card_status p{
+.index_orders_card_status_en_cours p{
   padding-top: 4px;
   font-size: 15px;
   width: 100%;
   text-align: center;
   background-color: #FFD4C8;
+  border-radius: 10%;
+  padding-bottom: 6px;
+  margin-top: 5px;
+}
+
+.index_orders_card_status_terminee p{
+  padding-top: 4px;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  background-color: #a7d7c5;
   border-radius: 10%;
   padding-bottom: 6px;
   margin-top: 5px;
