@@ -13,6 +13,14 @@ class RestaurantsController < ApplicationController
     end
     @user = current_user
     @menu_released = current_user.menu_released
+
+      if params[:query].present?
+      sql_query = "name ILIKE :query OR category ILIKE :query"
+      @restaurants = Restaurant.where(sql_query, query: "%#{params[:query]}%")
+      # @restaurants = Restaurant.where("name ILIKE ?", "%#{params[:query]}%")
+    else
+      @restaurants = Restaurant.all
+    end
   end
 
 
