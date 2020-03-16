@@ -1,0 +1,23 @@
+.mapboxgl-popup {
+  max-width: 100px;
+  height: 50px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title_resto_map p{
+  color: $yellow;
+  font-size: 15px;
+  margin-bottom: 5px;
+
+}
+
+
+.title_resto_address p{
+  font-size: 8px;
+  margin-bottom: 2px;
+
+}
