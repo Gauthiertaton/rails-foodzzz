@@ -4,11 +4,11 @@
   flex-direction: column;
   justify-content: space-between;
 
-  h2{
-    color: black;
-    // padding-top: 15px;
-  }
-}
+//   h1
+//     color: black;
+//     // padding-top: 15px;
+//   }
+// }
 
 .fa-hourglass-half {
   font-size: 100px;
@@ -20,14 +20,14 @@
 
 
 
-.titre-popup {
-  h2{
+.titre-popup h2{
     color: $yellow;
+    font-size: 36px;
   }
 }
 
 .text-infos {
-  padding-top: -50px;
+  // padding-top: -50px;
 
 }
 
