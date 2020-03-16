@@ -6,6 +6,7 @@
 
 h3 {
   text-align: center;
+  font-size: 13px;
 
 }
 
@@ -16,7 +17,8 @@ h3 {
 .home_etape h4 {
   font-size: 17px;
   text-align: center;
-  color: #A8A8A8;
+  color: $yellow;
+  font-weight: bold;
 
 }
 
@@ -25,13 +27,8 @@ h3 {
   font-size: 15px;
 }
 
-
-.home_fleche {
-  color: $yellow;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 40px;
+.home_etape {
+  margin-bottom: 30px;
 }
 
 .home_icones {
