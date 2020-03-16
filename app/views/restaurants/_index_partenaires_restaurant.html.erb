@@ -19,12 +19,12 @@
   <div class ="index_logos_partenaires d-flex display-block">
     <% @restaurants.each do |restaurant| %>
       <div class = "logo_partenaire">
-        <%= cl_image_tag restaurant.logo.key, height: 60, width: 60, crop: :fill %>
+        <%= cl_image_tag restaurant.logo.key, height: 93, width: 93, crop: :fill %>
       </div>
     <% end %>
   </div>
-  <div id="map" style="width: 100%; height: 250px;"data-markers="<%= @markers.to_json %>"data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
-  <div class="question_title">
+<!--   <div id="map" style="width: 100%; height: 250px;"data-markers="<%= @markers.to_json %>"data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+ -->  <div class="question_title">
     <h3>Alors, prêt à changer tes habitudes ?</h3>
   </div>
   <%= render 'meals/release' %>
