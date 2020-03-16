@@ -17,43 +17,46 @@
           <div class="order_menu_restaurant_name">
             <h3><strong><%= @order.menu.restaurant.name %></strong></h3>
           </div>
-          <div class="card_menu">
-            <div class="menu_title_description_style">
-              <div class="menu_title_description d-flex">
-                <div class="menu_name">
-                  <p><strong><%= @order.menu.name %></strong></p>
-                </div>
-                <div class="menu_style">
-                  <%if @order.menu.vegetarien == true%>
-                    <h4><i class="fas fa-carrot"></i> Végétarien</h4>
-                  <%elsif @order.menu.vegan == true %>
-                    <h4><i class="fas fa-seeding"></i> Vegan</h4>
-                  <%elsif @order.menu.sans_gluten == true %>
-                    <h4><i class="fas fa-bread-slice"> </i>Sans Gluten</h4>
-                  <%elsif @order.menu.halal == true %>
-                    <h4>Halal</h4>
-                  <%else%>
-                  <h4> </h4>
-                  <%end%>
-                </div>
+          <div class="card_menu border-bottom d-flex bd-highlight">
+            <!-- <div class= "bouton_click_order"> -->
+            <!-- </div> -->
+            <div class="menu_title_description-style pl-2 w-100 bd-highlight">
+              <div class="menu_name">
+                <p><strong><%= @order.menu.name %></strong></p>
               </div>
-              <div class="menu_img">
-                <%= cl_image_tag @order.menu.photo.key, height: 70, width: 70, crop: :fill %>
+              <div class="menu_description">
+                <h6><%= @order.menu.description %></h6>
               </div>
+              <div class="menu_style">
+                <%if @order.menu.vegetarien == true%>
+                  <h4><i class="fas fa-carrot"></i> Végétarien</h4>
+                <%elsif @order.menu.vegan == true %>
+                  <h4><i class="fas fa-seeding"></i> Vegan</h4>
+                <%elsif @order.menu.sans_gluten == true %>
+                  <h4><i class="fas fa-bread-slice"> </i>Sans Gluten</h4>
+                <%elsif @order.menu.halal == true %>
+                  <h4>Halal</h4>
+                <%else%>
+                <h4> </h4>
+                <%end%>
+              </div>
+            </div>
+            <div class="menu_img flex-shrink-1 bd-highlight">
+              <%= cl_image_tag @order.menu.photo.key, height: 70, width: 70, crop: :fill %>
             </div>
           </div>
           <div class= "recap_user_resto_localisation">
             <div id="map" style="width: 100%; height: 250px;"data-markers="<%= @markers.to_json %>"data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
           </div>
         </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-          <div class= "recap_qrcode mt-5">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Qrcode_wikipedia_fr_v2clean.png" alt="" width="120x120">
-            <p>23201</p>
-          </div>
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class= "recap_qrcode mt-5">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Qrcode_wikipedia_fr_v2clean.png" alt="" width="120x120">
+          <p>23201</p>
         </div>
       </div>
     </div>
-  <!-- </div> -->
+  </div>
 </div>
 <%= render 'shared/footer' %>
