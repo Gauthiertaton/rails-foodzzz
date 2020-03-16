@@ -1,22 +1,22 @@
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-12">
-      <h1><strong>Bienvenue </strong>sur Foodzzz <strong>!</strong></h1>
-
-      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-        <%= f.error_notification %>
-
-        <div class="form-inputs min-vh-50 container pt-3 pb-3 mt-5 mb-3" >
-          <%= f.input :email,
-                      required: false,
-                      autofocus: true,
-                      input_html: { autocomplete: "email" } %>
-          <%= f.input :password,
-                      required: false,
-                      input_html: { autocomplete: "current-password" } %>
-          <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-        </div>
-
+      <h1><strong>Bienvenue ! </strong></h1>
+      <div class= "logo_foodzzz text-center mt-5">
+        <%= image_tag("logo_foodzzz.png", size: "150x130", alt: "logo foodzzz") %>
+      </div>
+        <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <%= f.error_notification %>
+          <div class="form-inputs min-vh-50 container pt-3 pb-3 mt-5 mb-3" >
+            <%= f.input :email,
+                        required: false,
+                        autofocus: true,
+                        input_html: { autocomplete: "email" } %>
+            <%= f.input :password,
+                        required: false,
+                        input_html: { autocomplete: "current-password" } %>
+            <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+          </div>
         <div class="form-actions">
           <button type="Je me connecte" class="btn btn-primary">Je me connecte</button>
         </div>
