@@ -10,7 +10,8 @@ class OrdersController < ApplicationController
     @markers = [
       {
         lat: @order.menu.restaurant.latitude,
-        lng: @order.menu.restaurant.longitude
+        lng: @order.menu.restaurant.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { restaurant: @order.menu.restaurant })
       }
     ]
   end
@@ -19,18 +20,9 @@ class OrdersController < ApplicationController
     @order = Order.new
     @order.user_id = current_user.id
     @order.menu = Menu.find(params[:menu_id])
-    @order.status = 'en cours'
+    @order.status = 'En cours'
     @order.save!
 
     redirect_to order_path(@order)
   end
 end
-
-
-# @raclette_machines = RacletteMachine.geocoded #returns flats with coordinates
-
-#     @markers = @raclette_machines.map do |raclette_machine|
-#       {
-#         lat: raclette_machine.latitude,
-#         lng: raclette_machine.longitude
-#       }
