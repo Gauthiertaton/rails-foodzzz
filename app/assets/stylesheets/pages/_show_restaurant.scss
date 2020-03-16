@@ -1,3 +1,7 @@
+.show_container_menu{
+
+}
+
 
 .show_cards_restaurant {
   display: flex;
@@ -10,7 +14,7 @@
   overflow: hidden;
   background: white;
   min-width: 300px;
-  margin-top: 30px;
+  // margin-top: 30px;
   margin-bottom: 5px;
   margin-left: 39px;
 }
@@ -53,6 +57,7 @@
 .show_card_name_restaurant {
   bottom: 60px;
   right: 90px;
+
   h5 {
   padding-top: 7px;
   }
@@ -96,8 +101,15 @@
     font-size: 11px;
   color: #DADDD8; // gris //
   }
-}
+  }
 
-.banner h2 {
-    padding-top: 37px;
-}
+  .banner h2 {
+      padding-top: 37px;
+  }
+
+  .menu_name {
+      margin-top: 10px;
+      text-transform: uppercase;
+  }
+
+
