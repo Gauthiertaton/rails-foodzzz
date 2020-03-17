@@ -1,0 +1,11 @@
+:concurrency: 3
+:timeout: 60
+:verbose: true
+:queues:  # Queue priority: https://github.com/mperham/sidekiq/wiki/Advanced-Options
+  - default
+  - mailers
+:schedule:
+  reset_stock_job:
+    every: ["24h", first_at: "<%= Date.today.beginning_of_day %>"]
+    # cron: '0 0 * * *'
+    class: ResetStockJob
