@@ -27,26 +27,30 @@
 <div class ="cards-restaurant d-flex scrollmenu">
 
   <% @restaurants.each do |restaurant| %>
-    <%= link_to restaurant_path(restaurant) do %>
-      <div class="card-restaurant">
-        <div>
-          <%= cl_image_tag restaurant.photo.key, height: 120, width: 220, crop: :fill %>
-        </div>
-        <div class="card-restaurant-infos">
-            <div class ="name-restaurant">
-              <h5> <%= restaurant.name %> </h5>
+    <%if restaurant != current_user.restaurant %>
+      <%= link_to restaurant_path(restaurant) do %>
+        <%if restaurant.stock > 0 %>
+          <div class="card-restaurant">
+            <div>
+              <%= cl_image_tag restaurant.photo.key, height: 120, width: 220, crop: :fill %>
             </div>
-          <div>
-            <div class="category-restaurant">
-            <p> <%= restaurant.category %> </p>
+            <div class="card-restaurant-infos">
+                <div class ="name-restaurant">
+                  <h5> <%= restaurant.name %> </h5>
+                </div>
+              <div>
+                <div class="category-restaurant">
+                <p> <%= restaurant.category %> </p>
+              </div>
+                <p class="remove-mb"><span><%=restaurant.stock%> repas </span>disponibles</p>
+              </div>
+              <h2 class="card-restaurant-location "><i class="fas fa-walking"></i> 3 min</h2>
+            </div>
           </div>
-            <p class="remove-mb"><span>3 repas </span>disponibles</p>
-          </div>
-          <h2 class="card-restaurant-location "><i class="fas fa-walking"></i> 3 min</h2>
-        </div>
-      </div>
-    <% end %>
-  <% end %>
+        <%end%>
+      <%end%>
+    <%end%>
+  <%end%>
 </div>
 
 <%= render 'shared/footer' %>
