@@ -1,0 +1,103 @@
+
+.show_cards_restaurant {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 400px;
+}
+
+.show_card_restaurant {
+  overflow: hidden;
+  background: white;
+  min-width: 300px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-left: 39px;
+}
+
+.show_card_restaurant > img {
+  width: 100%;
+  height: 120px;
+}
+
+.show_card_restaurant p {
+  font-size: 13px;
+}
+
+// .show_card_restaurant h2 {
+//   font-size: 14px;
+//   color: $yellow;
+// }
+
+.show_card_restaurant .fa-walking {
+  font-size: 11px;
+  color: #DADDD8; // gris //
+}
+
+.show_card_restaurant .show_card_restaurant_infos {
+  padding: 30px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  .remove-mb {
+    margin-bottom: 0px;
+  }
+}
+
+.show_card_restaurant_location {
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+.show_card_name_restaurant {
+  bottom: 60px;
+  right: 90px;
+  h5 {
+  padding-top: 7px;
+  }
+}
+
+
+.show_order_title {
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.show_card_category_restaurant {
+  background-color: #FFD4C8;
+  max-width: 60px;
+  text-align: center;
+  border-radius: 1px;
+  p {
+    color: #BD654B;
+    font-size: 14px;
+  }
+
+}
+
+.show_uber_eats {
+  h5 {
+    text-align: left;
+    margin: 11px;
+  }
+  p {
+    text-align: left;
+    margin: 11px;
+  }
+  h2 {
+    color: $yellow;
+    text-align: left;
+    font-size: 14px;
+    margin: 11px;
+  }
+  .fa-walking {
+    font-size: 11px;
+  color: #DADDD8; // gris //
+  }
+}
+
+.banner h2 {
+    padding-top: 37px;
+}
