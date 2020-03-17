@@ -1,6 +1,7 @@
 class RestaurantsController < ApplicationController
   def index
     @restaurants = Restaurant.all
+    @my_resto = current_user.restaurant
     # @meals = Meal.new
     @restaurants_geocoded = Restaurant.geocoded #returns restaurants with coordinates
 
@@ -23,10 +24,19 @@ class RestaurantsController < ApplicationController
     end
   end
 
+  def except
+  end
+
 
   def show
     @restaurant = Restaurant.find(params[:id])
     @order = Order.new
-
   end
+
+  # def update
+  #   @restaurant = current_user.restaurant
+  #   @restaurant.stock += 1
+  #   @restaurant.save!
+  #   redirect_to release_meal_path
+  # end
 end

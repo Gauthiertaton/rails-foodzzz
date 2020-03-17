@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
   <style>
-  .rails-default-error-page {
+  body {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/foodzzz404.jpg);
     text-align: center;
     font-family: 'Zilla Slab', serif;
     /*margin: 0;*/
@@ -15,21 +16,21 @@
     padding: 150px 0;
   }
 
-  .rails-default-error-page div.dialog {
+  body div.dialog {
     max-width: 33em;
   }
 
-  .rails-default-error-page div.dialog > div {
+  body div.dialog > div {
     padding: 7px 12% 0;
   }
 
-  .rails-default-error-page h1 {
+  body h1 {
     font-size: 32px;
     color: white;
     line-height: 1.5em;
   }
 
-  .rails-default-error-page div.dialog div > p {
+  body div.dialog div > p {
     color: white;
     font-size: 23px;
   }
@@ -58,19 +59,19 @@
     font-weight: bold;
   }
 
-  .rails-default-error-page div.dialog div.infos {
+  body div.dialog div.infos {
     margin-top: 30px;
   }
   </style>
 </head>
 
-<body class="rails-default-error-page" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/foodzzz404.jpg);">
+<body>
   <!-- This file lives in public/404.html -->
   <div class="dialog">
     <div>
       <h1> 404 - OUPS, PAGE <br> INTROUVABLE </h1>
     </div>
-    <HR align=center size=8 width="80%" noshade>
+    <hr align=center size=8 width="80%" noshade>
     <div class="infos">
       <p> La page que vous recherchez ne semble pas ou plus exister. Pas d'inquiétude, rien n'est perdu !</p>
       <a href="http://www.foodzzz.website/restaurants" class="button"> Retourner à l'accueil </a>
