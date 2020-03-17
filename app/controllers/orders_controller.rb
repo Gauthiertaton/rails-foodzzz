@@ -14,8 +14,11 @@ class OrdersController < ApplicationController
     @order.user_id = current_user.id
     @order.menu = Menu.find(params[:menu_id])
     @order.status = 'En cours'
+
     # @order.distance_between_restos = current_user.restaurant.address - order.menu.restaurant.address
     # @order.duration =
+    @restaurant = @order.menu.restaurant
+    @restaurant.update(stock: @restaurant.stock - 1)
     @order.save!
 
     redirect_to order_path(@order)

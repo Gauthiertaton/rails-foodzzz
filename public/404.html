@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
   <style>
-
-  .body {
+  body {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/foodzzz404.jpg);
     text-align: center;
     font-family: 'Zilla Slab', serif;
     background-size: cover;
@@ -15,21 +15,21 @@
     padding: 150px 0;
   }
 
-  .dialog {
+  body div.dialog {
     max-width: 33em;
   }
 
-  .dialog > div {
+  body div.dialog > div {
     padding: 7px 12% 0;
   }
 
-  h1 {
+  body h1 {
     font-size: 32px;
     color: white;
     line-height: 1.5em;
   }
-
-  .p {
+    
+  body div.dialog div > p {
     color: white;
     font-size: 23px;
   }
@@ -58,13 +58,12 @@
     font-weight: bold;
   }
 
-  .dialog .infos {
+  body div.dialog div.infos {
     margin-top: 30px;
   }
   </style>
 </head>
-
-<body style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/foodzzz404.jpg);>
+<body>
   <!-- This file lives in public/404.html -->
   <div class="dialog">
     <div>
