@@ -9,6 +9,10 @@
   // box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
 }
 
+.container_menu:first-child {
+  border-top: 1px solid black;
+}
+
 
 .menu_title_description_style{
   padding-left: 11px;

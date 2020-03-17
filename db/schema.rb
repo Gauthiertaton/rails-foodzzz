@@ -84,7 +84,6 @@ ActiveRecord::Schema.define(version: 2020_03_17_153701) do
     t.string "last_name"
     t.boolean "menu_released", default: false
     t.bigint "restaurant_id"
-    t.boolean "admin", default: false, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["restaurant_id"], name: "index_users_on_restaurant_id"
