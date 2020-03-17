@@ -1,5 +1,5 @@
 <div class="container_index_orders">
-  <div class="banner">
+  <div class="title">
     <div class="index_orders_title">
       <h2><strong>Mes commandes</strong></h2>
     </div>
@@ -7,6 +7,7 @@
   <div class="index_orders_icone_listing mt-4 mx-4">
     <div class="index_orders_icone">
       <i class="fas fa-concierge-bell"></i>
+      <p><%= link_to "Ajouter une commande", restaurants_path %></p>
     </div>
     <div class="index_orders_count mt-5">
       <p>Mes commandes (<%= @orders.count%>) :</p>

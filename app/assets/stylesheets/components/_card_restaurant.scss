@@ -18,6 +18,16 @@ div.scrollmenu a:hover {
   background-color: white;
 }
 
+.title  {
+  margin-top: 33px;
+  margin-bottom: 33px;
+  h2 {
+  color:black;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 
 .cards-restaurant {
   display: flex;
@@ -72,11 +82,11 @@ div.scrollmenu a:hover {
 .name-restaurant {
   background-color: white;
   position: absolute;
-  min-width: 130px;
+  min-width: 80%;
   box-shadow: 0 5px 15px hsla(0, 0%, 0%, .2);
   border-radius: 2px;
   bottom: 80px;
-  right: 46px;
+  right: 21px;
   h5 {
     padding-top: 7px;
     // padding-left: 30px;
