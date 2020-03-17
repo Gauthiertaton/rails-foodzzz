@@ -7,13 +7,6 @@ class OrdersController < ApplicationController
     @order = Order.find(params[:id])
     @Restaurant = Restaurant.geocoded
 
-    @markers = [
-      {
-        lat: @order.menu.restaurant.latitude,
-        lng: @order.menu.restaurant.longitude,
-        infoWindow: render_to_string(partial: "info_window", locals: { restaurant: @order.menu.restaurant })
-      }
-    ]
   end
 
   def create
@@ -21,8 +14,14 @@ class OrdersController < ApplicationController
     @order.user_id = current_user.id
     @order.menu = Menu.find(params[:menu_id])
     @order.status = 'En cours'
+    # @order.distance_between_restos = current_user.restaurant.address - order.menu.restaurant.address
+    # @order.duration =
     @order.save!
 
     redirect_to order_path(@order)
   end
 end
+
+
+
+# "https://api.mapbox.com/directions/v5/mapbox/walking/<%=latitude%>;<%=longitude%>?access_token=pk.eyJ1IjoianVzdGluZWJhcmJhdWx0IiwiYSI6ImNrNm01b2ljYzBrcWIzbnA3ancwYTFmdnIifQ.zmvyCrK0HxPEnjQoXmiUjw"
