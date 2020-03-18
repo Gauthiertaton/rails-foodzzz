@@ -44,12 +44,9 @@ h2 {
 .card_menu{
   background-color: white;
   min-height: 111px;
-  // box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
 }
 
 .menu_description{
-  // padding-right: 15px;
-  // padding-left: 3px;
   width: 250px;
 
 }
@@ -58,10 +55,6 @@ h2 {
   background-color: $yellow-span;
   border-radius: 1px;
   width: 80px;
-  // margin-left: 10px;
-  // margin-bottom: 5px;
-  // position: relative;
-  // position: bottom;
 }
 
 .menu_img{
@@ -88,30 +81,18 @@ h2 {
 }
 
 .itinary .button{
-  // display: inline-block;
-  // text-decoration: none;
-  // background: $yellow;
-  // // color: black;
   width: 250px;
-
   padding-left: 28px;
   margin-bottom: 23px;
 }
 
-// .recap_button_itinary:active{
-//     -ms-transform: translateY(2px);
-//     -webkit-transform: translateY(2px);
-//     transform: translateY(2px);
-//     box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-//     border-bottom: none;
-// }
 
 .itinary .button a{
     color: white;
+    padding-left: 10px;
 
 }
 .icon_itinary{
   color: white;
-  // padding-top: 20px;
 }
 

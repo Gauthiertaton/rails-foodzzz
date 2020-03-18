@@ -12,7 +12,7 @@
   <div class="profil_user_buttons">
     <div class="profil_user_button_assistance mb-4">
           <%= link_to do %>
-            <div class="button d-flex flex-row align-items-center justify-content-around">
+            <div class="button d-flex flex-row justify-content-center">
                 <i class="fas fa-phone-volume ml-3"></i>
                 <div class="texticone"><p>Assistance en ligne</p></div>
             </div>
@@ -20,7 +20,7 @@
     </div>
     <div class="profil_user_button_FAQ mb-4">
           <%= link_to root_path do %>
-            <div class="button d-flex flex-row align-items-center justify-content-around">
+            <div class="button d-flex flex-row justify-content-center">
                 <i class="far fa-question-circle"></i>
                 <div class="texticone mr-5"><p class="pl-4"> FAQ </p></div>
             </div>
@@ -28,8 +28,8 @@
     </div>
     <div class="profil_user_button_logout mb-4">
           <%= link_to destroy_user_session_path, method: :delete do %>
-            <div class="button d-flex flex-row align-items-center justify-content-around">
-                <i class="fas fa-sign-out-alt ml-1"></i>
+            <div class="button d-flex flex-row justify-content-center">
+                <i class="fas fa-sign-out-alt"></i>
                 <div class="texticone"><p> Se déconnecter </p></div>
             </div>
           <%end%>
