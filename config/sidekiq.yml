@@ -5,7 +5,12 @@
   - default
   - mailers
 :schedule:
-  reset_stock_job:
-    every: ["24h", first_at: "<%= Date.today.beginning_of_day %>"]
+  # reset_stock_job:
+    # every: ["24h", first_at: "<%= DateTime.new(Date.today.year, Date.today.month, Date.today.day + 1, 1) %>"]
     # cron: '0 0 * * *'
-    class: ResetStockJob
+    # class: ResetStockJob
+  reset_menu_released:
+    # every: ["24h", first_at: "<%= DateTime.new(Date.today.year, Date.today.month, Date.today.day + 1, 1) %>"]
+    # cron: '* 1 * * *'
+    cron: '0 0 * * *'
+    class: ResetMenuReleasedJob
