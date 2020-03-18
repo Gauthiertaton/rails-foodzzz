@@ -7,47 +7,48 @@
   <div class="index_orders_icone_listing mt-4 mx-4">
     <div class="index_orders_icone">
       <i class="fas fa-concierge-bell"></i>
-      <p><%= link_to "Ajouter une commande", restaurants_path %></p>
     </div>
     <div class="index_orders_count mt-5">
       <p>Mes commandes (<%= @orders.count%>) :</p>
     </div>
-    <div class="index_orders_listing">
-      <%@orders.each do |order| %>
-        <div class="index_orders_card_order d-flex justify-content-between shadow-sm p-3 bg-white rounded">
-          <div class="index_orders_card_title_date">
-            <div class="index_orders_card_title">
-              <h5><strong><%=order.menu.restaurant.name%></strong></h5>
+    <% if @orders.count > 0 %>
+      <div class="index_orders_listing">
+        <%@orders.each do |order| %>
+          <div class="index_orders_card_order d-flex justify-content-between shadow-sm p-3 bg-white rounded">
+            <div class="index_orders_card_title_date">
+              <div class="index_orders_card_title">
+                <h5><strong><%=order.menu.restaurant.name%></strong></h5>
+              </div>
+              <div class="index_orders_card_date">
+                <p>Commandé le <%=order.created_at.strftime("%d.%m.%Y")%></p>
+              </div>
             </div>
-            <div class="index_orders_card_date">
-              <p>Commandé le <%=order.created_at.strftime("%d.%m.%Y")%></p>
+            <div class="index_orders_card_status_sigle d-flex justify-content-between">
+              <%if order.status == "En cours"%>
+                <div class="index_orders_card_status_en_cours">
+                  <p><%=order.status%></p>
+                </div>
+                <div class="index_orders_card_sigle">
+                  <h6><strong> > </strong></h6>
+                </div>
+              <% end %>
+              <%if order.status == "Terminée"%>
+                <div class="index_orders_card_status_terminee">
+                  <p><%=order.status%></p>
+                </div>
+                <div class="index_orders_card_sigle">
+                  <h6><strong> > </strong></h6>
+                </div>
+              <%end%>
             </div>
           </div>
-          <div class="index_orders_card_status_sigle d-flex justify-content-between">
-            <%if order.status == "En cours"%>
-              <div class="index_orders_card_status_en_cours">
-                <p><%=order.status%></p>
-              </div>
-              <div class="index_orders_card_sigle">
-                <h6><strong> > </strong></h6>
-              </div>
-            <% end %>
-            <%if order.status == "Terminée"%>
-              <div class="index_orders_card_status_terminee">
-                <p><%=order.status%></p>
-              </div>
-              <div class="index_orders_card_sigle">
-                <h6><strong> > </strong></h6>
-              </div>
-            <% end %>
-          </div>
+        <%end%>
+      </div>
+      <%else%>
+        <div class="ajout_cmd">
+          <p><%= link_to "Ajouter une commande", restaurants_path, class: 'button' %></p>
         </div>
-      <%end%>
-    </div>
+    <%end%>
   </div>
   <%= render "shared/footer" %>
 </div>
-<%#= render 'shared/footer' %>
-
-
-
