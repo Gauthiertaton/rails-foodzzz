@@ -44,7 +44,7 @@
                 <div class="category-restaurant">
                 <p> <%= restaurant.category %> </p>
               </div>
-                <p class="remove-mb"><span><%=restaurant.stock%> repas </span>disponibles</p>
+                <p class="remove-mb"><span> <%= pluralize( restaurant.stock, 'repas disponible' ) %>  </span></p>
               </div>
               <h2 class="card-restaurant-location "><i class="fas fa-walking"></i> 3 min</h2>
             </div>
