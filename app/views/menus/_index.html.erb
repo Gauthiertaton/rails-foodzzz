@@ -1,7 +1,8 @@
 <div class="container_menu">
   <% @restaurant.menus.each do |menu| %>
+  <hr>
     <%= link_to orders_path(menu_id: menu.id), method: :post do %>
-      <div class="card_menu border-bottom d-flex bd-highlight">
+      <div class="card_menu d-flex bd-highlight">
         <!-- <div class= "bouton_click_order"> -->
         <!-- </div> -->
         <div class="menu_title_description_style w-100 bd-highlight">

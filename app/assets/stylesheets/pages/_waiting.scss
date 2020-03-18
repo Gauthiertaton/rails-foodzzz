@@ -3,29 +3,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
 
-
-.fa-history{
+.fa-history {
   font-size: 80px;
   margin-bottom: 1px;
-  // padding-left: 154px;
   text-align: center;
-
 }
 
-
-.titre-popup h2{
-    color: $yellow;
-    font-size: 25px;
-  }
+.titre-popup h2 {
+    color: black;
+    font-size: 36px;
 }
 
-.text-infos {
-  // padding-top: -50px;
-
-}
-
-.link_skip a{
+.link_skip a {
   margin-bottom: 10px;
   color: #fafafa;
 }
