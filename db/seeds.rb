@@ -106,7 +106,7 @@ menu_1 = Menu.create!(name: "LE TENNESSEE BBQ",description: 'Cheddar fumé, deux
 menu_file_1 = File.open(Rails.root.join('db/fixtures/menu/menu_1.png'))
 menu_1.photo.attach(io: menu_file_1, filename: 'menu_1.png', content_type: 'image/png')
 
-menu_2 = Menu.create!(name: "LE McWRAP™ VEGGIE",description: 'Palets panés aux légumes, emmental, oignons frits, tomates, salade, galette de blé', restaurant: restaurant_1, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_2 = Menu.create!(name: "LE McWRAP™ VEGGIE",description: 'Palets panés aux légumes, emmental, oignons frits, tomates, salade, galette de blé', restaurant: restaurant_1, vegetarien: true, vegan: false, sans_gluten: false, halal: false)
 menu_file_2 = File.open(Rails.root.join('db/fixtures/menu/menu_2.jpg'))
 menu_2.photo.attach(io: menu_file_2, filename: 'menu_2.jpg', content_type: 'image/jpg')
 
@@ -115,11 +115,11 @@ menu_file_3 = File.open(Rails.root.join('db/fixtures/menu/menu_3.jpg'))
 menu_3.photo.attach(io: menu_file_3, filename: 'menu_3.jpg', content_type: 'image/jpg')
 
 # pita pit
-menu_4 = Menu.create!(name: "Poulet caesar",description: 'Blanc de poulet, bacon & parmesan', restaurant: restaurant_2, vegetarien: false, vegan: false, sans_gluten: false, halal: false)
+menu_4 = Menu.create!(name: "Poulet caesar",description: 'Blanc de poulet, bacon & parmesan', restaurant: restaurant_2, vegetarien: false, vegan: false, sans_gluten: false, halal: true)
 menu_file_4 = File.open(Rails.root.join('db/fixtures/menu/menu_4.jpg'))
 menu_4.photo.attach(io: menu_file_4, filename: 'menu_4.jpg', content_type: 'image/jpg')
 
-menu_5 = Menu.create!(name: "Poulet souvlaki",description: 'Haut de cuisse de poulet & sa sauce maison', restaurant: restaurant_2, vegetarien: false, vegan: false, sans_gluten: true, halal: true)
+menu_5 = Menu.create!(name: "Poulet souvlaki",description: 'Haut de cuisse de poulet & sa sauce maison', restaurant: restaurant_2, vegetarien: false, vegan: false, sans_gluten: false, halal: true)
 menu_file_5 = File.open(Rails.root.join('db/fixtures/menu/menu_5.jpg'))
 menu_5.photo.attach(io: menu_file_5, filename: 'menu_5.jpg', content_type: 'image/jpg')
 
@@ -132,20 +132,20 @@ menu_7 = Menu.create!(name: "LE SUPPLI",description: 'Boule de risotto tomaté, 
 menu_file_7 = File.open(Rails.root.join('db/fixtures/menu/menu_7.jpg'))
 menu_7.photo.attach(io: menu_file_7, filename: 'menu_7.jpg', content_type: 'image/jpg')
 
-menu_8 = Menu.create!(name: "ARANCINI",description: 'Arancini garni de la semaine', restaurant: restaurant_3, vegetarien: false, vegan: false, sans_gluten: true, halal: true)
+menu_8 = Menu.create!(name: "ARANCINI",description: 'Arancini garni de la semaine', restaurant: restaurant_3, vegetarien: false, vegan: false, sans_gluten: false, halal: true)
 menu_file_8 = File.open(Rails.root.join('db/fixtures/menu/menu_8.jpg'))
 menu_8.photo.attach(io: menu_file_8, filename: 'menu_8.jpg', content_type: 'image/jpg')
 
-menu_9 = Menu.create!(name: "FERMIER",description: 'Béchamel aux 3 fromages, fourme d’Ambert, comté et parmesan', restaurant: restaurant_3, vegetarien: false, vegan: false, sans_gluten: true, halal: true)
+menu_9 = Menu.create!(name: "FERMIER",description: 'Béchamel aux 3 fromages, fourme d’Ambert, comté et parmesan', restaurant: restaurant_3, vegetarien: false, vegan: false, sans_gluten: false, halal: true)
 menu_file_9 = File.open(Rails.root.join('db/fixtures/menu/menu_9.jpg'))
 menu_9.photo.attach(io: menu_file_9, filename: 'menu_9.jpg', content_type: 'image/jpg')
 
 # SaladBar
-menu_10 = Menu.create!(name: "LA PLANCHA",description: 'Plat cuit à la plancha une portion de bœuf et accompagnements', restaurant: restaurant_4, vegetarien: true, vegan: false, sans_gluten: false, halal: true)
+menu_10 = Menu.create!(name: "LA PLANCHA",description: 'Plat cuit à la plancha une portion de bœuf et accompagnements', restaurant: restaurant_4, vegetarien: false, vegan: false, sans_gluten: false, halal: true)
 menu_file_10 = File.open(Rails.root.join('db/fixtures/menu/menu_10.jpg'))
 menu_10.photo.attach(io: menu_file_10, filename: 'menu_10.jpg', content_type: 'image/jpg')
 
-menu_11 = Menu.create!(name: "Émincés végétariens",description: 'Blé et soja, relevés au gingembre et aux piments', restaurant: restaurant_4, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_11 = Menu.create!(name: "Émincés végétariens",description: 'Blé et soja, relevés au gingembre et aux piments', restaurant: restaurant_4, vegetarien: true, vegan: true, sans_gluten: false, halal: true)
 menu_file_11 = File.open(Rails.root.join('db/fixtures/menu/menu_11.png'))
 menu_11.photo.attach(io: menu_file_11, filename: 'menu_11.png', content_type: 'image/png')
 
@@ -162,16 +162,16 @@ menu_14 = Menu.create!(name: "Le big Fernand",description: 'Tomme de Savoie, tom
 menu_file_14 = File.open(Rails.root.join('db/fixtures/menu/menu_14.png'))
 menu_14.photo.attach(io: menu_file_14, filename: 'menu_14.png', content_type: 'image/png')
 
-menu_15 = Menu.create!(name: "Le Lucien",description: 'Champignon de Paris, tomme de Savoie, tomates séchées, oignons confits, sauce Tata Fernande', restaurant: restaurant_5, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_15 = Menu.create!(name: "Le Lucien",description: 'Champignon de Paris, tomme de Savoie, tomates séchées, oignons confits, sauce Tata Fernande', restaurant: restaurant_5, vegetarien: true, vegan: false, sans_gluten: false, halal: true)
 menu_file_15 = File.open(Rails.root.join('db/fixtures/menu/menu_15.jpg'))
 menu_15.photo.attach(io: menu_file_15, filename: 'menu_15.jpg', content_type: 'image/jpg')
 
 # pokawa
-menu_16 = Menu.create!(name: "Lover Bowl",description: 'Riz, ceviche de daurade mariné au lait de coco, citron vert, betterave, avocat, edamame, graines germées', restaurant: restaurant_6, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_16 = Menu.create!(name: "Lover Bowl",description: 'Riz, ceviche de daurade mariné au lait de coco, citron vert, betterave, avocat, edamame, graines germées', restaurant: restaurant_6, vegetarien: false, vegan: false, sans_gluten: true, halal: true)
 menu_file_16 = File.open(Rails.root.join('db/fixtures/menu/menu_16.png'))
 menu_16.photo.attach(io: menu_file_16, filename: 'menu_16.png', content_type: 'image/png')
 
-menu_17 = Menu.create!(name: "Chirashi Hawaien",description: 'Riz, saumon frais, avocat, ananas, graines de sésame', restaurant: restaurant_6, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_17 = Menu.create!(name: "Chirashi Hawaien",description: 'Riz, saumon frais, avocat, ananas, graines de sésame', restaurant: restaurant_6, vegetarien: false, vegan: false, sans_gluten: true, halal: true)
 menu_file_17 = File.open(Rails.root.join('db/fixtures/menu/menu_17.jpg'))
 menu_17.photo.attach(io: menu_file_17, filename: 'menu_17.jpg', content_type: 'image/jpg')
 
@@ -184,7 +184,7 @@ menu_19 = Menu.create!(name: "Beef Barbacoa",description: 'Morceaux de bœuf cui
 menu_file_19 = File.open(Rails.root.join('db/fixtures/menu/menu_19.jpg'))
 menu_19.photo.attach(io: menu_file_19, filename: 'menu_19.jpg', content_type: 'image/jpg')
 
-menu_20 = Menu.create!(name: "Veggie Quinoa Kale",description: 'Galettes de quinoa Kale composées de chou kale, poivrons rouges, quinoa', restaurant: restaurant_7, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_20 = Menu.create!(name: "Veggie Quinoa Kale",description: 'Galettes de quinoa Kale composées de chou kale, poivrons rouges, quinoa', restaurant: restaurant_7, vegetarien: true, vegan: true, sans_gluten: true, halal: false)
 menu_file_20 = File.open(Rails.root.join('db/fixtures/menu/menu_20.jpg'))
 menu_20.photo.attach(io: menu_file_20, filename: 'menu_20.jpg', content_type: 'image/jpg')
 
@@ -206,11 +206,11 @@ menu_file_24 = File.open(Rails.root.join('db/fixtures/menu/menu_24.jpg'))
 menu_24.photo.attach(io: menu_file_24, filename: 'menu_24.jpg', content_type: 'image/jpg')
 
 # eat salade
-menu_25 = Menu.create!(name: "La 4",description: 'Laitue iceberg, avocat, bacon, carotte, feta, ranch', restaurant: restaurant_9, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_25 = Menu.create!(name: "La 4",description: 'Laitue iceberg, avocat, bacon, carotte, feta, ranch', restaurant: restaurant_9, vegetarien: false, vegan: false, sans_gluten: true, halal: true)
 menu_file_25 = File.open(Rails.root.join('db/fixtures/menu/menu_25.jpg'))
 menu_25.photo.attach(io: menu_file_25, filename: 'menu_25.jpg', content_type: 'image/jpg')
 
-menu_26 = Menu.create!(name: "La 6",description: 'Riz, noix, champignon, crabe, oignons, fourme d’Ambert, graines, pesto', restaurant: restaurant_9, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_26 = Menu.create!(name: "La 6",description: 'Riz, noix, champignon, crabe, oignons, fourme d’Ambert, graines, pesto', restaurant: restaurant_9, vegetarien: false, vegan: false, sans_gluten: true, halal: true)
 menu_file_26 = File.open(Rails.root.join('db/fixtures/menu/menu_26.png'))
 menu_26.photo.attach(io: menu_file_26, filename: 'menu_26.png', content_type: 'image/png')
 
@@ -232,28 +232,28 @@ menu_file_30 = File.open(Rails.root.join('db/fixtures/menu/menu_30.jpg'))
 menu_30.photo.attach(io: menu_file_30, filename: 'menu_30.jpg', content_type: 'image/jpg')
 
 # bagel corner
-menu_31 = Menu.create!(name: "L’ORIGINEL",description: 'Cream cheese ciboulette, saumon fumé', restaurant: restaurant_11, vegetarien: true, vegan: false, sans_gluten: true, halal: true)
+menu_31 = Menu.create!(name: "L’ORIGINEL",description: 'Cream cheese ciboulette, saumon fumé', restaurant: restaurant_11, vegetarien: false, vegan: false, sans_gluten: false, halal: true)
 menu_file_31 = File.open(Rails.root.join('db/fixtures/menu/menu_31.jpg'))
 menu_31.photo.attach(io: menu_file_31, filename: 'menu_31.jpg', content_type: 'image/jpg')
 
-menu_32 = Menu.create!(name: "LE NORDIQUE",description: 'Cream cheese ciboulette, avocat, saumon, jeunes pousses, tomates, sauce citron aneth', restaurant: restaurant_11, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_32 = Menu.create!(name: "LE NORDIQUE",description: 'Cream cheese ciboulette, avocat, saumon, jeunes pousses, tomates, sauce citron aneth', restaurant: restaurant_11, vegetarien: false, vegan: false, sans_gluten: false, halal: true)
 menu_file_32 = File.open(Rails.root.join('db/fixtures/menu/menu_32.jpg'))
 menu_32.photo.attach(io: menu_file_32, filename: 'menu_32.jpg', content_type: 'image/jpg')
 
-menu_33 = Menu.create!(name: "LA VEGGIE",description: 'Jeunes pousses, avocat, parmesan, concombre, tomates, tartare de courgette, vinaigrette, croûtons', restaurant: restaurant_11, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_33 = Menu.create!(name: "LA VEGGIE",description: 'Jeunes pousses, avocat, parmesan, concombre, tomates, tartare de courgette, vinaigrette, croûtons', restaurant: restaurant_11, vegetarien: true, vegan: false, sans_gluten: false, halal: true)
 menu_file_33 = File.open(Rails.root.join('db/fixtures/menu/menu_33.jpg'))
 menu_33.photo.attach(io: menu_file_33, filename: 'menu_33.jpg', content_type: 'image/jpg')
 
 # Sushi shop
-menu_34 = Menu.create!(name: "Satay Sushi",description: 'Crevette, sauce cacahuète, noix de coco, zeste de citron vert, noix de coco', restaurant: restaurant_12, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_34 = Menu.create!(name: "Satay Sushi",description: 'Crevette, sauce cacahuète, noix de coco, zeste de citron vert, noix de coco', restaurant: restaurant_12, vegetarien: false, vegan: false, sans_gluten: true, halal: true)
 menu_file_34 = File.open(Rails.root.join('db/fixtures/menu/menu_34.png'))
 menu_34.photo.attach(io: menu_file_34, filename: 'menu_34.png', content_type: 'image/png')
 
-menu_35 = Menu.create!(name: "Saumon tsukudani",description: 'Sauce tsukudani, algue nori et sauce soja', restaurant: restaurant_12, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_35 = Menu.create!(name: "Saumon tsukudani",description: 'Sauce tsukudani, algue nori et sauce soja', restaurant: restaurant_12, vegetarien: false, vegan: false, sans_gluten: true, halal: true)
 menu_file_35 = File.open(Rails.root.join('db/fixtures/menu/menu_35.png'))
 menu_35.photo.attach(io: menu_file_35, filename: 'menu_35.png', content_type: 'image/png')
 
-menu_36 = Menu.create!(name: "Maki carotte",description: 'Carotte cuite et crue, coriandre, mayonnaise aux agrumes', restaurant: restaurant_12, vegetarien: true, vegan: true, sans_gluten: true, halal: true)
+menu_36 = Menu.create!(name: "Maki carotte",description: 'Carotte cuite et crue, coriandre, mayonnaise aux agrumes', restaurant: restaurant_12, vegetarien: true, vegan: false, sans_gluten: true, halal: true)
 menu_file_36 = File.open(Rails.root.join('db/fixtures/menu/menu_36.jpg'))
 menu_36.photo.attach(io: menu_file_36, filename: 'menu_36.jpg', content_type: 'image/jpg')
 
