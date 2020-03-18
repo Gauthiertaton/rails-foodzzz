@@ -45,9 +45,14 @@
 
 .button {
 
-  .fa-phone-volume, .fa-sign-out-alt, .fa-question-circle {
+  .fa-phone-volume, .fa-sign-out-alt {
   font-size: 18px;
   color: white;
+  padding-right: 9px;
 }
+}
+
+.fa-question-circle{
+  padding-right: 4px;
 }
 
