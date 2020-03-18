@@ -31,6 +31,15 @@ class RestaurantsController < ApplicationController
   def show
     @restaurant = Restaurant.find(params[:id])
     @order = Order.new
+    coordinates = current_user.restaurant.geocode
+
+    mapbox_url = "https://api.mapbox.com/directions/v5/mapbox/walking/#{coordinates.last},#{coordinates.first};#{@restaurant.longitude},#{@restaurant.latitude}?access_token=#{ENV["MAPBOX_API_KEY"]}"
+    coordinates_serialized = open(mapbox_url).read
+    coordinates = JSON.parse(coordinates_serialized)
+    duration_in_S = coordinates["routes"][0]["legs"][0]["duration"] / 60.0
+    distance_in_M = coordinates["routes"][0]["legs"][0]["distance"] / 1000
+    @distance = distance_in_M.round(0)
+    @duration = duration_in_S.round(0)
   end
 
   # def update

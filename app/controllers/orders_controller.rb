@@ -1,3 +1,6 @@
+require 'json'
+require 'open-uri'
+
 class OrdersController < ApplicationController
   def index
     @orders = current_user.orders.order(created_at: :desc)
@@ -14,9 +17,13 @@ class OrdersController < ApplicationController
     @order.user_id = current_user.id
     @order.menu = Menu.find(params[:menu_id])
     @order.status = 'En cours'
-
-    # @order.distance_between_restos = current_user.restaurant.address - order.menu.restaurant.address
-    # @order.duration =
+    mapbox_url = "https://api.mapbox.com/directions/v5/mapbox/walking/#{current_user.restaurant.longitude},#{current_user.restaurant.latitude};#{@order.menu.restaurant.longitude},#{@order.menu.restaurant.latitude}?access_token=#{ENV["MAPBOX_API_KEY"]}"
+    coordinates_serialized = open(mapbox_url).read
+    coordinates = JSON.parse(coordinates_serialized)
+    duration_in_S = coordinates["routes"][0]["legs"][0]["duration"]
+    @order.duration = duration_in_S / 60.0
+    distance_in_M = coordinates["routes"][0]["legs"][0]["distance"]
+    @order.distance_between_restos = distance_in_M / 1000
     @restaurant = @order.menu.restaurant
     @restaurant.update(stock: @restaurant.stock - 1)
     @order.save!
@@ -24,7 +31,3 @@ class OrdersController < ApplicationController
     redirect_to order_path(@order)
   end
 end
-
-
-
-# "https://api.mapbox.com/directions/v5/mapbox/walking/<%=latitude%>;<%=longitude%>?access_token=pk.eyJ1IjoianVzdGluZWJhcmJhdWx0IiwiYSI6ImNrNm01b2ljYzBrcWIzbnA3ancwYTFmdnIifQ.zmvyCrK0HxPEnjQoXmiUjw"
