@@ -1,6 +1,6 @@
 <div class = "container_recap_order">
   <div class="recap_title">
-    <h1>C'est <span><strong>réservé<span> </strong>!</h1>
+    <h2>C'est <span><strong>réservé<span> </strong>!</h2>
   </div>
   <div class="recap_bar mt-5">
     <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
@@ -44,14 +44,14 @@
             </div>
           </div>
         </div>
-          <div class="itinary mt-4">
-            <div class ="button d-flex flex-row align-items-center justify-content-around">
-              <!-- <div class="icon_itinary d-flex align-items"> -->
-                <i class="fas fa-map-marked-alt"></i>
-              <!-- </div> -->
-              <a href="https://www.google.com/maps/dir/?api=1&origin=<%=current_user.restaurant.address%>&destination=<%=@order.menu.restaurant.address%>&travelmode=walking">Voir l'itinéraire</a>
-            </div>
+        <div class="itinary mt-4">
+          <div class ="button d-flex flex-row align-items-center justify-content-around">
+            <!-- <div class="icon_itinary d-flex align-items"> -->
+              <i class="fas fa-map-marked-alt"></i>
+            <!-- </div> -->
+            <a href="https://www.google.com/maps/dir/?api=1&origin=<%=current_user.restaurant.address%>&destination=<%=@order.menu.restaurant.address%>&travelmode=walking">Voir l'itinéraire</a>
           </div>
+        </div>
       </div>
       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
         <div class= "recap_qrcode mt-5">

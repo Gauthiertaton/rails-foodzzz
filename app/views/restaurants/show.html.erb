@@ -8,12 +8,12 @@
     <%= cl_image_tag @restaurant.photo.key, height: 150, width: 414, crop: :fill %>
     <div class="d-flex justify-content-between">
       <h5> <%= @restaurant.name %> </h5>
-      <h2><i class="fas fa-walking"></i><%= @duration %> min</h2>
+      <h2><i class="fas fa-walking"></i> <%= @duration %> min</h2>
     </div>
     <p> <%= @restaurant.category %> </p>
   </div>
 </div>
-<%= render 'menus/index' %>
+  <%= render 'menus/index' %>
 </div>
 <%= render 'shared/footer' %>
 
