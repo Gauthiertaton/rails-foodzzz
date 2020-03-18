@@ -12,11 +12,22 @@
 }
 
 .titre-popup h2 {
-    color: black;
-    font-size: 36px;
+    color: $yellow;
+    font-size: 30px;
 }
 
 .link_skip a {
   margin-bottom: 10px;
   color: #fafafa;
+}
+
+.title  {
+  margin-top: 33px;
+  margin-bottom: 33px;
+  h1 {
+  color:$yellow;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
