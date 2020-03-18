@@ -1,0 +1,16 @@
+:concurrency: 3
+:timeout: 60
+:verbose: true
+:queues:  # Queue priority: https://github.com/mperham/sidekiq/wiki/Advanced-Options
+  - default
+  - mailers
+:schedule:
+  # reset_stock_job:
+    # every: ["24h", first_at: "<%= DateTime.new(Date.today.year, Date.today.month, Date.today.day + 1, 1) %>"]
+    # cron: '0 0 * * *'
+    # class: ResetStockJob
+  reset_menu_released:
+    # every: ["24h", first_at: "<%= DateTime.new(Date.today.year, Date.today.month, Date.today.day + 1, 1) %>"]
+    # cron: '* 1 * * *'
+    cron: '0 0 * * *'
+    class: ResetMenuReleasedJob

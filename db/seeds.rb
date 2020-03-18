@@ -69,13 +69,13 @@ restaurant_8.photo.attach(io: resto_file_8, filename: 'resto_8.jpg', content_typ
 logo_file_8 = File.open(Rails.root.join('db/fixtures/logo/fresh_burritos.jpg'))
 restaurant_8.logo.attach(io: logo_file_8, filename: 'fresh_burritos.jpg', content_type: 'image/jpg')
 
-restaurant_9 = Restaurant.create!(name: "Eat Salad",address: '19 BIS Rue Scribe, 44000 Nantes', category: 'salades', stock: 0)
+restaurant_9 = Restaurant.create!(name: "Eat Salad",address: '19 BIS Rue Scribe, 44000 Nantes', category: 'salades', stock: 1)
 resto_file_9 = File.open(Rails.root.join('db/fixtures/resto/resto_9.jpeg'))
 restaurant_9.photo.attach(io: resto_file_9, filename: 'resto_9.jpeg', content_type: 'image/jpeg')
 logo_file_9 = File.open(Rails.root.join('db/fixtures/logo/eat_salad.jpg'))
 restaurant_9.logo.attach(io: logo_file_9, filename: 'eat_salad.jpg', content_type: 'image/jpg')
 
-restaurant_10 = Restaurant.create!(name: "O'Tacos",address: '2 Cours Olivier de Clisson, 44000 Nantes', category: 'Tacos', stock: 0)
+restaurant_10 = Restaurant.create!(name: "O'Tacos",address: '2 Cours Olivier de Clisson, 44000 Nantes', category: 'Tacos', stock: 2)
 resto_file_10 = File.open(Rails.root.join('db/fixtures/resto/resto_10.png'))
 restaurant_10.photo.attach(io: resto_file_10, filename: 'resto_10.png', content_type: 'image/png')
 logo_file_10 = File.open(Rails.root.join('db/fixtures/logo/o_tacos.jpg'))
