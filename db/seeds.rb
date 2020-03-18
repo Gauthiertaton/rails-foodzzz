@@ -33,7 +33,7 @@ restaurant_2.photo.attach(io: resto_file_2, filename: 'resto_2.jpg', content_typ
 logo_file_2 = File.open(Rails.root.join('db/fixtures/logo/pita_pit.jpg'))
 restaurant_2.logo.attach(io: logo_file_2, filename: 'pita_pit.jpg', content_type: 'image/jpg')
 
-restaurant_3 = Restaurant.create!(name: "Supply Factory",address: '1 Rue de l Arche Sèche, 44000 Nantes', category: 'Italien', stock: 2)
+restaurant_3 = Restaurant.create!(name: "Suppli Factory",address: "1 Rue de l'Arche Sèche, 44000 Nantes", category: 'Italien', stock: 2)
 resto_file_3 = File.open(Rails.root.join('db/fixtures/resto/resto_3.jpg'))
 restaurant_3.photo.attach(io: resto_file_3, filename: 'resto_3.jpg', content_type: 'image/jpg')
 logo_file_3 = File.open(Rails.root.join('db/fixtures/logo/supply-factory.jpg'))
