@@ -63,7 +63,7 @@ restaurant_7.photo.attach(io: resto_file_7, filename: 'resto_7.jpg', content_typ
 logo_file_7 = File.open(Rails.root.join('db/fixtures/logo/subway.jpg'))
 restaurant_7.logo.attach(io: logo_file_7, filename: 'subway.jpg', content_type: 'image/jpg')
 
-restaurant_8 = Restaurant.create!(name: "Fresh Burrito",address: '5 Rue de Gorges, 44000 Nantes', category: 'Burrito', stock: 1)
+restaurant_8 = Restaurant.create!(name: "Fresh Burrito",address: '5 Rue de Gorges, 44000 Nantes', category: 'Burrito', stock: 0)
 resto_file_8 = File.open(Rails.root.join('db/fixtures/resto/resto_8.jpg'))
 restaurant_8.photo.attach(io: resto_file_8, filename: 'resto_8.jpg', content_type: 'image/jpg')
 logo_file_8 = File.open(Rails.root.join('db/fixtures/logo/fresh_burritos.jpg'))
