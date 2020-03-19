@@ -1,5 +1,6 @@
 .recap_qrcode{
   text-align: center;
+  margin-top: 90px;
 }
 
 .recap_title{
@@ -12,9 +13,6 @@ h2 {
 }
 }
 
-.recap_bar{
-  // text-align: center;
-}
 
 .nav-pills {
   margin-left: 80px;
@@ -81,13 +79,10 @@ h2 {
 }
 
 .itinary{
-  // margin-left: 63px;
   margin-top: 320px;
 }
 
 .itinary .button{
-  // width: 250px;
-  // padding-left: 28px;
   margin-bottom: 23px;
   width: 100%
 }
@@ -100,5 +95,10 @@ h2 {
 }
 .icon_itinary{
   color: white;
+}
+
+.instructions p{
+  font-size: 15px;
+  font-style: italic;
 }
 

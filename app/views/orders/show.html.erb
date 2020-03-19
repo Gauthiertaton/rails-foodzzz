@@ -52,7 +52,10 @@
         </div>
       </div>
       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <div class= "recap_qrcode mt-5">
+        <div class="instructions">
+          <p>Présentes ce QR code au moment du retrait de ta commande.</p>
+        </div>
+        <div class= "recap_qrcode">
           <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Qrcode_wikipedia_fr_v2clean.png" alt="" width="200x200">
           <p><strong><%= @order.id %></strong></p>
         </div>
@@ -61,9 +64,3 @@
   </div>
 </div>
 <%= render 'shared/footer' %>
-<!--
-
-<div class="button d-flex flex-row align-items-center justify-content-around">
-                <i class="fas fa-sign-out-alt ml-1"></i>
-                <div class="texticone"><p> Se déconnecter </p></div>
-            </div> -->
