@@ -6,9 +6,19 @@ class RestaurantsController < ApplicationController
     @restaurants = Restaurant.all
     @my_resto = current_user.restaurant
     # @meals = Meal.new
-    @restaurants_geocoded = Restaurant.geocoded #returns restaurants with coordinates
+    @restaurants = Restaurant.geocoded #returns restaurants with coordinates
 
-    @markers = @restaurants_geocoded.map do |restaurant|
+    # @restaurants_zero_stock = Restaurant.where(stock: 0)
+    # @restaurants_with_stock = @restaurants.first unless @restauarnt_zero_stock
+
+    @restaurants_dispo = []
+    @restaurants.each do |restaurant|
+      if restaurant.stock > 0
+        @restaurants_dispo << restaurant
+      end
+    end
+
+    @markers = @restaurants_dispo.map do |restaurant|
       {
         lat: restaurant.latitude,
         lng: restaurant.longitude,
