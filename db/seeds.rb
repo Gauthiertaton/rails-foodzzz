@@ -260,7 +260,7 @@ menu_36.photo.attach(io: menu_file_36, filename: 'menu_36.jpg', content_type: 'i
 # puts 'Creating orders'
 
 # order_1 = Order.create!(status: "En cours",menu: menu_33 , user: user_1 )
-order_2 = Order.create!(status: "Terminée",menu: menu_12 , user: user_1 )
+#order_2 = Order.create!(status: "Terminée",menu: menu_12 , user: user_1 )
 # order_3 = Order.create!(status: "En cours",menu: menu_13 , user: user_2 )
 # order_4 = Order.create!(status: "Terminée",menu: menu_3 , user: user_2 )
 # order_5 = Order.create!(status: "Terminée",menu: menu_27 , user: user_3 )
