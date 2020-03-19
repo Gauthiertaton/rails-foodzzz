@@ -31,14 +31,15 @@
                 <%elsif @order.menu.vegan == true %>
                   <h4><i class="fas fa-seeding"></i> Vegan</h4>
                 <%elsif @order.menu.sans_gluten == true %>
-                  <h4><i class="fas fa-bread-slice"> </i>Sans Gluten</h4>
+                  <h4><i class="fas fa-bread-slice"></i> Sans Gluten</h4>
                 <%elsif @order.menu.halal == true %>
-                  <h4>Halal</h4>
+                  <h4><i class="fas fa-moon"></i> Halal</h4>
                 <%else%>
                 <h4> </h4>
                 <%end%>
               </div>
             </div>
+
             <div class="menu_img flex-shrink-1 bd-highlight">
               <%= cl_image_tag @order.menu.photo.key, height: 70, width: 70, crop: :fill %>
             </div>

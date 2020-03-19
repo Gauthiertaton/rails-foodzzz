@@ -20,10 +20,13 @@
 .menu_style h4{
   text-align: center;
   color: $gray;
+  padding-top: 2.5px;
+  padding-bottom: 1.5px;
+  background-color: $yellow-span;
 }
 
 .menu_style{
-  background-color: $yellow-span;
+  // background-color: $yellow-span;
   border-radius: 1px;
   width: 80px;
   // margin-left: 10px;
