@@ -26,10 +26,7 @@
 .title  {
   margin-top: 33px;
   margin-bottom: 33px;
-  h1 {
-  color:$yellow;
-    font-style: normal;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
