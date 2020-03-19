@@ -12,8 +12,13 @@ class RestaurantsController < ApplicationController
       {
         lat: restaurant.latitude,
         lng: restaurant.longitude,
-        infoWindow: render_to_string(partial: "info_window", locals: { restaurant: restaurant })
+        infoWindow: render_to_string(partial: "info_window", locals: { restaurant: restaurant }),
+        myresto: restaurant == @my_resto,
+        # image_url: helpers.asset_url("/images/logo_foodzzz.png")
       }
+
+
+
     end
     @user = current_user
     @menu_released = current_user.menu_released
