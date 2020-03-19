@@ -3,7 +3,11 @@
 }
 
 .recap_title{
-margin-top: 20px;
+margin-top: 33px;
+margin-bottom: 33px;
+display: flex;
+align-items: center;
+justify-content: center;
 h2 {
  color:$yellow;
     font-style: normal;
@@ -14,6 +18,7 @@ h2 {
 
 .recap_bar{
   // text-align: center;
+  height: 100%;
 }
 
 .nav-pills {
@@ -82,7 +87,7 @@ h2 {
 
 .itinary{
   // margin-left: 63px;
-  margin-top: 320px;
+  margin-top: 380px;
 }
 
 .itinary .button{

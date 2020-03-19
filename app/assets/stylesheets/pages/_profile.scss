@@ -3,6 +3,12 @@
   padding-top: 50px;
 }
 
+.profil_user_personal_infos{
+  display: flex;
+  align-items: center;
+
+}
+
 .profil_user_infos {
   padding-top: 10px;
 }
@@ -54,5 +60,9 @@
 
 .fa-question-circle{
   padding-right: 4px;
+}
+
+.profil_user_personal_infos_content{
+  height: 80%;
 }
 
