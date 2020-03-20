@@ -260,13 +260,13 @@ menu_36.photo.attach(io: menu_file_36, filename: 'menu_36.jpg', content_type: 'i
 # puts 'Creating orders'
 
 # order_1 = Order.create!(status: "En cours", menu: menu_33, user: user_1)
-order_2 = Order.create!(status: "Terminée", menu: menu_12, user: user_1)
+order_2 = Order.create!(status: "Terminée", creation_date: "2020-03-19T13:30:00", menu: menu_34, user: user_1)
 # order_3 = Order.create!(status: "En cours", menu: menu_13, user: user_2)
-# order_4 = Order.create!(status: "Terminée", menu: menu_3, user: user_2)
-# order_5 = Order.create!(status: "Terminée", menu: menu_27, user: user_3)
-# order_6 = Order.create!(status: "Terminée", menu: menu_32, user: user_3)
-# order_7 = Order.create!(status: "Terminée", menu: menu_7, user: user_4)
-# order_8 = Order.create!(status: "Terminée", menu: menu_4, user: user_4)
+# order_4 = Order.create!(status: "Terminée", creation_date: "2020-03-18T13:30:00", menu: menu_3, user: user_1)
+order_5 = Order.create!(status: "Terminée", creation_date: "2020-03-17T13:30:00", menu: menu_27, user: user_1)
+order_6 = Order.create!(status: "Terminée", creation_date: "2020-03-16T13:30:00", menu: menu_33, user: user_1)
+order_7 = Order.create!(status: "Terminée", creation_date: "2020-03-15T13:30:00", menu: menu_20, user: user_1)
+# order_8 = Order.create!(status: "Terminée", creation_date: "2020-03-14T13:30:00", menu: menu_11, user: user_1)
 
 puts "finish"
 
