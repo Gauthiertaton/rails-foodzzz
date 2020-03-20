@@ -3,7 +3,7 @@ require 'open-uri'
 
 class OrdersController < ApplicationController
   def index
-    @orders = current_user.orders.order(created_at: :desc)
+    @orders = current_user.orders.order(creation_date: :desc)
   end
 
   def show
@@ -17,6 +17,7 @@ class OrdersController < ApplicationController
     @order.user_id = current_user.id
     @order.menu = Menu.find(params[:menu_id])
     @order.status = 'En cours'
+    @order.creation_date = DateTime.now.to_date
     mapbox_url = "https://api.mapbox.com/directions/v5/mapbox/walking/#{current_user.restaurant.longitude},#{current_user.restaurant.latitude};#{@order.menu.restaurant.longitude},#{@order.menu.restaurant.latitude}?access_token=#{ENV["MAPBOX_API_KEY"]}"
     coordinates_serialized = open(mapbox_url).read
     coordinates = JSON.parse(coordinates_serialized)
