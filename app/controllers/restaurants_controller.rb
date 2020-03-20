@@ -3,22 +3,15 @@ require 'open-uri'
 
 class RestaurantsController < ApplicationController
   def index
-    @restaurants = Restaurant.all
     @my_resto = current_user.restaurant
-    # @meals = Meal.new
-    @restaurants = Restaurant.geocoded #returns restaurants with coordinates
-
-    # @restaurants_zero_stock = Restaurant.where(stock: 0)
-    # @restaurants_with_stock = @restaurants.first unless @restauarnt_zero_stock
-
-    @restaurants_dispo = []
-    @restaurants.each do |restaurant|
-      if restaurant.stock > 0
-        @restaurants_dispo << restaurant
-      end
+    @restaurants = Restaurant.geocoded.where.not(id: @my_resto.id).where("stock > 0") #returns restaurants with coordinates
+    if params[:query].present?
+    sql_query = "name ILIKE :query OR category ILIKE :query"
+    @restaurants = @restaurants.where(sql_query, query: "%#{params[:query]}%")
+    # @restaurants = Restaurant.where("name ILIKE ?", "%#{params[:query]}%")
     end
 
-    @markers = @restaurants_dispo.map do |restaurant|
+    @markers = (@restaurants + [@my_resto]).map do |restaurant|
       {
         lat: restaurant.latitude,
         lng: restaurant.longitude,
@@ -27,19 +20,10 @@ class RestaurantsController < ApplicationController
         # image_url: helpers.asset_url("/images/logo_foodzzz.png")
       }
 
-
-
     end
     @user = current_user
     @menu_released = current_user.menu_released
 
-      if params[:query].present?
-      sql_query = "name ILIKE :query OR category ILIKE :query"
-      @restaurants = Restaurant.where(sql_query, query: "%#{params[:query]}%")
-      # @restaurants = Restaurant.where("name ILIKE ?", "%#{params[:query]}%")
-    else
-      @restaurants = Restaurant.all
-    end
   end
 
   def except

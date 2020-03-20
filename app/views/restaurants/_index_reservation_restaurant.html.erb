@@ -29,28 +29,24 @@
 <div class ="cards-restaurant d-flex scrollmenu">
 
   <% @restaurants.each do |restaurant| %>
-    <%if restaurant != current_user.restaurant %>
-      <%= link_to restaurant_path(restaurant) do %>
-        <%if restaurant.stock > 0 %>
-          <div class="card-restaurant">
-            <div>
-              <%= cl_image_tag restaurant.photo.key, height: 120, width: 220, crop: :fill %>
+    <%= link_to restaurant_path(restaurant) do %>
+      <div class="card-restaurant">
+        <div>
+          <%= cl_image_tag restaurant.photo.key, height: 120, width: 220, crop: :fill %>
+        </div>
+        <div class="card-restaurant-infos">
+            <div class ="name-restaurant">
+              <h5> <%= restaurant.name %> </h5>
             </div>
-            <div class="card-restaurant-infos">
-                <div class ="name-restaurant">
-                  <h5> <%= restaurant.name %> </h5>
-                </div>
-              <div>
-                <div class="category-restaurant">
-                <p> <%= restaurant.category %> </p>
-              </div>
-                <p class="remove-mb"><span> <%= pluralize( restaurant.stock, 'repas disponible' ) %> </span></p>
-              </div>
-              <h2 class="card-restaurant-location "></h2>
-            </div>
+          <div>
+            <div class="category-restaurant">
+            <p> <%= restaurant.category %> </p>
           </div>
-        <%end%>
-      <%end%>
+            <p class="remove-mb"><span> <%= pluralize( restaurant.stock, 'repas disponible' ) %> </span></p>
+          </div>
+          <h2 class="card-restaurant-location "></h2>
+        </div>
+      </div>
     <%end%>
   <%end%>
 </div>
