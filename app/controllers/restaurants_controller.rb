@@ -3,6 +3,7 @@ require 'open-uri'
 
 class RestaurantsController < ApplicationController
   def index
+    @restaurants_all = Restaurant.all
     @my_resto = current_user.restaurant
     @restaurants = Restaurant.geocoded.where.not(id: @my_resto.id).where("stock > 0") #returns restaurants with coordinates
     if params[:query].present?

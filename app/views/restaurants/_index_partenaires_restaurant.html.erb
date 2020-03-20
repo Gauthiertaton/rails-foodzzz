@@ -22,7 +22,7 @@
 <% end %>
 
   <div class ="index_logos_partenaires d-flex display-block">
-    <% @restaurants.each do |restaurant| %>
+    <% @restaurants_all.each do |restaurant| %>
       <div class = "logo_partenaire">
         <%= cl_image_tag restaurant.logo.key, height: 93, width: 93, crop: :fill %>
       </div>
