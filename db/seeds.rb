@@ -39,7 +39,7 @@ restaurant_3.photo.attach(io: resto_file_3, filename: 'resto_3.jpg', content_typ
 logo_file_3 = File.open(Rails.root.join('db/fixtures/logo/supply-factory.jpg'))
 restaurant_3.logo.attach(io: logo_file_3, filename: 'supply-factory.jpg', content_type: 'image/jpg')
 
-restaurant_4 = Restaurant.create!(name: "SaladBar",address: '12 Rue de Jemmapes, 44200 Nantes', category: 'Salades', stock: 4)
+restaurant_4 = Restaurant.create!(name: "SaladBar",address: '12 Rue de Jemmapes, 44200 Nantes', category: 'Salades', stock: 5)
 resto_file_4 = File.open(Rails.root.join('db/fixtures/resto/resto_4.jpg'))
 restaurant_4.photo.attach(io: resto_file_4, filename: 'resto_4.jpg', content_type: 'image/jpg')
 logo_file_4 = File.open(Rails.root.join('db/fixtures/logo/salad_bar.jpg'))
@@ -259,14 +259,14 @@ menu_36.photo.attach(io: menu_file_36, filename: 'menu_36.jpg', content_type: 'i
 
 # puts 'Creating orders'
 
-# order_1 = Order.create!(status: "En cours",menu: menu_33 , user: user_1 )
-#order_2 = Order.create!(status: "Terminée",menu: menu_12 , user: user_1 )
-# order_3 = Order.create!(status: "En cours",menu: menu_13 , user: user_2 )
-# order_4 = Order.create!(status: "Terminée",menu: menu_3 , user: user_2 )
-# order_5 = Order.create!(status: "Terminée",menu: menu_27 , user: user_3 )
-# order_6 = Order.create!(status: "Terminée",menu: menu_32 , user: user_3 )
-# order_7 = Order.create!(status: "Terminée",menu: menu_7 , user: user_4 )
-# order_8 = Order.create!(status: "Terminée",menu: menu_4 , user: user_4 )
+# order_1 = Order.create!(status: "En cours", menu: menu_33, user: user_1)
+order_2 = Order.create!(status: "Terminée", menu: menu_12, user: user_1)
+# order_3 = Order.create!(status: "En cours", menu: menu_13, user: user_2)
+# order_4 = Order.create!(status: "Terminée", menu: menu_3, user: user_2)
+# order_5 = Order.create!(status: "Terminée", menu: menu_27, user: user_3)
+# order_6 = Order.create!(status: "Terminée", menu: menu_32, user: user_3)
+# order_7 = Order.create!(status: "Terminée", menu: menu_7, user: user_4)
+# order_8 = Order.create!(status: "Terminée", menu: menu_4, user: user_4)
 
 puts "finish"
 
