@@ -39,7 +39,6 @@
                 <%end%>
               </div>
             </div>
-
             <div class="menu_img flex-shrink-1 bd-highlight">
               <%= cl_image_tag @order.menu.photo.key, height: 70, width: 70, crop: :fill %>
             </div>
@@ -47,7 +46,7 @@
         </div>
         <div class="itinary">
           <div class ="button d-flex flex-row align-items-center">
-              <i class="fas fa-map-marked-alt"></i>
+            <i class="fas fa-map-marked-alt"></i>
             <a href="https://www.google.com/maps/dir/?api=1&origin=<%=current_user.restaurant.address%>&destination=<%=@order.menu.restaurant.address%>&travelmode=walking">Voir l'itinéraire</a>
           </div>
         </div>

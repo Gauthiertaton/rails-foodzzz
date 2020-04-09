@@ -5,9 +5,11 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  # associations
   belongs_to :restaurant
   has_many :orders, dependent: :destroy
 
+  # validations
   validates :first_name, presence: true
   validates :last_name,  presence: true
   private

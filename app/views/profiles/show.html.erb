@@ -1,7 +1,7 @@
 <div class="container_profil">
   <div class="profil_user_infos d-flex flex-row">
     <div class="profil_user_avatar">
-        <img src="https://images.unsplash.com/photo-1503235930437-8c6293ba41f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar">
+      <img src="https://images.unsplash.com/photo-1503235930437-8c6293ba41f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar">
     </div>
     <div class="profil_user_personal_infos">
       <div class="profil_user_personal_infos_content d-flex flex-column justify-content-end">
@@ -13,28 +13,28 @@
   </div>
   <div class="profil_user_buttons">
     <div class="profil_user_button_assistance mb-4">
-          <%= link_to do %>
-            <div class="button d-flex flex-row justify-content-center">
-                <i class="fas fa-phone-volume ml-3"></i>
-                <div class="texticone"><p>Assistance en ligne</p></div>
-            </div>
-          <%end%>
+      <%= link_to do %>
+        <div class="button d-flex flex-row justify-content-center">
+          <i class="fas fa-phone-volume ml-3"></i>
+          <div class="texticone"><p>Assistance en ligne</p></div>
+        </div>
+      <%end%>
     </div>
     <div class="profil_user_button_FAQ mb-4">
-          <%= link_to root_path do %>
-            <div class="button d-flex flex-row justify-content-center">
-                <i class="far fa-question-circle"></i>
-                <div class="texticone mr-5"><p class="pl-4"> FAQ </p></div>
-            </div>
-          <%end%>
+      <%= link_to root_path do %>
+        <div class="button d-flex flex-row justify-content-center">
+          <i class="far fa-question-circle"></i>
+          <div class="texticone mr-5"><p class="pl-4"> FAQ </p></div>
+        </div>
+      <%end%>
     </div>
     <div class="profil_user_button_logout mb-4">
-          <%= link_to destroy_user_session_path, method: :delete do %>
-            <div class="button d-flex flex-row justify-content-center">
-                <i class="fas fa-sign-out-alt"></i>
-                <div class="texticone"><p> Se déconnecter </p></div>
-            </div>
-          <%end%>
+      <%= link_to destroy_user_session_path, method: :delete do %>
+        <div class="button d-flex flex-row justify-content-center">
+          <i class="fas fa-sign-out-alt"></i>
+          <div class="texticone"><p> Se déconnecter </p></div>
+        </div>
+      <%end%>
     </div>
   </div>
   <div class="profil_order_navbar"></div>

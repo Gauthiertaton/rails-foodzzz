@@ -46,10 +46,10 @@
           <%end%>
         <%end%>
       </div>
-      <%else%>
-        <div class="ajout_cmd">
-          <p><%= link_to "Ajouter une commande", restaurants_path, class: 'button' %></p>
-        </div>
+    <%else%>
+      <div class="ajout_cmd">
+        <p><%= link_to "Ajouter une commande", restaurants_path, class: 'button' %></p>
+      </div>
     <%end%>
   </div>
   <%= render "shared/footer" %>

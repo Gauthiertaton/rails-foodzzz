@@ -3,13 +3,16 @@ require 'open-uri'
 
 class RestaurantsController < ApplicationController
   def index
+
     @restaurants_all = Restaurant.all
+
     @my_resto = current_user.restaurant
     @restaurants = Restaurant.geocoded.where.not(id: @my_resto.id).where("stock > 0") #returns restaurants with coordinates
+
+    # display restaurants according to the query in the search bar
     if params[:query].present?
     sql_query = "name ILIKE :query OR category ILIKE :query"
     @restaurants = @restaurants.where(sql_query, query: "%#{params[:query]}%")
-    # @restaurants = Restaurant.where("name ILIKE ?", "%#{params[:query]}%")
     end
 
     @markers = (@restaurants + [@my_resto]).map do |restaurant|
@@ -34,9 +37,9 @@ class RestaurantsController < ApplicationController
   def show
     @restaurant = Restaurant.find(params[:id])
     @order = Order.new
-    # coordinates = current_user.restaurant.geocode
-    my_resto = current_user.restaurant
 
+    # Call API mapbox to calculate walking time
+    my_resto = current_user.restaurant
     mapbox_url = "https://api.mapbox.com/directions/v5/mapbox/walking/#{my_resto.longitude},#{my_resto.latitude};#{@restaurant.longitude},#{@restaurant.latitude}?access_token=#{ENV["MAPBOX_API_KEY"]}"
     coordinates_serialized = open(mapbox_url).read
     coordinates = JSON.parse(coordinates_serialized)
@@ -45,11 +48,4 @@ class RestaurantsController < ApplicationController
     @distance = distance_in_M.round(0)
     @duration = duration_in_S.round(0)
   end
-
-  # def update
-  #   @restaurant = current_user.restaurant
-  #   @restaurant.stock += 1
-  #   @restaurant.save!
-  #   redirect_to release_meal_path
-  # end
 end
