@@ -257,7 +257,7 @@ menu_36 = Menu.create!(name: "Maki carotte",description: 'Carotte cuite et crue,
 menu_file_36 = File.open(Rails.root.join('db/fixtures/menu/menu_36.jpg'))
 menu_36.photo.attach(io: menu_file_36, filename: 'menu_36.jpg', content_type: 'image/jpg')
 
-# puts 'Creating orders'
+puts 'Creating orders'
 
 # order_1 = Order.create!(status: "En cours", menu: menu_33, user: user_1)
 order_2 = Order.create!(status: "Terminée", creation_date: "2020-03-19T13:30:00", menu: menu_34, user: user_1)

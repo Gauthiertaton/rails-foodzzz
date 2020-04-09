@@ -1,4 +1,3 @@
-
 <div class="title">
   <h2>Les restaurants <span><strong>autour de toi</strong></span></h2>
 </div>
@@ -12,10 +11,7 @@
     <%= button_tag(type: "submit", class: "search-btn") do %>
       <i class="fas fa-search"></i>
     <% end %>
-     <!--<%# submit_tag do %>
-      <i class="fas fa-search"></i>
-     <#% end %>-->
-   </div>
+  </div>
 <% end %>
 
 <div
@@ -27,7 +23,6 @@
 ></div>
 
 <div class ="cards-restaurant d-flex scrollmenu">
-
   <% @restaurants.each do |restaurant| %>
     <%= link_to restaurant_path(restaurant) do %>
       <div class="card-restaurant">
@@ -35,13 +30,13 @@
           <%= cl_image_tag restaurant.photo.key, height: 120, width: 220, crop: :fill %>
         </div>
         <div class="card-restaurant-infos">
-            <div class ="name-restaurant">
-              <h5> <%= restaurant.name %> </h5>
-            </div>
+          <div class ="name-restaurant">
+            <h5> <%= restaurant.name %> </h5>
+          </div>
           <div>
             <div class="category-restaurant">
             <p> <%= restaurant.category %> </p>
-          </div>
+            </div>
             <p class="remove-mb"><span> <%= pluralize( restaurant.stock, 'repas disponible' ) %> </span></p>
           </div>
           <h2 class="card-restaurant-location "></h2>

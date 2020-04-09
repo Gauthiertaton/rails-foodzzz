@@ -1,4 +1,6 @@
 class MealsController < ApplicationController
+
+  # the user menu is released
   def release
     current_user.update(menu_released: true)
 
