@@ -1,19 +1,13 @@
-.title  {
+
+.title {
   margin-top: 33px;
   margin-bottom: 33px;
   h2 {
   color:$yellow;
     font-style: normal;
-    // margin-top: 15px;
     margin-bottom: -2px;
   }
 }
-
-
-.show_container_menu{
-
-}
-
 
 .show_cards_restaurant {
   display: flex;
@@ -26,7 +20,6 @@
   overflow: hidden;
   background: white;
   min-width: 300px;
-  // margin-top: 30px;
   margin-bottom: 5px;
   margin-left: 39px;
 }
@@ -39,11 +32,6 @@
 .show_card_restaurant p {
   font-size: 13px;
 }
-
-// .show_card_restaurant h2 {
-//   font-size: 14px;
-//   color: $yellow;
-// }
 
 .show_card_restaurant .fa-walking {
   font-size: 11px;
@@ -75,11 +63,9 @@
   }
 }
 
-
 .show_order_title {
   margin-left: 10px;
   margin-right: 10px;
-
 }
 
 .show_card_category_restaurant {
@@ -91,7 +77,6 @@
     color: #BD654B;
     font-size: 14px;
   }
-
 }
 
 .show_uber_eats {
@@ -112,7 +97,7 @@
   .fa-walking {
     font-size: 11px;
   color: #DADDD8; // gris //
-  }
+    }
   }
 
   .banner h2 {

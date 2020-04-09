@@ -1,5 +1,7 @@
 import mapboxgl from 'mapbox-gl';
 
+// code du cours du Wagon sur le geocoding
+
 const mapElement = document.getElementById('map');
 
 const buildMap = () => {
@@ -12,23 +14,17 @@ const buildMap = () => {
 
 const addMarkersToMap = (map, markers) => {
   markers.forEach((marker) => {
-    const popup = new mapboxgl.Popup().setHTML(marker.infoWindow); // add this
-    const color = marker.myresto ? "#FFEA2F" : "#06908F";
-
-  // const element = document.createElement('div');
-  // element.className = 'marker';
-  // element.style.backgroundImage = `url('${marker.image_url}')`;
-  // element.style.backgroundSize = 'contain';
-  // element.style.width = '25px';
-  // element.style.height = '25px';
+    const popup = new mapboxgl.Popup().setHTML(marker.infoWindow); // ajout du pop quand on clique sur un resto sur la map
+    const color = marker.myresto ? "#FFEA2F" : "#06908F"; // ajout du marker qui se met en jaune pour la localisation du resto de l'employe
 
     new mapboxgl.Marker({color: color})
       .setLngLat([ marker.lng, marker.lat ])
-      .setPopup(popup) // add this
+      .setPopup(popup)
       .addTo(map);
   });
 };
 
+// permet de configurer le zoom sur la map, la vue des markeurs.
 const fitMapToMarkers = (map, markers) => {
   const bounds = new mapboxgl.LngLatBounds();
   markers.forEach(marker => bounds.extend([ marker.lng, marker.lat ]));

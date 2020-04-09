@@ -1,11 +1,8 @@
-.home_banner_title  {
-  // margin-top: 33px;
-  // margin-bottom: 33px;
+
+.home_banner_title {
   h2 {
   color: white;
     font-style: normal;
-    // margin-top: 10px;
-    // margin-bottom: 10px;
   }
 }
 
@@ -19,7 +16,6 @@ h3 {
   text-align: center;
   font-size: 13px;
   font-weight: bold;
-
 }
 
 
@@ -28,7 +24,6 @@ h3 {
   text-align: center;
   color: $yellow;
   font-weight: bold;
-
 }
 
 .home_etape p {
@@ -45,10 +40,9 @@ h3 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 40px;
-
 }
 
-.home_button{
+.home_button {
   padding-left: 28px;
   margin-bottom: 23px;
 }
@@ -56,6 +50,5 @@ h3 {
 .banner {
   background-size: cover;
   height: 230px;
-  // padding: 200px 0;
   object-fit: cover;
 }
