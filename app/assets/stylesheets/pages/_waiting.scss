@@ -1,3 +1,4 @@
+
 .waiting-page {
   height: 100vh;
   display: flex;
@@ -13,7 +14,6 @@
 
 .titre-popup h2 {
     color: $yellow;
-    // font-size: 30px;
 }
 
 .link_skip a {
@@ -26,8 +26,6 @@
   margin-bottom: 33px;
   h2 {
   color:$yellow;
-    font-style: normal;
-    // margin-top: 10px;
-    // margin-bottom: 10px;
+  font-style: normal;
   }
 }

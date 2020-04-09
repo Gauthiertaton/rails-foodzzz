@@ -9,8 +9,6 @@ div.scrollmenu a {
   display: inline-block;
   color: white;
   text-align: center;
-  // padding: 14px;
-  // margin: 10px;
   text-decoration: none;
 }
 
@@ -19,16 +17,12 @@ div.scrollmenu a:hover {
 }
 
 .title  {
-  // margin-top: 33px;
-  // margin-bottom: 33px;
   display: flex;
   align-items: center;
   justify-content: center;
   h2 {
   color:$yellow;
-    font-style: normal;
-    // margin-top: 10px;
-    // margin-bottom: 10px;
+  font-style: normal;
   }
 }
 
@@ -40,14 +34,10 @@ div.scrollmenu a:hover {
 }
 
 .card-restaurant {
-  // overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   min-width: 220px;
   margin: 12px;
-}
-
-.card-restaurant > img {
 }
 
 .card-restaurant p {
@@ -81,7 +71,6 @@ div.scrollmenu a:hover {
   margin-bottom: 2px;
 }
 
-
 .name-restaurant {
   background-color: white;
   position: absolute;
@@ -92,9 +81,6 @@ div.scrollmenu a:hover {
   right: 21px;
   h5 {
     padding-top: 7px;
-    // padding-left: 30px;
-    // padding-right: 30px;
-
   }
 }
 
@@ -115,7 +101,6 @@ div.scrollmenu a:hover {
     color: #BD654B;
     font-size: 14px;
   }
-
 }
 
 .map {

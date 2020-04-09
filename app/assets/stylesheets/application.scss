@@ -23,7 +23,7 @@
 @import "pages/index_orders";
 @import "components/card_restaurant";
 
-body{
+body {
   position: relative;
   min-height: calc(100vh, -12px);
   background-color: white;
@@ -74,7 +74,5 @@ span {
 
 a {
   text-decoration: none !important;
-  // color: white;
-  // &
 }
 

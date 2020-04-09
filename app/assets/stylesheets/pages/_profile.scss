@@ -3,7 +3,7 @@
   padding-top: 50px;
 }
 
-.profil_user_personal_infos{
+.profil_user_personal_infos {
   display: flex;
   align-items: center;
 
@@ -13,18 +13,15 @@
   padding-top: 10px;
 }
 
-
 .profil_user_buttons {
   padding: 40px;
   margin-top: 70px;
   margin-left: 20px;
 }
 
-
 .profil_user_avatar {
   margin-left: 40px;
 }
-
 
 .profil_user_avatar img {
   width: 100px;
@@ -32,7 +29,6 @@
   object-fit: cover;
   border-radius: 50%;
 }
-
 
 .profil_user_personal_infos p {
    overflow-wrap: break-word;
@@ -42,27 +38,24 @@
    margin-left: 9px;
 }
 
-
 .texticone p {
   color: white;
   margin-bottom: 0px;
 }
 
-
 .button {
-
   .fa-phone-volume, .fa-sign-out-alt {
   font-size: 18px;
   color: white;
   padding-right: 9px;
-}
+  }
 }
 
-.fa-question-circle{
+.fa-question-circle {
   padding-right: 4px;
 }
 
-.profil_user_personal_infos_content{
+.profil_user_personal_infos_content {
   height: 80%;
 }
 

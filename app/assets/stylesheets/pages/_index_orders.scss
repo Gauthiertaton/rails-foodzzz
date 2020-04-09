@@ -1,22 +1,19 @@
-.index_orders_icone{
+
+.index_orders_icone {
   text-align: center;
-  // margin-top: 25px;
 }
 
-.index_orders_card_order{
-  // border: solid 1px;
+.index_orders_card_order {
   margin-bottom: 2px;
 }
 
-.index_orders_card_title_date{
+.index_orders_card_title_date {
   padding-top: 15px;
   padding-left: 10px;
 }
 
-.index_orders_card_status_en_cours, .index_orders_card_status_terminee{
-  // background-color: #f67280;
+.index_orders_card_status_en_cours, .index_orders_card_status_terminee {
   padding-top: 13px;
-
 }
 
 .index_orders_card_status_en_cours, .index_orders_card_sigle, .index_orders_card_status_terminee {
@@ -26,34 +23,28 @@
   justify-content: center;
 }
 
-.index_orders_card_sigle{
+.index_orders_card_sigle {
   margin-top: 10px;
   width: 25px;
   align-items: right;
   padding-left: 13px;
-
 }
 
-.index_orders_count p{
+.index_orders_count p {
   color: $yellow;
   font-size: 15px;
   text-decoration: underline;
 }
 
-
-
-.index_orders_card_sigle h6{
+.index_orders_card_sigle h6 {
   width: 100%;
   text-align: center;
   font-size: 20px;
   color: $yellow;
 }
 
-
-
-.index_orders_title{
+.index_orders_title {
   text-align: left;
-  // padding-top: 8px;
   margin-right: 20px;
   margin-left: 20px;
   h2 {
@@ -61,13 +52,14 @@
     font-style: normal;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
 }
-}
-.index_orders_card_title h5{
+
+.index_orders_card_title h5 {
   font-size: 16px;
 }
 
-.index_orders_card_status_en_cours p{
+.index_orders_card_status_en_cours p {
   padding-top: 4px;
   font-size: 15px;
   width: 100%;
@@ -78,7 +70,7 @@
   margin-top: 5px;
 }
 
-.index_orders_card_status_terminee p{
+.index_orders_card_status_terminee p {
   padding-top: 4px;
   font-size: 15px;
   width: 100%;
@@ -89,14 +81,14 @@
   margin-top: 5px;
 }
 
-.index_orders_card_date p{
+.index_orders_card_date p {
   font-size: 10px;
 }
 
-.ajout_cmd{
+.ajout_cmd {
   padding-top: 340px;
 }
 
-.ajout_cmd p .button{
+.ajout_cmd p .button {
   width: 100%;
 }

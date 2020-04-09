@@ -1,45 +1,35 @@
 .container_menu{
-  // padding: 10px;
   margin-bottom: 60px;
   margin-top: 7px;
 }
 .card_menu{
   background-color: white;
   min-height: 111px;
-  // box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
 }
 
 .container_menu:first-child {
   border-top: 1px solid black;
 }
 
-
 .menu_title_description_style{
   padding-left: 11px;
 }
+
 .menu_style h4{
   text-align: center;
   color: $gray;
   padding-top: 2.5px;
   padding-bottom: 1.5px;
-
 }
 
 .menu_style{
   background-color: $yellow-span;
   border-radius: 1px;
   width: 80px;
-  // margin-left: 10px;
-  // margin-bottom: 5px;
-  // position: relative;
-  // position: bottom;
 }
 
 .menu_description{
-  // padding-right: 15px;
-  // padding-left: 3px;
   width: 250px;
-
 }
 
 .menu_description h6{
@@ -48,10 +38,8 @@
 }
 
 .menu_img{
-
   padding-top: 20px;
   padding-right: 6px;
-
 }
 
 .menu_name p {
