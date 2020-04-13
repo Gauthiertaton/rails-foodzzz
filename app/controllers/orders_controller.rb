@@ -1,5 +1,7 @@
 require 'json'
 require 'open-uri'
+require 'rqrcode'
+require 'dragonfly'
 
 class OrdersController < ApplicationController
   def index
@@ -9,6 +11,9 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
     @Restaurant = Restaurant.geocoded
+
+    @qr_code_img = RQRCode::QRCode.new('http://www.google.com/', :size => 4, :level => :h ).to_img
+    @order.update_attribute :qr_code, @qr_code_img.to_string
 
   end
 
@@ -28,6 +33,8 @@ class OrdersController < ApplicationController
     @restaurant = @order.menu.restaurant
     @restaurant.update(stock: @restaurant.stock - 1)
     @order.save!
+
+
 
     redirect_to order_path(@order)
   end
