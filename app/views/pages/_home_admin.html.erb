@@ -1,0 +1,18 @@
+<h1>hello <%= current_user.first_name%></h1>
+
+<% @users.each do |user|%>
+  <%= user.first_name%>
+<% end %>
+
+<% current_user.restaurant.menus.each do |menu|%>
+  <%= menu.name%>
+<% end %>
+
+<div class="profil_user_button_logout mb-4">
+  <%= link_to destroy_user_session_path, method: :delete do %>
+    <div class="button d-flex flex-row justify-content-center">
+      <i class="fas fa-sign-out-alt"></i>
+      <div class="texticone"><p> Se déconnecter </p></div>
+    </div>
+  <%end%>
+</div>

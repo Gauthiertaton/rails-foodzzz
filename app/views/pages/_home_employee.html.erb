@@ -1,0 +1,53 @@
+<div class= "container_home">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);">
+  <div class= "home_banner">
+    <div class = "home_banner_title">
+      <h2><strong>Foodzzz te permet de varier tes repas et kiffer ta pause dej !</strong></h2>
+    </div>
+  </div>
+  </div>
+    <div class = "container_home_etapes">
+      <div class = "home_etape">
+        <h3>Etape 1</h3>
+        <h4>Libère ton repas</h4>
+        <div class = "home_icones">
+          <i class="fas fa-utensils"></i>
+        </div>
+        <p>Foodzzz te permet de réserver un repas dans un resto autour de toi.
+        Clique sur “Je libère mon repas” avant 10h afin de le rendre accessible à quelqu’un d’autre, et laisse-toi porter !</p>
+        </div>
+      <div class = "home_etape">
+        <h3>Etape 2</h3>
+        <h4>Réserve un plat</h4>
+        <div class = "home_icones">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <p>A 11h,  tu vas reçevoir une alerte te disant que  des repas sont dispos autour de toi.
+        Navigue entre les différents menus et commande celui qui te donne le plus envie !</p>
+      </div>
+      <div class = "home_etape">
+        <h3>Etape 3</h3>
+        <h4>Va le chercher</h4>
+        <div class = "home_icones">
+          <i class="fas fa-walking"></i>
+        </div>
+        <p>Foodzzz sélectionne pour toi les restos à 10mn à pied autour de ta localisation.
+        Parfait pour prendre un petit bol d’air à ta pause !</p>
+        </div>
+      <div class = "home_etape">
+        <h3>Etape 4</h3>
+        <h4>Récupère-le et régale-toi !</h4>
+        <div class = "home_icones">
+          <i class="fas fa-store-alt"></i>
+        </div>
+        <p>Présente le QR code qui figure sur le recap’ de ta commande et récupère ton repas.
+        C’est l’heure de se régaler !</p>
+        </div>
+  <div class ="home_button">
+    <% if user_signed_in? %>
+      <%=link_to "C'est parti !", restaurants_path, class: "button mt-4" %>
+    <% else %>
+      <%=link_to "C'est parti !", new_user_session_path, class: "button mt-4" %>
+    <% end %>
+  </div>
+</div>
