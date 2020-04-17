@@ -22,4 +22,9 @@ Rails.application.routes.draw do
   resource :meal, only: [] do
     patch :release
   end
+
+  namespace :admin do
+    resources :menus, only: [:index, :edit, :create, :update] # => /admin/menus
+    resources :users, only: [:index, :edit, :create, :update]
+  end
 end

@@ -95,7 +95,7 @@ restaurant_12.logo.attach(io: logo_file_12, filename: 'sushi_shop.jpg', content_
 
 puts 'Creating users 🦹 '
 
-user_1 = User.create!(first_name: 'Marion',last_name: 'Henrio',email: "marion.henrio@gmail.com",id: 1, restaurant: restaurant_1, menu_released: false, password: 'secret')
+user_1 = User.create!(first_name: 'Marion',last_name: 'Henrio',email: "marion.henrio@gmail.com",id: 1, restaurant: restaurant_12, menu_released: false, password: 'secret')
 user_2 = User.create!(first_name: 'Gauthier',last_name: 'Taton',email: "gauthier_taton@yahoo.fr",id: 2, restaurant: restaurant_12, menu_released: false, password: 'secret')
 user_3 = User.create!(first_name: 'Armel',last_name: 'Ahehehinnou',email: "ahehehinnouarmel8@gmail.com",id: 3, restaurant: restaurant_7, menu_released: false, password: 'secret')
 user_4 = User.create!(first_name: 'Justine',last_name: 'Barbault',email: "justinehsd@gmail.com",id: 4, restaurant: restaurant_6, menu_released: false, password: 'secret')
