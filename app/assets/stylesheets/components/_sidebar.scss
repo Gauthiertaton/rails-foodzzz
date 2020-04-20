@@ -1,0 +1,37 @@
+.container-sidebar {
+  min-width: 130px;
+  text-align: center;
+  background-color: white;
+}
+
+.container-sidebar .fa-sign-out-alt {
+  color: $yellow-span;
+  font-size: 35px;
+}
+
+.container-sidebar p {
+  font-size: 12px;
+  color: $yellow;
+  font-weight: bold;
+}
+
+.button-logout {
+  text-align: center;
+}
+
+.button-menus{
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+
+.button-staff {
+  margin-bottom: 100px;
+}
+
+.button-account {
+  margin-bottom: 100px;
+}
+
+.button-support {
+  margin-bottom: 195px;
+}

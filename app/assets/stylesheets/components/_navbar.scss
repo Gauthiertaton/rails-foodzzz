@@ -1,7 +1,7 @@
 //component non utilise, template du wagon
 
 .navbar-lewagon {
-  justify-content: space-between;
+  justify-content: between;
   background: white;
 }
 
@@ -11,4 +11,17 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.admin-title {
+  // padding-top: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-right: 250px;
+}
+
+.admin-title h1 {
+  color: $yellow;
+  font-weight: bold;
 }
