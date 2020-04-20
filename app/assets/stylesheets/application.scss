@@ -9,6 +9,8 @@
 @import "font-awesome";
 
 // Your CSS partials
+
+// import user
 @import "components/index";
 @import "components/banner";
 @import "pages/index";
@@ -22,7 +24,11 @@
 @import "pages/index_without_orders";
 @import "pages/index_orders";
 @import "components/card_restaurant";
+
+// import admin
 @import "components/sidebar";
+@import "pages/admin_index_orders";
+@import "components/admin_footer";
 
 body {
   position: relative;

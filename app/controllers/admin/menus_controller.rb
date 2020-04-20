@@ -1,7 +1,8 @@
 class Admin::MenusController < ApplicationController
 
   def index
-
+    @restaurant = current_user.restaurant
+    @menus = @restaurant.menus
   end
 
   def edit
