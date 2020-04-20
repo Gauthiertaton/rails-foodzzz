@@ -1,1 +1,30 @@
+.container-overview {
+  background-color: #F1F1F1;
+  padding: 20px;
+}
 
+.card-myresto{
+  border: solid;
+  border-color: black;
+  background-color: white;
+  margin-right: 130px;
+  max-width: 250px;
+}
+
+.card-myteam{
+  border: solid;
+  border-color: black;
+  background-color: white;
+  margin-left: 130px;
+  min-width: 400px;
+  min-height: 400px
+}
+
+.card-mymenus{
+  margin-top: 100px;
+  border: solid;
+  border-color: black;
+  min-height: 250px;
+  max-width: 800px;
+
+}

@@ -4,15 +4,15 @@
   background-color: white;
 }
 
-.container-sidebar .fa-sign-out-alt {
-  color: $yellow-span;
-  font-size: 35px;
-}
 
 .container-sidebar p {
-  font-size: 12px;
+  font-size: 9px;
   color: $yellow;
   font-weight: bold;
+}
+
+.container-sidebar .icone {
+opacity: 80%;
 }
 
 .button-logout {
@@ -20,7 +20,7 @@
 }
 
 .button-menus{
-  margin-top: 160px;
+  margin-top: 20px;
 }
 
 .button-staff {
@@ -30,4 +30,5 @@
 }
 
 .button-support {
+  margin-bottom: 20px;
 }
