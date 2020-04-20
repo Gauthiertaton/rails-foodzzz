@@ -29,11 +29,14 @@
 @import "components/sidebar";
 @import "pages/admin_index_orders";
 @import "components/admin_footer";
+@import "pages/admin_home";
 
 body {
   position: relative;
   min-height: calc(100vh, -12px);
   background-color: white;
+  // border-color: black;
+  // border: solid;
 }
 
 h1 {

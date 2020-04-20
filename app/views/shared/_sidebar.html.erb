@@ -1,24 +1,27 @@
-<div class="container-sidebar">
-  <div class="d-flex align-items-start flex-column bd-highlight mb-3">
-    <div class="button-menus p-2 bd-highlight w-100">
-      <p> Mes menus </p>
+<div class="container-sidebar d-flex align-items-end flex-column bd-highlight">
+  <div class="button-menus bd-highlight w-100">
+    <%= image_tag("my_menus.png", size: "45x25") %>
+    <p> Mes menus </p>
+  </div>
+  <div class="button-staff bd-highlight w-100">
+    <%= image_tag("my_team.png", size: "35x25") %>
+    <p> Mon équipe </p>
+  </div>
+  <div class="button-account bd-highlight w-100">
+    <%= image_tag("my_profile.png", size: "35x25") %>
+    <p> Mon compte </p>
+  </div>
+  <div class="button-support bd-highlight w-100">
+    <div class="icone">
+      <%= image_tag("client-support.png", size: "20x20") %>
     </div>
-    <div class="button-staff p-2 bd-highlight w-100">
-      <p> Mon équipe </p>
-    </div>
-    <div class="button-account p-2 bd-highlight w-100">
-      <p> Mon compte </p>
-    </div>
-    <div class="button-support p-2 bd-highlight w-100">
-      <p> Support client </p>
-    </div>
-    <div class="p-2 bd-highlight w-100">
-      <%= link_to destroy_user_session_path, method: :delete do %>
-        <div class="button-logout">
-          <i class="fas fa-sign-out-alt"></i>
-          <p> Se déconnecter </p>
-        </div>
-      <%end%>
-    </div>
+    <p> Support client </p>
+  </div>
+  <div class="button-logout mt-auto bd-highlight w-100">
+    <%= link_to destroy_user_session_path, method: :delete do %>
+      <!-- <i class="fas fa-sign-out-alt"></i> -->
+      <%= image_tag("logout.png", size: "15x10") %>
+      <p> Se déconnecter </p>
+    <%end%>
   </div>
 </div>
