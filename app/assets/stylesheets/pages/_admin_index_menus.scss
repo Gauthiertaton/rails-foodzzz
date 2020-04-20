@@ -1,0 +1,57 @@
+.admin_index_container{
+  background: #e1e1e1;
+  height: 600px;
+}
+
+.admin_index_container_menu{
+  width: 400px;
+  position: absolute; /* or absolute */
+  top: 60%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+}
+
+.empty_box {
+  background: #C4C4C4;
+}
+
+.dropbtn {
+  background-color: #06908F;
+  color: white;
+  padding: 16px;
+  font-size: 10px;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+
+.dropdown-content a:hover {background-color: #9CD1D1;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #9CD1D1;}
