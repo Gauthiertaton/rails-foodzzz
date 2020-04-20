@@ -36,11 +36,16 @@
             <div class="menu_img flex-shrink-1 bd-highlight">
               <%= cl_image_tag menu.photo.key, height: 70, width: 70, crop: :fill %>
             </div>
+            <div class="dropdown">
+              <button class="dropbtn">+</button>
+              <div class="dropdown-content">
+                <a href="#">Modifier</a>
+                <a href="#">Supprimer</a>
+              </div>
+            </div>
           </div>
         <% end %>
-      </div>
-          <div class= "empty_box mt-4">
-            <div class="card_menu d-flex bd-highlight">
+            <div class="empty_box d-flex bd-highlight mt-4">
               <div class="menu_title_description_style w-100 bd-highlight">
                 <div class="menu_name">
                   <p><strong>Nom du menu</strong></p>
@@ -49,11 +54,11 @@
                   <h6>Description</h6>
                 </div>
                 <div class="menu_style">
-                  <p><strong>Style</strong></p>
+                  <h4>Style</h4>
                 </div>
               </div>
             </div>
-          </div>
+      </div>
   </div>
 </div>
   </div>
