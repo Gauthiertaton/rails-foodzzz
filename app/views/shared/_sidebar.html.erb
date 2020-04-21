@@ -1,27 +1,25 @@
 <div class="container-sidebar d-flex align-items-end flex-column bd-highlight">
   <div class="button-menus bd-highlight w-100">
-    <%= image_tag("my_menus.png", size: "45x25") %>
+    <%= image_tag("my_menus.png", size: "50x50") %>
     <p> Mes menus </p>
   </div>
   <div class="button-staff bd-highlight w-100">
-    <%= image_tag("my_team.png", size: "35x25") %>
+    <%= image_tag("my_team.png", size: "50x50") %>
     <p> Mon équipe </p>
   </div>
   <div class="button-account bd-highlight w-100">
-    <%= image_tag("my_profile.png", size: "35x25") %>
+    <%= image_tag("my_profile.png", size: "50x50") %>
     <p> Mon compte </p>
   </div>
   <div class="button-support bd-highlight w-100">
-    <div class="icone">
-      <%= image_tag("client-support.png", size: "20x20") %>
-    </div>
+    <%= image_tag("client-support.png", size: "50x50") %>
     <p> Support client </p>
   </div>
   <div class="button-logout mt-auto bd-highlight w-100">
     <%= link_to destroy_user_session_path, method: :delete do %>
       <!-- <i class="fas fa-sign-out-alt"></i> -->
-      <%= image_tag("logout.png", size: "15x10") %>
-      <p> Se déconnecter </p>
+    <%= image_tag("logout.png", size: "30x30") %>
+    <p> Se déconnecter </p>
     <%end%>
   </div>
 </div>
