@@ -5,29 +5,47 @@
   <div class="flex-shrink-1 bd-highlight">
     <%= render 'shared/sidebar'%>
   </div>
-  <div class="w-100 bd-highlight">
+  <!-- <div class="w-100 bd-highlight"> -->
     <div class="container-overview">
-      <div class="d-flex justify-content-center">
+      <div class="d-flex">
         <div class="card-myresto">
-          <h2>Mon restaurant</h2>
-          <%= cl_image_tag current_user.restaurant.photo.key, height: 120, width: 220, crop: :fill %>
-          <%= current_user.restaurant.name%>
-          <%= current_user.restaurant.address%>
-          <p>Téléphone :</p>
+          <div class= "admin_restaurant_title">
+            <h2><strong>Mon restaurant</strong></h2>
+          </div>
+          <div class="admin_resto_photo">
+            <%= cl_image_tag current_user.restaurant.photo.key, height: 120, width: 220, crop: :fill %>
+          </div>
+          <div class= admin_resto_infos>
+            <p><strong><%= current_user.restaurant.name%></strong></p>
+            <p>📍 <%= current_user.restaurant.address%></p>
+            <p>📞</p>
+          </div>
         </div>
         <div class="card-myteam">
-          <h2>Mon équipe</h2>
+          <div class= "admin_myteam_title">
+            <h2><strong>Mon équipe</strong></h2>
+          </div>
         </div>
       </div>
       <div class="card-mymenus">
-        <h2>Mes menus</h2>
-        <%current_user.restaurant.menus.each do |menu|%>
-          <%= cl_image_tag menu.photo.key, height: 120, width: 220, crop: :fill %>
-          <%= menu.name%>
-        <% end %>
+        <div class= "admin_menu_title">
+          <h2><strong>Mes menus</strong></h2>
+        </div>
+        <div class="admin_all_menus d-flex">
+          <%current_user.restaurant.menus.each do |menu|%>
+            <div class= "admin_menu_photo_name">
+              <div class= "admin_menu_photo">
+                <%= cl_image_tag menu.photo.key, height: 120, width: 220, crop: :fill %>
+              </div>
+              <div class="admin_menu_name">
+                <%= menu.name%>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
-  </div>
+<!--   </div> -->
 </div>
 
 
