@@ -37,7 +37,9 @@
               <%= cl_image_tag menu.photo.key, height: 70, width: 70, crop: :fill %>
             </div>
             <div class="dropdown">
-              <button class="dropbtn">+</button>
+              <button class="dropbtn">
+                <p><strong>+</strong></p>
+              </button>
               <div class="dropdown-content">
                 <a href="#">Modifier</a>
                 <a href="#">Supprimer</a>
@@ -45,23 +47,23 @@
             </div>
           </div>
         <% end %>
-            <div class="empty_box d-flex bd-highlight mt-4">
-              <div class="menu_title_description_style w-100 bd-highlight">
-                <div class="menu_name">
-                  <p><strong>Nom du menu</strong></p>
-                </div>
-                <div class="menu_description">
-                  <h6>Description</h6>
-                </div>
-                <div class="menu_style">
-                  <h4>Style</h4>
-                </div>
+          <div class="empty_box d-flex bd-highlight mt-4">
+            <div class="menu_title_description_style w-100 bd-highlight">
+              <div class="admin_menu_name">
+                <p><strong>NOM DU MENU</strong></p>
+              </div>
+              <div class="admin_menu_description">
+                <h6>Description</h6>
+              </div>
+              <div class="admin_menu_style">
+                <h4>Style</h4>
               </div>
             </div>
+          </div>
       </div>
-  </div>
-</div>
+    </div>
   </div>
 </div>
 
+<%= render 'shared/adminfooter'%>
 

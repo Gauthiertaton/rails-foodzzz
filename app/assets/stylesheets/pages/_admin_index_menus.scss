@@ -1,31 +1,43 @@
 .admin_index_container{
   background: #e1e1e1;
   height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.instructions{
+  padding-top: 15px;
+  padding-left: 15px;
 }
 
 .admin_index_container_menu{
   width: 400px;
-  position: absolute; /* or absolute */
-  top: 60%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
 
 }
 
+
 .empty_box {
   background: #C4C4C4;
+  border-style: dotted;
+  border-width: 1px;
+    p{
+  text-align: left;
+  font-size: 15px;
+    }
+    h6, h4{
+      font-size: 12px;
+    }
 }
 
 .dropbtn {
   background-color: #06908F;
   color: white;
-  padding: 16px;
   font-size: 10px;
   border: none;
   border-radius: 50%;
   height: 30px;
-  width: 20px;
+  width: 30px;
 }
 
 .dropdown {
@@ -36,18 +48,20 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 50px;
+  background-color: white;
+  min-width: 30px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 5px;
 }
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 5px 5px;
   text-decoration: none;
   display: block;
-  font-size: 12px;
+  font-size: 10px;
+  border-radius: 5px;
 }
 
 .dropdown-content a:hover {background-color: #9CD1D1;}
