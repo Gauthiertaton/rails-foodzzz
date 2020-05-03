@@ -25,6 +25,13 @@
           <div class= "admin_myteam_title">
             <h2><strong>Mon équipe</strong></h2>
           </div>
+          <div class = "admin_avatar_users d-flex display-block">
+            <% current_user.restaurant.users.each do |user| %>
+              <div class = "avatar_users">
+                <%= cl_image_tag user.photo.key, height: 50, width: 50, crop: :fill %>
+              </div>
+            <% end %>
+          </div>
         </div>
       </div>
       <div class="card-mymenus">
