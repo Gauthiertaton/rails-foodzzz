@@ -8,10 +8,12 @@ class User < ApplicationRecord
   # associations
   belongs_to :restaurant
   has_many :orders, dependent: :destroy
+  has_one_attached :photo
 
   # validations
   validates :first_name, presence: true
   validates :last_name,  presence: true
+
   private
 
   def async_update

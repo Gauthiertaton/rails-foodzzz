@@ -96,15 +96,36 @@ restaurant_12.logo.attach(io: logo_file_12, filename: 'sushi_shop.jpg', content_
 puts 'Creating users 🦹 '
 
 user_1 = User.create!(first_name: 'Marion',last_name: 'Henrio',email: "marion.henrio@gmail.com",id: 1, restaurant: restaurant_12, menu_released: false, password: 'secret')
+user_file_1 = File.open(Rails.root.join('db/fixtures/avatars/user_1.jpg'))
+user_1.photo.attach(io: user_file_1, filename: 'user_1.jpg', content_type: 'image/jpg')
 user_2 = User.create!(first_name: 'Gauthier',last_name: 'Taton',email: "gauthier_taton@yahoo.fr",id: 2, restaurant: restaurant_12, menu_released: false, password: 'secret')
+user_file_2 = File.open(Rails.root.join('db/fixtures/avatars/user_2.jpg'))
+user_2.photo.attach(io: user_file_2, filename: 'user_2.jpg', content_type: 'image/jpg')
 user_3 = User.create!(first_name: 'Armel',last_name: 'Ahehehinnou',email: "ahehehinnouarmel8@gmail.com",id: 3, restaurant: restaurant_7, menu_released: false, password: 'secret')
+user_file_3 = File.open(Rails.root.join('db/fixtures/avatars/user_3.jpg'))
+user_3.photo.attach(io: user_file_3, filename: 'user_3.jpg', content_type: 'image/jpg')
 user_4 = User.create!(first_name: 'Justine',last_name: 'Barbault',email: "justinehsd@gmail.com",id: 4, restaurant: restaurant_6, menu_released: false, password: 'secret')
+user_file_4 = File.open(Rails.root.join('db/fixtures/avatars/user_4.jpg'))
+user_4.photo.attach(io: user_file_4, filename: 'user_4.jpg', content_type: 'image/jpg')
+user_5 = User.create!(first_name: 'David',last_name: 'Lorenz',email: "devid.lorenz@gmail.com",id: 5, restaurant: restaurant_12, menu_released: false, password: 'secret')
+user_file_5 = File.open(Rails.root.join('db/fixtures/avatars/user_5.jpg'))
+user_5.photo.attach(io: user_file_5, filename: 'user_5.jpg', content_type: 'image/jpg')
+user_6 = User.create!(first_name: 'Camille',last_name: 'Paturel',email: "camille_paturel@yahoo.fr",id: 6, restaurant: restaurant_12, menu_released: false, password: 'secret')
+user_file_6 = File.open(Rails.root.join('db/fixtures/avatars/user_6.jpg'))
+user_6.photo.attach(io: user_file_6, filename: 'user_6.jpg', content_type: 'image/jpg')
+user_7 = User.create!(first_name: 'Corentin',last_name: 'Dubois',email: "corentindubois@gmail.com",id: 7, restaurant: restaurant_12, menu_released: false, password: 'secret')
+user_file_7 = File.open(Rails.root.join('db/fixtures/avatars/user_7.jpg'))
+user_7.photo.attach(io: user_file_7, filename: 'user_7.jpg', content_type: 'image/jpg')
+user_8 = User.create!(first_name: 'Sophia',last_name: 'Rissot',email: "sophiarissot@gmail.com",id: 8, restaurant: restaurant_12, menu_released: false, password: 'secret')
+user_file_8 = File.open(Rails.root.join('db/fixtures/avatars/user_8.jpg'))
+user_8.photo.attach(io: user_file_8, filename: 'user_8.jpg', content_type: 'image/jpg')
 
 puts 'Creating menus 🍔'
 # mcdo
 menu_1 = Menu.create!(name: "LE TENNESSEE BBQ",description: 'Cheddar fumé, deux tranches de bacon fumé, viande charolaise', restaurant: restaurant_1, vegetarien: false, vegan: false, sans_gluten: false, halal: false)
 menu_file_1 = File.open(Rails.root.join('db/fixtures/menu/menu_1.png'))
 menu_1.photo.attach(io: menu_file_1, filename: 'menu_1.png', content_type: 'image/png')
+
 
 menu_2 = Menu.create!(name: "LE McWRAP™ VEGGIE",description: 'Palets panés aux légumes, emmental, oignons frits, tomates, salade, galette de blé', restaurant: restaurant_1, vegetarien: true, vegan: false, sans_gluten: false, halal: false)
 menu_file_2 = File.open(Rails.root.join('db/fixtures/menu/menu_2.jpg'))
