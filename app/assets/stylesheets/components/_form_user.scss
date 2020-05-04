@@ -1,0 +1,87 @@
+.container-card-form{
+  background-color: #F1F1F1;
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+}
+
+
+.card-form-new {
+  background-color: white;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.title-form{
+  border-bottom: solid 2px #e5e5e5;
+  h1{
+    text-align: left;
+    font-weight: 500;
+  }
+}
+
+.instruction-form{
+  padding-top: 25px;
+  p{
+    font-size: 22px;
+  }
+}
+
+.form-new-user{
+  padding-top: 50px;
+}
+
+.form-first-name{
+
+  margin-bottom: 75px;
+  max-width: 300px;
+  input{
+    background-color: #f6f6f6;
+    border-radius: 8px;
+  }
+}
+
+.form-email{
+  max-width: 400px;
+  input{
+    background-color: #f6f6f6;
+    border-radius: 8px;
+  }
+}
+
+.form-last-name{
+  margin-bottom: 50px;
+
+  input{
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    max-width: 300px;
+  }
+}
+
+.form-avatar{
+  input{
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    max-width: 300px;
+  }
+  label{
+    display: inline-block;
+  }
+}
+
+.form-submit{
+  text-align: right;
+  margin-top: 80px;
+  margin-left: 60px;
+  max-width: 250px;
+}
+
+
+
+

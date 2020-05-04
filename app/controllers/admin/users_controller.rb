@@ -6,7 +6,7 @@ class Admin::UsersController < ApplicationController
   end
 
   def new
-    @user = User.new
+    @user_new = User.new
   end
 
   def edit
