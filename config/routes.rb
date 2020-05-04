@@ -24,7 +24,7 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
-    resources :menus, only: [:index, :edit, :create, :update] # => /admin/menus
-    resources :users, only: [:index, :edit, :create, :update]
+    resources :menus, only: [:index, :new, :edit, :create, :update] # => /admin/menus
+    resources :users, only: [:index, :new, :edit, :create, :update]
   end
 end
