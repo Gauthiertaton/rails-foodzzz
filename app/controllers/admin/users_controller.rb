@@ -3,6 +3,13 @@ class Admin::UsersController < ApplicationController
   def index
     @my_resto_users = current_user.restaurant.users
     @users = @my_resto_users.where.not(id: current_user.id)
+
+     # display user according to the query in the search bar
+    if params[:query].present?
+    sql_query = "first_name ILIKE :query OR last_name ILIKE :query"
+    @users = @users.where(sql_query, query: "%#{params[:query]}%")
+
+    end
   end
 
   def new
