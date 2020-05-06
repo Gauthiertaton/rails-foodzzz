@@ -36,12 +36,11 @@
                 <div class="form-avatar">
                   <%= f.input :photo, as: :file %>
                 </div>
-                <div class="form-submit">
-                  <%= f.button :submit, "Enregistrer", class: "button"%>
-                </div>
               </div>
             </div>
-          <%#= f.input :restaurant_id, collection: User::restaurant %>
+            <div class="form-submit">
+              <%= f.button :submit, "Enregistrer", class: "button"%>
+            </div>
           <% end %>
         </div>
       </div>
