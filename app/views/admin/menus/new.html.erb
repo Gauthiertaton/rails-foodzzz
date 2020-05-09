@@ -24,7 +24,7 @@
           </div>
         </form> -->
         <div class="form-new-menu">
-          <%= simple_form_for @menu, url: new_admin_menu_path do |f| %>
+          <%= simple_form_for @menu, url: admin_menus_path do |f| %>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-first-title">
@@ -36,18 +36,18 @@
               </div>
               <div class="col-md-6">
                 <div class="file-upload-wrapper">
-                  <%= f.input :photo, as: :file, class: "file-upload-field", placeholder: "Photo" %>
+                  <%= f.input :photo, as: :file, class: "file-upload-field", label: false%>
                 </div>
                 <div class="form-type">
-                  <%= f.input :vegetarien %>
-                  <%= f.input :vegan %>
-                  <%= f.input :halal %>
-                  <%= f.input :sans_gluten %>
+                  <%= f.input :vegetarien, as: :boolean %>
+                  <%= f.input :vegan, as: :boolean %>
+                  <%= f.input :halal, as: :boolean %>
+                  <%= f.input :sans_gluten, as: :boolean %>
                 </div>
               </div>
             </div>
             <div class="form-submit">
-              <%= f.button :submit, "Enregistrer", class: "button"%>
+              <%= f.submit "Enregistrer", class: "button"%>
             </div>
           <% end %>
         </div>

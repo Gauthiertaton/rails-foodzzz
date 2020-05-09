@@ -47,6 +47,7 @@
             </div>
           </div>
         <% end %>
+        <% if @menus.count < 3%>
           <div class="empty_box d-flex bd-highlight mt-4">
             <div class="menu_title_description_style w-100 bd-highlight">
               <div class="admin_menu_name">
@@ -60,6 +61,7 @@
               </div>
             </div>
           </div>
+        <% end %>
       </div>
     </div>
   </div>
