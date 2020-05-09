@@ -9,17 +9,19 @@ class Admin::MenusController < ApplicationController
     @menu = Menu.new
   end
 
-  def edit
-  end
-
   def create
-    menu = Menu.new(menu_params)
-    if @menu.save
+    @menu = Menu.new(menu_params)
+    @menu.restaurant_id = current_user.restaurant_id
+    if @menu.save!
       redirect_to admin_menus_path, notice: "Le menu a bien été créé."
     else
       render :new
     end
   end
+
+  def edit
+  end
+
 
   def update
     if @menu.update(menu_params)
@@ -37,6 +39,6 @@ class Admin::MenusController < ApplicationController
   private
 
   def menu_params
-    params.require(:menu).permit(:name, :description, :vegetarien, :vegan, :halal, :sans_gluten)
+    params.require(:menu).permit(:name, :description, :vegetarien, :vegan, :halal, :sans_gluten, :photo)
   end
 end

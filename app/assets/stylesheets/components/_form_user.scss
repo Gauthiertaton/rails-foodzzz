@@ -77,8 +77,11 @@
 
 .form-submit{
   float: right;
-  margin-top: 80px;
-  min-width: 250px;
+  margin-top: 30px;
+  min-width: 200px;
+  input{
+    width: 100%;
+  }
 }
 
 
