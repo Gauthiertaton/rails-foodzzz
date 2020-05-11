@@ -13,20 +13,22 @@ class Admin::UsersController < ApplicationController
   end
 
   def new
-    @user_new = User.new
-  end
-
-  def edit
+    @user = User.new
   end
 
   def create
     @user = User.new(user_params)
-    if @user.save
+    @user.restaurant_id = current_user.restaurant_id
+    if @user.save!
       redirect_to admin_users_path, notice: "L'employé a bien été créé."
     else
       render :new
     end
   end
+
+  def edit
+  end
+
 
   def update
     if @user.update(user_params)
@@ -37,7 +39,7 @@ class Admin::UsersController < ApplicationController
   end
 
   def destroy
-    @user.destroy
+    @user.delete
     redirect_to admin_users_path, notice: "L'employé a bien été supprimé."
   end
 
