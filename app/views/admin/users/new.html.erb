@@ -19,7 +19,7 @@
           </p>
         </div>
         <div class="form-new-user">
-          <%= simple_form_for @user_new, url: new_admin_user_path do |f| %>
+          <%= simple_form_for @user, url: admin_users_path do |f| %>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-first-name">
@@ -39,7 +39,7 @@
               </div>
             </div>
             <div class="form-submit">
-              <%= f.button :submit, "Enregistrer", class: "button"%>
+              <%= f.submit "Enregistrer", class: "button"%>
             </div>
           <% end %>
         </div>
