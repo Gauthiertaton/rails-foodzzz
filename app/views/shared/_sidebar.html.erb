@@ -1,4 +1,9 @@
 <div class="container-sidebar d-flex align-items-end flex-column bd-highlight">
+  <div class="logo-home">
+    <%= link_to "#", class: "logo_foodzzz text-center" do %>
+      <%= image_tag("logo_foodzzz.png", size: "130x110", alt: "logo foodzzz") %>
+    <% end %>
+  </div>
   <div class="button-menus bd-highlight w-100">
     <%= link_to admin_menus_path do %>
       <%= image_tag("my_menus.png", size: "50x50") %>
