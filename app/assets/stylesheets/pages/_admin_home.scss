@@ -1,37 +1,62 @@
 .container-overview {
+  display: grid;
   background-color: #F1F1F1;
   padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-around;
+  grid-template-columns: [first] 110px [line2] 350px [line3] auto [col4-start] 350px [five] 110px [end];
+  grid-template-rows: [row1-start] 50% [row2-start] 50%;
 }
 
 .card-myresto{
-  margin-right: 90px;
-  max-width: 400px;
+  // margin-right: 90px;
+  // max-width: 350px;
+  // min-width: 350px;
+  // min-height: 350px;
+  // max-height: 350px;
   border-radius: 20px;
   background-color: #9CD1D1;
   max-height: 400px;
-  padding-right: 20px;
-  padding-left: 10px;
+  // padding-right: 20px;
+  // padding-left: 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: row1-start;
+  grid-row-end: row2-start;
 }
 
 .card-myteam{
   background-color: white;
-  margin-left: 130px;
-  max-width: 350px;
-  max-height: 350px;
-  min-width: 350px;
-  min-height: 350px;
+  // margin-left: 130px;
+  // max-width: 350px;
+  // max-height: 350px;
+  // min-width: 350px;
+  // min-height: 350px;
   border-radius: 20px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: row1-start;
+  grid-row-end: row2-start;
 }
 
 .card-mymenus{
   margin-top: 50px;
   background-color: white;
-  min-height: 250px;
+  // min-height: 250px;
   border-radius: 20px;
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row2-start;
+  grid-row-end: 4;
 
+}
+
+.admin_all_menus{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding: 20px;
 }
 
 .admin_menu_name {
@@ -39,21 +64,14 @@ text-align: center;
 padding-top: 10px;
 }
 
+.admin_menu_photo{
+  text-align: center;
+}
+
 .admin_menu_title h2{
 text-align: center;
 padding-top: 15px;
-padding-left: 40px;
 color: #06908F;
-}
-
-.admin_menu_photo_name{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: space-between;
-  padding-top: 20px;
-  padding-right: 40px;
-
 }
 
 .admin_resto_photo{
@@ -81,11 +99,20 @@ color: #06908F;
 
 .avatar_users img{
   border-radius: 50%;
-  margin-top: 10px;
-  margin-left: 40px;
+}
+
+.avatar_users{
+  margin: 13px;
 }
 
 .admin_avatar_users {
   flex-wrap: wrap;
-  margin-left: 20px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
 }
+
+
+
+
