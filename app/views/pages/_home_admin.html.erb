@@ -1,12 +1,12 @@
-<%= render 'shared/navbar'%>
-
-<div class="d-flex bd-highlight">
-  <div class="flex-shrink-1 bd-highlight">
+<div class="container-home">
+  <div class="navbar-home">
+    <%= render 'shared/navbar'%>
+  </div>
+  <div class="sidebar-bar-home">
     <%= render 'shared/sidebar'%>
   </div>
-
-  <div class="w-100 bd-highlight">
-    <div class="container-overview">
+  <div class="container-resto-team d-flex justify-content-around">
+    <div class="container-myresto">
       <div class="card-myresto">
         <div class= "admin_restaurant_title">
           <h2><strong>Mon restaurant</strong></h2>
@@ -20,6 +20,8 @@
           <p>📞</p>
         </div>
       </div>
+    </div>
+    <div class="container-myteam">
       <div class="card-myteam">
         <%= link_to admin_users_path do %>
           <div class= "admin_myteam_title">
@@ -34,30 +36,33 @@
           </div>
         <% end %>
       </div>
-      <div class="card-mymenus">
-        <%= link_to admin_menus_path do %>
-          <div class= "admin_menu_title">
-            <h2><strong>Mes menus</strong></h2>
-          </div>
-          <div class="admin_all_menus">
-            <%current_user.restaurant.menus.each do |menu|%>
-              <div class= "admin_menu_photo_name">
-                <div class= "admin_menu_photo">
-                  <%= cl_image_tag menu.photo.key, height: 120, width: 220, crop: :fill %>
-                </div>
-                <div class="admin_menu_name">
-                  <%= menu.name%>
-                </div>
+    </div>
+    </div>
+  <div class="container-menus">
+    <div class="card-mymenus">
+      <%= link_to admin_menus_path do %>
+        <div class= "admin_menu_title">
+          <h2><strong>Mes menus</strong></h2>
+        </div>
+        <div class="admin_all_menus">
+          <%current_user.restaurant.menus.each do |menu|%>
+            <div class= "admin_menu_photo_name">
+              <div class= "admin_menu_photo">
+                <%= cl_image_tag menu.photo.key, height: 120, width: 220, crop: :fill %>
               </div>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
+              <div class="admin_menu_name">
+                <%= menu.name%>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
     </div>
   </div>
+  <div class="footer-home">
+    <%= render 'shared/adminfooter'%>
+  </div>
 </div>
-
-<%= render 'shared/adminfooter'%>
 
 
 <!-- <div class="profil_user_button_logout mb-4">
