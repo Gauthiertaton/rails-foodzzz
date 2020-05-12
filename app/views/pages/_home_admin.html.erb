@@ -7,43 +7,39 @@
 
   <div class="w-100 bd-highlight">
     <div class="container-overview">
-      <div class="d-flex">
-        <%#= link_to edit_restaurant_path do %>
-          <div class="card-myresto">
-            <div class= "admin_restaurant_title">
-              <h2><strong>Mon restaurant</strong></h2>
-            </div>
-            <div class="admin_resto_photo">
-              <%= cl_image_tag current_user.restaurant.photo.key, height: 120, width: 220, crop: :fill %>
-            </div>
-            <div class= admin_resto_infos>
-              <p><strong><%= current_user.restaurant.name%></strong></p>
-              <p>📍 <%= current_user.restaurant.address%></p>
-              <p>📞</p>
-            </div>
-          </div>
-        <%#end %>
+      <div class="card-myresto">
+        <div class= "admin_restaurant_title">
+          <h2><strong>Mon restaurant</strong></h2>
+        </div>
+        <div class="admin_resto_photo">
+          <%= cl_image_tag current_user.restaurant.photo.key, height: 120, width: 220, crop: :fill %>
+        </div>
+        <div class= admin_resto_infos>
+          <p><strong><%= current_user.restaurant.name%></strong></p>
+          <p>📍 <%= current_user.restaurant.address%></p>
+          <p>📞</p>
+        </div>
+      </div>
+      <div class="card-myteam">
         <%= link_to admin_users_path do %>
-          <div class="card-myteam">
-            <div class= "admin_myteam_title">
-              <h2><strong>Mon équipe</strong></h2>
-            </div>
-            <div class = "admin_avatar_users d-flex display-block">
-              <% current_user.restaurant.users.each do |user| %>
-                <div class = "avatar_users">
-                  <%= cl_image_tag user.photo.key, height: 50, width: 50, crop: :fill %>
-                </div>
-              <% end %>
-            </div>
+          <div class= "admin_myteam_title">
+            <h2><strong>Mon équipe</strong></h2>
+          </div>
+          <div class = "admin_avatar_users d-flex display-block">
+            <% current_user.restaurant.users.each do |user| %>
+              <div class = "avatar_users">
+                <%= cl_image_tag user.photo.key, height: 50, width: 50, crop: :fill %>
+              </div>
+            <% end %>
           </div>
         <% end %>
       </div>
-      <%= link_to admin_menus_path do %>
-        <div class="card-mymenus">
+      <div class="card-mymenus">
+        <%= link_to admin_menus_path do %>
           <div class= "admin_menu_title">
             <h2><strong>Mes menus</strong></h2>
           </div>
-          <div class="admin_all_menus d-flex">
+          <div class="admin_all_menus">
             <%current_user.restaurant.menus.each do |menu|%>
               <div class= "admin_menu_photo_name">
                 <div class= "admin_menu_photo">
@@ -55,8 +51,8 @@
               </div>
             <% end %>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
