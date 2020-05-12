@@ -1,55 +1,79 @@
-.container-overview {
+.container-home{
   display: grid;
+  grid-template-columns: [line1] 130px [line2] auto [line3] auto ;
+  grid-template-rows: [row1-start] 110px [row2-start] auto [row3-start] auto [row4-start] 52px;
+}
+
+.navbar-home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  h1 {
+  color: $yellow;
+  font-weight: bold;
+  }
+}
+
+.footer-home{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.sidebar-bar-home{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.container-resto-team{
   background-color: #F1F1F1;
-  padding: 20px;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-around;
-  grid-template-columns: [first] 110px [line2] 350px [line3] auto [col4-start] 350px [five] 110px [end];
-  grid-template-rows: [row1-start] 50% [row2-start] 50%;
+  padding-top: 50px;
+
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .card-myresto{
-  // margin-right: 90px;
-  // max-width: 350px;
-  // min-width: 350px;
-  // min-height: 350px;
-  // max-height: 350px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
   border-radius: 20px;
   background-color: #9CD1D1;
-  max-height: 400px;
-  // padding-right: 20px;
-  // padding-left: 10px;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: row1-start;
-  grid-row-end: row2-start;
 }
 
 .card-myteam{
   background-color: white;
-  // margin-left: 130px;
-  // max-width: 350px;
-  // max-height: 350px;
-  // min-width: 350px;
-  // min-height: 350px;
+  width: 350px;
+  height: 350px;
   border-radius: 20px;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: row1-start;
-  grid-row-end: row2-start;
+}
+
+.container-menus{
+  background-color: #F1F1F1;
+  padding: 50px;
+
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .card-mymenus{
-  margin-top: 50px;
   background-color: white;
-  // min-height: 250px;
   border-radius: 20px;
-  grid-column-start: 2;
-  grid-column-end: five;
-  grid-row-start: row2-start;
-  grid-row-end: 4;
-
 }
 
 .admin_all_menus{
