@@ -5,6 +5,11 @@
   height: 100%;
   display: grid;
   align-items: center;
+
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 

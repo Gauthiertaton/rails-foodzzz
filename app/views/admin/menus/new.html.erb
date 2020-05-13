@@ -1,59 +1,60 @@
-<%= render 'shared/navbar'%>
-<div class="d-flex bd-highlight">
-  <div class="flex-shrink-1 bd-highlight">
+<div class="container-admin">
+  <div class="navbar-admin">
+    <%= render 'shared/navbar'%>
+  </div>
+  <div class="sidebar-bar-admin">
     <%= render 'shared/sidebar'%>
   </div>
-
-  <div class="w-100 bd-highlight">
-    <div class="container-card-form">
-      <div class="card-form-new">
-        <div class="title-form">
-          <h1>
-            Création Menu
-          </h1>
+  <div class="container-card-form">
+    <div class="card-form-new">
+      <div class="title-form">
+        <h1>
+          Création Menu
+        </h1>
+      </div>
+      <div class="instruction-form">
+        <p>
+          Crée le profil de l’employé qui pourra utiliser Foodzzz. Une fois le profil validé,
+          un SMS lui sera envoyé avec ses identifiants de connexion.
+        </p>
+      </div>
+      <!-- <form class="form">
+        <div class="file-upload-wrapper" data-text="Select your file!">
+          <input name="file-upload-field" type="file" class="file-upload-field" value="">
         </div>
-        <div class="instruction-form">
-          <p>
-            Crée le profil de l’employé qui pourra utiliser Foodzzz. Une fois le profil validé,
-            un SMS lui sera envoyé avec ses identifiants de connexion.
-          </p>
-        </div>
-        <!-- <form class="form">
-          <div class="file-upload-wrapper" data-text="Select your file!">
-            <input name="file-upload-field" type="file" class="file-upload-field" value="">
+      </form> -->
+      <div class="form-new-menu">
+        <%= simple_form_for @menu, url: admin_menus_path do |f| %>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-first-title">
+                <%= f.input :name, placeholder: "Titre", label: false %>
+              </div>
+              <div class="form-description">
+                <%= f.input :description, placeholder: "Description", label: false%>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="file-upload-wrapper">
+                <%= f.input :photo, as: :file, class: "file-upload-field", label: false%>
+              </div>
+              <div class="form-type">
+                <%= f.input :vegetarien, as: :boolean %>
+                <%= f.input :vegan, as: :boolean %>
+                <%= f.input :halal, as: :boolean %>
+                <%= f.input :sans_gluten, as: :boolean %>
+              </div>
+            </div>
           </div>
-        </form> -->
-        <div class="form-new-menu">
-          <%= simple_form_for @menu, url: admin_menus_path do |f| %>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-first-title">
-                  <%= f.input :name, placeholder: "Titre", label: false %>
-                </div>
-                <div class="form-description">
-                  <%= f.input :description, placeholder: "Description", label: false%>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="file-upload-wrapper">
-                  <%= f.input :photo, as: :file, class: "file-upload-field", label: false%>
-                </div>
-                <div class="form-type">
-                  <%= f.input :vegetarien, as: :boolean %>
-                  <%= f.input :vegan, as: :boolean %>
-                  <%= f.input :halal, as: :boolean %>
-                  <%= f.input :sans_gluten, as: :boolean %>
-                </div>
-              </div>
-            </div>
-            <div class="form-submit">
-              <%= f.submit "Enregistrer", class: "button"%>
-            </div>
-          <% end %>
-        </div>
+          <div class="form-submit">
+            <%= f.submit "Enregistrer", class: "button"%>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
+  <div class="footer-admin">
+    <%= render 'shared/adminfooter'%>
+  </div>
 </div>
-<%= render 'shared/adminfooter'%>
 

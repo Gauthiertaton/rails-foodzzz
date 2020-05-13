@@ -1,50 +1,51 @@
-<%= render 'shared/navbar'%>
-<div class="d-flex bd-highlight">
-  <div class="flex-shrink-1 bd-highlight">
+<div class="container-admin">
+  <div class="navbar-admin">
+    <%= render 'shared/navbar'%>
+  </div>
+  <div class="sidebar-bar-admin">
     <%= render 'shared/sidebar'%>
   </div>
-
-  <div class="w-100 bd-highlight">
-    <div class="container-card-form">
-      <div class="card-form-new">
-        <div class="title-form">
-          <h1>
-            Profil
-          </h1>
-        </div>
-        <div class="instruction-form">
-          <p>
-            Crée le profil de l’employé qui pourra utiliser Foodzzz. Une fois le profil validé,
-            un SMS lui sera envoyé avec ses identifiants de connexion.
-          </p>
-        </div>
-        <div class="form-new-user">
-          <%= simple_form_for @user, url: admin_users_path do |f| %>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-first-name">
-                  <%= f.input :first_name, placeholder: "Prénom", label: false %>
-                </div>
-                <div class="form-email">
-                  <%= f.input :email, placeholder: "Email", label: false%>
-                </div>
+  <div class="container-card-form">
+    <div class="card-form-new">
+      <div class="title-form">
+        <h1>
+          Profil
+        </h1>
+      </div>
+      <div class="instruction-form">
+        <p>
+          Crée le profil de l’employé qui pourra utiliser Foodzzz. Une fois le profil validé,
+          un SMS lui sera envoyé avec ses identifiants de connexion.
+        </p>
+      </div>
+      <div class="form-new-user">
+        <%= simple_form_for @user, url: admin_users_path do |f| %>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-first-name">
+                <%= f.input :first_name, placeholder: "Prénom", label: false %>
               </div>
-              <div class="col-md-6">
-                <div class="form-last-name">
-                  <%= f.input :last_name, placeholder: "Nom", label: false %>
-                </div>
-                <div class="form-avatar">
-                  <%= f.input :photo, as: :file %>
-                </div>
+              <div class="form-email">
+                <%= f.input :email, placeholder: "Email", label: false%>
               </div>
             </div>
-            <div class="form-submit">
-              <%= f.submit "Enregistrer", class: "button"%>
+            <div class="col-md-6">
+              <div class="form-last-name">
+                <%= f.input :last_name, placeholder: "Nom", label: false %>
+              </div>
+              <div class="form-avatar">
+                <%= f.input :photo, as: :file %>
+              </div>
             </div>
-          <% end %>
-        </div>
+          </div>
+          <div class="form-submit">
+            <%= f.submit "Enregistrer", class: "button"%>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
+  <div class="footer-admin">
+    <%= render 'shared/adminfooter'%>
+  </div>
 </div>
-<%= render 'shared/adminfooter'%>
