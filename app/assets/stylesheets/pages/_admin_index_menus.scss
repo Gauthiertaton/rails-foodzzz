@@ -1,6 +1,14 @@
 .admin_index_menus_container{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+
+  display: grid;
+  grid-template-columns: [line1] 50% [line2] 50%;
+  grid-template-rows: [row1-start] 246px [row2-start] 246px [row3-start] 247px;
+
   background: #e1e1e1;
-  height: 600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -9,10 +17,30 @@
 .instructions{
   padding-top: 15px;
   padding-left: 15px;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 .admin_index_container_menu{
   width: 400px;
+  // height: 180px;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  padding: 30px;
+
+  .card_menu{
+    height: 180px;
+  }
 
 }
 

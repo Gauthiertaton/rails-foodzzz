@@ -1,71 +1,71 @@
-<%= render 'shared/navbar'%>
-
-<div class="d-flex bd-highlight">
-  <div class="p-2 flex-shrink-1 bd-highlight">
+<div class="container-admin">
+  <div class="navbar-admin">
+    <%= render 'shared/navbar'%>
+  </div>
+  <div class="sidebar-bar-admin">
     <%= render 'shared/sidebar'%>
   </div>
-
-  <div class="p-2 w-100 bd-highlight">
-    <div class= "admin_index_menus_container">
-      <div class= "instructions">
-        <p>Tu peux proposer jusqu'à 3 menus, et les modifier la veille pour le lendemain.</p>
-      </div>
-      <div class="admin_index_container_menu">
-        <% @menus.each do |menu| %>
-          <div class="card_menu d-flex bd-highlight mt-3">
-            <div class="menu_title_description_style w-100 bd-highlight">
-              <div class="menu_name">
-                <p><strong><%= menu.name %></strong></p>
-              </div>
-              <div class="menu_description">
-                <h6><%= menu.description %></h6>
-              </div>
-              <div class="menu_style">
-                <%if menu.vegetarien == true%>
-                  <h4><i class="fas fa-carrot"></i> Végétarien</h4>
-                <%elsif menu.vegan == true %>
-                  <h4><i class="fas fa-seeding"></i> Vegan</h4>
-                <%elsif menu.sans_gluten == true %>
-                  <h4><i class="fas fa-bread-slice"></i> Sans Gluten</h4>
-                <%elsif menu.halal == true %>
-                  <h4><i class="fas fa-moon"></i> Halal</h4>
-                <%else%>
-                <%end%>
-              </div>
-            </div>
-            <div class="menu_img flex-shrink-1 bd-highlight">
-              <%= cl_image_tag menu.photo.key, height: 70, width: 70, crop: :fill %>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">
-                <p><strong>+</strong></p>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Modifier</a>
-                <a href="#">Supprimer</a>
-              </div>
-            </div>
-          </div>
-        <% end %>
-        <% if @menus.count < 3%>
-          <div class="empty_box d-flex bd-highlight mt-4">
-            <div class="menu_title_description_style w-100 bd-highlight">
-              <div class="admin_menu_name">
-                <p><strong>NOM DU MENU</strong></p>
-              </div>
-              <div class="admin_menu_description">
-                <h6>Description</h6>
-              </div>
-              <div class="admin_menu_style">
-                <h4>Style</h4>
-              </div>
-            </div>
-          </div>
-        <% end %>
-      </div>
+  <div class= "admin_index_menus_container">
+    <div class= "instructions">
+      <p>Tu peux proposer jusqu'à 3 menus, et les modifier la veille pour le lendemain.</p>
     </div>
+    <div class="admin_index_container_menu">
+      <% @menus.each do |menu| %>
+        <div class="card_menu d-flex bd-highlight">
+          <div class="menu_title_description_style w-100 bd-highlight">
+            <div class="menu_name">
+              <p><strong><%= menu.name %></strong></p>
+            </div>
+            <div class="menu_description">
+              <h6><%= menu.description %></h6>
+            </div>
+            <div class="menu_style">
+              <%if menu.vegetarien == true%>
+                <h4><i class="fas fa-carrot"></i> Végétarien</h4>
+              <%elsif menu.vegan == true %>
+                <h4><i class="fas fa-seeding"></i> Vegan</h4>
+              <%elsif menu.sans_gluten == true %>
+                <h4><i class="fas fa-bread-slice"></i> Sans Gluten</h4>
+              <%elsif menu.halal == true %>
+                <h4><i class="fas fa-moon"></i> Halal</h4>
+              <%else%>
+              <%end%>
+            </div>
+          </div>
+          <div class="menu_img flex-shrink-1 bd-highlight">
+            <%= cl_image_tag menu.photo.key, height: 70, width: 70, crop: :fill %>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <p><strong>+</strong></p>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Modifier</a>
+              <a href="#">Supprimer</a>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <% if @menus.count < 3%>
+        <div class="empty_box d-flex bd-highlight mt-4">
+          <div class="menu_title_description_style w-100 bd-highlight">
+            <div class="admin_menu_name">
+              <p><strong>NOM DU MENU</strong></p>
+            </div>
+            <div class="admin_menu_description">
+              <h6>Description</h6>
+            </div>
+            <div class="admin_menu_style">
+              <h4>Style</h4>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="footer-admin">
+    <%= render 'shared/adminfooter'%>
   </div>
 </div>
 
-<%= render 'shared/adminfooter'%>
 

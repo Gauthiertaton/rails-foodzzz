@@ -1,10 +1,10 @@
-.container-home{
+.container-admin{
   display: grid;
   grid-template-columns: [line1] 130px [line2] auto [line3] auto ;
   grid-template-rows: [row1-start] 110px [row2-start] auto [row3-start] auto [row4-start] 52px;
 }
 
-.navbar-home{
+.navbar-admin{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,14 +20,14 @@
   }
 }
 
-.footer-home{
+.footer-admin{
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 4;
   grid-row-end: 5;
 }
 
-.sidebar-bar-home{
+.sidebar-bar-admin{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;

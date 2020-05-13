@@ -1,16 +1,21 @@
 .admin_index_users_container{
   background: #e1e1e1;
-  max-height: 1000px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  justify-content: space-between;
+  padding: 20px;
+
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+
+  display: grid;
+  grid-template-columns: [line1] 60% [line2] 40%;
+  grid-template-rows: [row1-start] 60px [row2-start] 80px [row3-start] auto;
+
 
 }
 
 .card_user{
   background-color: white;
-  margin-left: 20px;
-  width: 600px;
   height: 70px;
   border-radius: 20px;
   justify-content: space-around;
@@ -18,19 +23,40 @@
 }
 
 .titleboard{
+  display: grid;
+  align-items: center;
   background-color: #CECECE;
-  margin-left: 20px;
-  max-width: 600px;
-  max-height: 100px;
+  height: 50px;
   border-radius: 20px;
   justify-content: space-around;
+  margin-top: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 
 }
 
 .titleboard p{
   color: white;
   padding-top: 10px;
-  }
+}
+
+.userlist{
+  display: grid;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
 
 .admin_index_avatar_users img{
 border-radius: 50%;
@@ -38,16 +64,39 @@ border-radius: 50%;
 
 
 .search_and_filters{
+  display: grid;
+  align-items: center;
   justify-content: space-between;
+}
+
+.admin_index_users_userlist{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.view-bloc{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .admin_index_user_view{
   background-color: white;
-  margin-right: 90px;
   width: 300px;
   border-radius: 20px;
   height: 300px;
-  margin-top: 115px;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .admin_index_user_view_icones {
@@ -69,7 +118,6 @@ border-radius: 50%;
   border-radius: 20px;
   background-color: white;
   padding-left: 20px;
-  margin-left: 20px;
 
   input {
     border:none !important;
@@ -103,7 +151,6 @@ border-radius: 50%;
 
 .filters {
   background-color: white;
-  margin-left: 20px;
   width: 100px;
   height: 40px;
   border-radius: 20px;
@@ -123,7 +170,6 @@ border-radius: 50%;
 
 .orderby {
   background-color: white;
-  margin-left: 20px;
   width: 100px;
   height: 40px;
   border-radius: 20px;
@@ -147,10 +193,10 @@ border-radius: 50%;
 }
 
 .admin_button {
+  position: absolute;
   background-color: $yellow;
   border: none;
-  font-style: bold;
-  padding: 15px 32px;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -158,6 +204,13 @@ border-radius: 50%;
   border-radius: 4px;
   height: 40px;
   padding: 7px;
+  // margin-top: 20px;
+  right: 15px;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .admin_button p{
