@@ -2,16 +2,16 @@
   <div class="navbar-admin">
     <%= render 'shared/navbar'%>
   </div>
-  <div class="sidebar-bar-admin">
-    <%= render 'shared/sidebar'%>
-  </div>
+  <!-- <div class="sidebar-bar-admin"> -->
+    <%#= render 'shared/sidebar'%>
+  <!-- </div> -->
   <div class= "admin_index_menus_container">
     <div class= "instructions">
       <p>Tu peux proposer jusqu'à 3 menus, et les modifier la veille pour le lendemain.</p>
     </div>
     <div class="admin_index_container_menu">
       <% @menus.each do |menu| %>
-        <div class="card_menu d-flex bd-highlight">
+        <div class="card_menu_admin d-flex bd-highlight">
           <div class="menu_title_description_style w-100 bd-highlight">
             <div class="menu_name">
               <p><strong><%= menu.name %></strong></p>
