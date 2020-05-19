@@ -1,7 +1,9 @@
 .container-admin{
+  height: 100vh;
+  width: 100vw;
   display: grid;
-  grid-template-columns: [line1] auto [line2] auto [line3] auto ;
-  grid-template-rows: [row1-start] 110px [row2-start] auto [row3-start] auto [row4-start] 52px;
+  grid-template-columns: [line1] 130px [line2] auto [line3] auto ;
+  grid-template-rows: [row1-start] 110px [row2-start] auto [row3-start] auto [row4-start] 80px;
 }
 
 .home-title {

@@ -1,45 +1,51 @@
 .admin_index_menus_container{
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 4;
 
   display: grid;
-  grid-template-columns: [line1] 50% [line2] 50%;
-  grid-template-rows: [row1-start] 246px [row2-start] 246px [row3-start] 247px;
+  grid-template-columns: [line1] 100%;
+  grid-template-rows: [row1-start] 10% [row2-start] auto;
 
   background: #e1e1e1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-around;
 }
 
 .instructions{
-  padding-top: 15px;
-  padding-left: 15px;
+  display: grid;
+  align-items: center;
+  text-align: center;
 
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 1;
+  grid-row-end: 2;
+
+  p{
+    // top: 50%;
+  }
 }
 
 .admin_index_container_menu{
-  width: 400px;
-  // height: 180px;
-
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 30px;
   padding: 30px;
 
-  .card_menu{
-    height: 180px;
+  .card_menu_admin{
+    background-color: white;
+    .menu_style{
+      bottom: 2px;
+      left: 2px;
+    }
   }
 
 }
@@ -50,7 +56,7 @@
   border-style: dotted;
   border-width: 1px;
     p{
-  text-align: left;
+  // text-align: left;
   font-size: 15px;
     }
     h6, h4{
@@ -97,3 +103,124 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #9CD1D1;}
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .admin_index_container_menu{
+  grid-gap: 30px;
+  padding: 0px;
+  padding-bottom: 20px;
+  padding-top: 29px;
+
+  }
+
+  .card_menu_admin{
+    max-width: 350px;
+    position: relative;
+    margin: 0 auto;
+    p{
+      font-size: 12px;
+    }
+    h6{
+      font-size: 10px;
+    }
+    h4{
+      font-size: 8px;
+    }
+    .menu_img{
+      padding-right: 0px;
+    }
+    .dropdown{
+    position: relative;
+    top: -5px;
+    right: 0px;
+    z-index: 1;
+    }
+  }
+  .instructions{
+    padding-top: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .admin_index_container_menu{
+  grid-gap: 30px;
+  padding: 0px;
+  padding-bottom: 20px;
+  padding-top: 29px;
+
+  }
+
+  .card_menu_admin{
+    max-width: 350px;
+    position: relative;
+    margin: 0 auto;
+    p{
+      font-size: 15px;
+    }
+    h6{
+      font-size: 12px;
+    }
+    h4{
+      font-size: 10px;
+    }
+    .menu_img{
+      padding-right: 0px;
+    }
+    .dropdown{
+    position: relative;
+    top: -5px;
+    right: 0px;
+    z-index: 1;
+    }
+  }
+  .instructions{
+    padding-top: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .card_menu_admin{
+    min-width: 850px;
+    max-height: 180px;
+    p{
+      font-size: 25px;
+    }
+    h6{
+      font-size: 20px;
+    }
+    h4{
+      font-size: 16px;
+    }
+    .menu_description{
+      padding-bottom: 20px;
+      width: 100%;
+    }
+    .menu_style{
+      width: 120px;
+    }
+    .menu_img{
+      padding-top: 0;
+      display: flex;
+      align-items: center;
+      padding-right: 10px;
+      img{
+        height: 150px;
+        width: 150px;
+      }
+    }
+    .dropbtn{
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
