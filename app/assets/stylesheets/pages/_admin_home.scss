@@ -33,13 +33,6 @@
   grid-row-end: 5;
 }
 
-.sidebar-bar-admin{
-  // grid-column-start: 1;
-  // grid-column-end: 2;
-  // grid-row-start: 1;
-  // grid-row-end: 4;
-}
-
 .container-dashbord{
   background-color: #F1F1F1;
   padding-top: 50px;
@@ -149,12 +142,6 @@ color: #06908F;
  // Extra small devices (phones, 600px and down) / iphone 5 & SE et iphone 6 7 8
 @media only screen and (max-width: 600px) {
 
-  .container-admin{
-    // display: grid;
-    // grid-template-columns: [line1] auto [line2] auto [line3] auto ;
-    // grid-template-rows: [row1-start] 60px [row2-start] auto [row3-start] auto [row4-start] 52px;
-  }
-
   .container-resto-team {
     display: flex;
     flex-wrap: wrap;
@@ -184,11 +171,6 @@ color: #06908F;
 
 // Small devices (portrait tablets and large phones, 600px and up)
 @media only screen and (min-width: 600px) {
-  .container-admin{
-    // display: grid;
-    // grid-template-columns: [line1] auto [line2] auto [line3] auto ;
-    // grid-template-rows: [row1-start] 60px [row2-start] auto [row3-start] auto [row4-start] 52px;
-  }
 
   .container-resto-team {
     display: flex;
@@ -250,11 +232,6 @@ color: #06908F;
     and (device-height : 812px)
     and (-webkit-device-pixel-ratio : 3) {
 
-.container-admin{
-    display: grid;
-    grid-template-columns: [line1] auto [line2] auto [line3] auto ;
-    grid-template-rows: [row1-start] 60px [row2-start] auto [row3-start] auto [row4-start] 52px;
-  }
 
   .container-resto-team {
     display: flex;
@@ -331,11 +308,6 @@ color: #06908F;
     and (device-height : 736px)
     and (-webkit-device-pixel-ratio : 3) {
 
-.container-admin{
-    display: grid;
-    grid-template-columns: [line1] auto [line2] auto [line3] auto ;
-    grid-template-rows: [row1-start] 60px [row2-start] auto [row3-start] auto [row4-start] 52px;
-  }
 
   .container-resto-team {
     display: flex;
@@ -442,12 +414,6 @@ color: #06908F;
   margin-bottom: 7px;
 }
 
-.container-admin{
-  // display: grid;
-  // grid-template-columns: [line1] auto [line2] auto [line3] auto ;
-  // grid-template-rows: [row1-start] 50px [row2-start] auto [row3-start] auto [row4-start] 52px;
-
-}
 
 .avatar_users{
   margin: 5px;
@@ -497,11 +463,6 @@ color: #06908F;
 // Large devices (laptops/desktops, 992px and up) / ipads pro
 @media only screen and (min-width: 992px) {
 
- .container-admin{
-    // display: grid;
-    // grid-template-columns: [line1] auto [line2] auto [line3] auto ;
-    // grid-template-rows: [row1-start] 40px [row2-start] auto [row3-start] auto [row4-start] 52px;
-  }
 .container-dashbord{
   padding-top: 10px;
   // width: 865px;
