@@ -1,9 +1,53 @@
-//component non utilise, template du wagon
+.Navbar {
+  display: flex;
+  padding: 20px;
+  margin-top: 20px;
+  color: black;
+}
 
-.admin-title {
-  text-align: center;
-  h1 {
-  color: $yellow;
-  font-weight: bold;
+.Navbar__Link {
+  padding-right: 30px;
+}
+
+.Navbar__Items {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar__Items--right {
+  margin-left:auto;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+
+
+// iphone 6 7 8
+
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
   }
+
+.Navbar__Items {
+    display:flex;
+  }
+
+.Navbar__Items--right {
+    margin-left:0;
+  }
+
+.Navbar__ToggleShow {
+    display: none;
+  }
+
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   }
 }
