@@ -58,7 +58,6 @@ ActiveRecord::Schema.define(version: 2020_05_04_174030) do
     t.integer "distance_between_restos"
     t.integer "duration"
     t.date "creation_date"
-    t.string "otp_secret_key"
     t.index ["menu_id"], name: "index_orders_on_menu_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
