@@ -6,20 +6,24 @@
   grid-template-rows: [row1-start] 110px [row2-start] auto [row3-start] auto [row4-start] 80px;
 }
 
+.home-title {
+  text-align: center;
+  margin-bottom: 20px;
+  h1 {
+  color: $yellow;
+  font-weight: bold;
+
+  }
+}
+
 .navbar-admin{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-
-  h1 {
-  color: $yellow;
-  font-weight: bold;
-  }
 }
 
 .footer-admin{
@@ -36,11 +40,11 @@
   grid-row-end: 4;
 }
 
-.container-resto-team{
+.container-dashbord{
   background-color: #F1F1F1;
   padding-top: 50px;
 
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
@@ -139,29 +143,197 @@ color: #06908F;
   padding-top: 25px;
 }
 
+// .container-resto-team {
+//   margin-top: 20px;
+// }
 
- // Extra small devices (phones, 600px and down)
+
+ // Extra small devices (phones, 600px and down) / iphone 5 & SE
 @media only screen and (max-width: 600px) {
+
+  .container-admin{
+    display: grid;
+    grid-template-columns: [line1] auto [line2] auto [line3] auto ;
+    grid-template-rows: [row1-start] 60px [row2-start] auto [row3-start] auto [row4-start] 52px;
+  }
+
+  .container-resto-team {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .admin_all_menus{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+  }
+
+  .container-menus{
+    padding: 15px;
+  }
+
+  .card-myresto{
+    margin-bottom: 20px;
+    width: 290px
+  }
+
+  .card-myteam{
+    width: 290px;
+  }
+
+
 
 }
 
 // Small devices (portrait tablets and large phones, 600px and up)
 @media only screen and (min-width: 600px) {
+  .container-admin{
+    display: grid;
+    grid-template-columns: [line1] auto [line2] auto [line3] auto ;
+    grid-template-rows: [row1-start] 60px [row2-start] auto [row3-start] auto [row4-start] 52px;
+  }
+
+  .container-resto-team {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .admin_all_menus{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+  }
+
+  .container-menus{
+    padding: 15px;
+  }
+
+  .card-myresto{
+    margin-bottom: 20px;
+  }
 
 }
 
-// Medium devices (landscape tablets, 768px and up)
+// Medium devices (landscape tablets, 768px and up) plus grand que iphone 6 7 8 = ipads et +
 @media only screen and (min-width: 768px) {
 
+.admin_all_menus{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding: 5px;
+}
+.container-menus{
+  padding-top: 5px;
+}
+.card-myresto{
+  margin-bottom: 20px;
+  }
+
+.container-dashbord{
+  padding-top: 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
-// Large devices (laptops/desktops, 992px and up)
+.card-myresto{
+  height: 220px;
+  margin-bottom: 7px;
+}
+.card-myteam{
+  height: 220px;
+  margin-bottom: 7px;
+}
+
+.container-admin{
+  display: grid;
+  grid-template-columns: [line1] auto [line2] auto [line3] auto ;
+  grid-template-rows: [row1-start] 50px [row2-start] auto [row3-start] auto [row4-start] 52px;
+
+}
+
+.avatar_users{
+  margin: 5px;
+}
+
+.admin_avatar_users {
+  padding-top: 5px;
+}
+
+.admin_resto_infos {
+  padding-top: 5px;
+  line-height: 0.5em;
+  p {
+    font-size: 13px;
+  }
+
+}
+
+.admin_resto_photo{
+  padding-top: 5px;
+  img {
+    height: 90px;
+  width: 150px;
+}
+}
+
+.admin_myteam_title, .admin_restaurant_title, .admin_menu_title {
+  h2{
+  font-size: 20px;
+}
+}
+
+.home_title h1 {
+  font-size: 30px;
+  }
+
+.admin_menu_photo{
+
+  img {
+  height: 90px;
+  width: 150px;
+}
+}
+
+}
+
+// Large devices (laptops/desktops, 992px and up) / ipads pro
 @media only screen and (min-width: 992px) {
 
+ .container-admin{
+    display: grid;
+    grid-template-columns: [line1] auto [line2] auto [line3] auto ;
+    grid-template-rows: [row1-start] 40px [row2-start] auto [row3-start] auto [row4-start] 52px;
+  }
+.container-dashbord{
+  padding-top: 10px;
+  width: 865px;
+}
+
+.container-menus{
+  padding: 30px;
+}
+
+ .card-myresto{
+  margin-bottom: 20px;
+  }
+.container-menus{
+  padding-top: 5px;
+}
 }
 
 // Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {
 
+.admin_all_menus{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding: 20px;
+  }
 }
 
