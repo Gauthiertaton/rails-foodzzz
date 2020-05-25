@@ -375,8 +375,8 @@ color: #06908F;
 
 
 
-// Medium devices (landscape tablets, 768px and up)  ipads, mcbook pro 13pouces
-@media only screen and (min-width: 768px) {
+// Medium devices (landscape tablets, 768px and up)  ipads landscape + portrait, mcbook pro 13pouces
+@media only screen and (min-width: 768px) and (max-device-width : 1024px) {
 
 .admin_all_menus{
   display: grid;
@@ -449,51 +449,49 @@ color: #06908F;
   }
 }
 
+.container-resto-team {
+  display: flex;
+  flex-wrap: wrap;
 }
-//ipad vue portrait (pas landscape)
-@media only screen and (max-device-width : 1024px) {
 
-  .container-resto-team {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.admin_all_menus{
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
-  .admin_all_menus{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+.container-menus{
+  padding: 40px;
+  padding-top: 20px;
+}
 
-  .container-menus{
-    padding: 40px;
-    padding-top: 20px;
-  }
+.card-myresto{
+  margin-bottom: 20px;
+  width: 300px;
+  height: 300px;
+}
 
-  .card-myresto{
-    margin-bottom: 20px;
-    width: 300px;
-    height: 300px;
-  }
+.card-myteam{
+  width: 300px;
+  height: 300px;
+}
 
-  .card-myteam{
-    width: 300px;
-    height: 300px;
-  }
+.admin_avatar_users img{
+  height: 50px;
+  width: 50px;
 
-  .admin_avatar_users img{
-    height: 50px;
-    width: 50px;
-
-  }
-  .home_title h1 {
-  font-size: 40px;
+}
+.home_title h1 {
+font-size: 40px;
   }
 }
 
-// Large devices (laptops/desktops, 992px and up) / ipads pro
-@media only screen and (min-width: 992px) {
+// Large devices (laptops/desktops, 992px and up) / ipads pro landscape & portrait
+@media only screen and (min-width: 992px) and (max-device-width : 1366px) {
 
 .home_title h1 {
   font-size: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   }
 
 .card-myresto{
@@ -518,12 +516,9 @@ color: #06908F;
   width: 1300px;
   height: 300px;
   margin-top: 50px;
+  margin-bottom: 200px;
   border-radius: 20px;
   }
-}
-
-//ipad pro vue portrait (pas landscape)
-@media only screen and (max-device-width : 1366px) {
 
 .container-resto-team {
   display: flex;
@@ -581,8 +576,9 @@ height: 500px;
   width: 400px;
   padding-top: 30px;
   }
+  }
 }
-}
+
 
 // Extra large devices (large laptops and desktops, 1151px and up)
 @media only screen and (min-width: 1151px) {
