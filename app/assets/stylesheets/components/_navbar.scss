@@ -1,8 +1,8 @@
 .Navbar {
   display: flex;
-  padding: 20px;
-  margin-top: 20px;
+  padding-bottom: 30px;
   color: black;
+  background-color: white;
 }
 
 .Navbar__Link {
@@ -11,8 +11,10 @@
 
 .Navbar__Items {
   display: flex;
-  align-items: center;
+  align-items: center; // alignement items navbar mobile
+
 }
+
 
 .Navbar__Items--right {
   margin-left:auto;
@@ -36,9 +38,14 @@
     display:flex;
   }
 
-.Navbar__Items--right {
-    margin-left:0;
-  }
+  .Navbar {
+  padding-bottom: 30px;
+  // margin-top: 20px;
+}
+
+// .Navbar__Items--right {
+//     margin-left:0;
+//   }
 
 .Navbar__ToggleShow {
     display: none;

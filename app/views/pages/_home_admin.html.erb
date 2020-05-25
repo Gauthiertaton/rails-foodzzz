@@ -1,8 +1,10 @@
 <div class="container-admin">
   <div class="navbar-admin">
-    <%= render 'shared/navbar'%>
+<!--     <a class="navbar-brand" href="#"> -->
+    <%= image_tag("logo_foodzzz.png", size: "100x85", alt: "logo foodzzz") %>
   </div>
   <div class="container-dashbord">
+    <%= render 'shared/navbar'%>
     <div class="home_title">
       <h1><span>Hello <%= current_user.first_name%> ! </span></h1>
     </div>

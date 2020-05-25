@@ -3,17 +3,16 @@
   width: 100vw;
   display: grid;
   grid-template-columns: [line1] 130px [line2] auto [line3] auto ;
-  grid-template-rows: [row1-start] 110px [row2-start] auto [row3-start] auto [row4-start] 80px;
+  grid-template-rows: [row1-start] 90px [row2-start] auto [row3-start] auto [row4-start] 80px;
 }
 
-.home-title {
+.home_title h1 {
   text-align: center;
-  margin-bottom: 20px;
-  h1 {
   color: $yellow;
   font-weight: bold;
-
-  }
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: gray;
 }
 
 .navbar-admin{
@@ -35,7 +34,7 @@
 
 .container-dashbord{
   background-color: #F1F1F1;
-  padding-top: 50px;
+  // padding-top: 50px;
   // height: 100%;
 
   grid-column-start: 1;
@@ -224,6 +223,10 @@ color: #06908F;
   border-radius: 20px;
 }
 
+ // .home-title h1 {
+ //  padding-top: 20px;
+ //  }
+
 }
 // Iphone X
 
@@ -251,7 +254,7 @@ color: #06908F;
 
   .card-myresto{
     margin-bottom: 20px;
-    height: 300Px;
+    height: 300px;
   }
 
   .admin_resto_infos {
@@ -327,7 +330,7 @@ color: #06908F;
 
   .card-myresto{
     margin-bottom: 20px;
-    height: 300Px;
+    height: 300px;
   }
 
   .admin_resto_infos {
@@ -375,7 +378,6 @@ color: #06908F;
   height: 500px;
   margin-left: 45px;
 }
-
     }
 
 
@@ -398,7 +400,7 @@ color: #06908F;
   }
 
 .container-dashbord{
-  padding-top: 20px;
+  // padding-top: 20px;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
@@ -464,7 +466,7 @@ color: #06908F;
 @media only screen and (min-width: 992px) {
 
 .container-dashbord{
-  padding-top: 10px;
+  // padding-top: 10px;
   // width: 865px;
 }
 
@@ -501,8 +503,8 @@ color: #06908F;
 
 }
 
-// Extra large devices (large laptops and desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {
+// Extra large devices (large laptops and desktops, 1151px and up)
+@media only screen and (min-width: 1151px) {
 
 .admin_all_menus{
   display: grid;
