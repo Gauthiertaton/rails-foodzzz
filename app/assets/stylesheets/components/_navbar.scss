@@ -1,13 +1,13 @@
 .Navbar {
-  // display: flex;
+  display: flex;
   padding-bottom: 30px;
   color: black;
   background-color: white;
+  align-items: right;
 }
 
 .Navbar__Link {
   padding-right: 30px;
-
 
 }
 
@@ -21,8 +21,8 @@
   margin-left:auto;
 }
 
-.Navbar__Items .Navbar__ToggleShow{
-  margin-left: 50px;
+.Navbar__ToggleShow{
+  margin-left: 600px;
 }
 
 .Navbar__Link-toggle {
@@ -53,8 +53,9 @@
 .Navbar__Link-toggle {
     align-self: flex-end;
     display: initial;
-    position: absolute;
+    // position: absolute;
     cursor: pointer;
+    position: right;
    }
 
 .Navbar__Link {
@@ -92,14 +93,22 @@
   .Navbar__Link {
     font-size: 20px;
    }
+  .Navbar__ToggleShow{
+  margin-left: 130px;
+}
+
 
 }
 
 // Large devices (laptops/desktops, 992px and up) / ipads pro landscape & portrait
-@media only screen and (min-width: 992px) and (max-device-width : 1366px) {
+@media only screen and (min-width: 992px) and (max-device-width : 1151px) {
 .Navbar__Link {
-    font-size: 20px;
+    font-size: 30px;
   }
+  .Navbar__ToggleShow{
+  margin-left: 450px;
+  }
+
 }
 
 
