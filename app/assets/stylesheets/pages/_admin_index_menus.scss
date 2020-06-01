@@ -6,7 +6,7 @@
 
   display: grid;
   grid-template-columns: [line1] 100%;
-  grid-template-rows: [row1-start] 10% [row2-start] auto;
+  grid-template-rows: [row1-start] 10% [row2-start] auto [row3-start] auto [row4-start] auto;
 
   background: #e1e1e1;
   // display: flex;
@@ -21,8 +21,8 @@
 
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 
   p{
     // top: 50%;
@@ -32,8 +32,8 @@
 .admin_index_container_menu{
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -103,6 +103,18 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #9CD1D1;}
+
+// .navbar-admin{
+//   display: flex;
+//   justify-content: space-between;
+//   grid-column-start: 1;
+//   grid-column-end: 4;
+//   grid-row-start: 1;
+//   grid-row-end: 2;
+// }
+
+
+
 
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -180,14 +192,36 @@
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-// @media only screen and (min-width: 768px) {...}
+// Iphone X
 
-/* Large devices (laptops/desktops, 992px and up) */
-// @media only screen and (min-width: 992px) {...}
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+    }
+
+//iphone 6 7 8 plus
+
+@media only screen
+    and (device-width : 414px)
+    and (device-height : 736px)
+    and (-webkit-device-pixel-ratio : 3) {
+
+}
+
+// Medium devices (landscape tablets, 768px and up)  ipads landscape + portrait, mcbook pro 13pouces
+@media only screen and (min-width: 768px) and (max-device-width : 1024px) {
+
+}
+
+// Large devices (laptops/desktops, 992px and up) / ipads pro landscape & portrait
+@media only screen and (min-width: 992px) and (max-device-width : 1151px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1151px and up) */
+@media only screen and (min-width: 1151px) {
   .card_menu_admin{
     min-width: 850px;
     max-height: 180px;
@@ -224,3 +258,7 @@
     }
   }
 }
+
+
+
+
