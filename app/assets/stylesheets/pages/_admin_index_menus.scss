@@ -23,10 +23,6 @@
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-
-  p{
-    // top: 50%;
-  }
 }
 
 .admin_index_container_menu{
@@ -129,7 +125,8 @@
   .card_menu_admin{
     max-width: 350px;
     position: relative;
-    margin: 0 auto;
+    margin-right: 20px;
+    margin-left: 20px;
     p{
       font-size: 12px;
     }
@@ -151,6 +148,10 @@
   }
   .instructions{
     padding-top: 10px;
+  }
+
+  .menu_description{
+    width: 80px;
   }
 }
 
@@ -198,7 +199,44 @@
     and (device-width : 375px)
     and (device-height : 812px)
     and (-webkit-device-pixel-ratio : 3) {
+.admin_index_container_menu{
+  grid-gap: 30px;
+  padding: 0px;
+  padding-bottom: 20px;
+  padding-top: 29px;
+  height: 500px;
 
+  }
+
+  .card_menu_admin{
+    max-width: 350px;
+    position: relative;
+    margin: 0 auto;
+    p{
+      font-size: 10px;
+    }
+    h6{
+      font-size: 10px;
+    }
+    h4{
+      font-size: 8px;
+    }
+    .menu_img{
+      padding-right: 0px;
+    }
+    .dropdown{
+    position: relative;
+    top: -5px;
+    right: 0px;
+    z-index: 1;
+    }
+  }
+  .instructions{
+    padding-top: 10px;
+  }
+  .menu_description{
+    width: 160px;
+  }
     }
 
 //iphone 6 7 8 plus
@@ -213,10 +251,80 @@
 // Medium devices (landscape tablets, 768px and up)  ipads landscape + portrait, mcbook pro 13pouces
 @media only screen and (min-width: 768px) and (max-device-width : 1024px) {
 
+  .menu_description{
+    width: 400px;
+  }
+
+  .card_menu_admin{
+    max-width: 600px;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+    p{
+      font-size: 10px;
+    }
+    h6{
+      font-size: 10px;
+    }
+    h4{
+      font-size: 8px;
+    }
+  }
+
+  .admin_index_container_menu{
+    grid-gap: 30px;
+    padding: 0px;
+    padding-bottom: 20px;
+    padding-top: 29px;
+    height: 800px;
+
+  }
 }
 
 // Large devices (laptops/desktops, 992px and up) / ipads pro landscape & portrait
 @media only screen and (min-width: 992px) and (max-device-width : 1151px) {
+
+  .menu_description{
+    width: 400px;
+  }
+
+  .instructions p{
+    font-size: 20px;
+  }
+
+  .card_menu_admin{
+    max-width: 600px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    p{
+      font-size: 30px;
+    }
+    h6{
+      font-size: 20px;
+    }
+    h4{
+      font-size: 15px;
+    }
+  }
+
+  .admin_index_container_menu{
+    grid-gap: 30px;
+    padding: 0px;
+    padding-bottom: 20px;
+    padding-top: 29px;
+    height: 900px;
+
+  }
+
+  .Navbar__ToggleShow{
+    margin-left: 140px;
+  }
+
+  .navbar-admin img{
+    width: 120px;
+    height: 100px;
+  }
 
 }
 
