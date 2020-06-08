@@ -1,3 +1,4 @@
+
 <div class="container-admin">
   <div class="navbar-admin">
     <%= image_tag("logo_foodzzz.png", size: "100x85", alt: "logo foodzzz") %>
@@ -40,7 +41,7 @@
       <div class="title_nom"><p><strong>Nom</strong></p></div>
       <div class="title_restaurant"><strong></strong><p>Restaurant</p></div>
     </div>
-    <div class="userlist">
+    <div id="userlist">
       <% @users.each do |user| %>
         <div class="card_user d-flex bd-highlight">
           <div class= "admin_index_avatar_users">
@@ -58,27 +59,8 @@
     <div class="admin_button">
       <p>Ajouter</p>
     </div>
-    <div class="view-bloc">
-      <div class="admin_index_user_view">
-        <div class="admin_index_user_view_icones">
-          <%= image_tag("edit.png", size: "20x20") %>
-          <%= image_tag("delete.png", size: "20x20") %>
-        </div>
-        <div class="admin_index_user_view_header d-flex">
-          <div class="current_user_avatar">
-            <p>avatar</p>
-          </div>
-          <div class="current_user_maininfos">
-            <p><strong>name</strong></p>
-            <p><strong>id</strong></p>
-          </div>
-        </div>
-        <div class="admin_index_user_view_infos">
-          <p><strong>Téléphone : </strong></p>
-          <p><strong>Mail : </strong></p>
-          <p><strong>Restaurant : </strong></p>
-        </div>
-      </div>
+    <div class="view_bloc d-none">
+      <%= render 'admin/users/show'%>
     </div>
   </div>
   <div class="footer-admin">
