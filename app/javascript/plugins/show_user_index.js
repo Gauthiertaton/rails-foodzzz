@@ -1,11 +1,11 @@
 const cardsUser = document.querySelectorAll(".card_user");
-const viewBloc = document.querySelector(".view_bloc");
+const userInfosComplement = document.querySelector(".user_infos_complement");
 
 
 cardsUser.forEach((cardUser) => {
   cardUser.addEventListener("click", (event) => {
 
-    viewBloc.classList.remove("d-none");
+    userInfosComplement.classList.remove("d-none");
   });
 });
 

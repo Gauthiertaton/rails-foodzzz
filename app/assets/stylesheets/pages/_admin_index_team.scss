@@ -14,28 +14,31 @@
 
 .card_user{
   background-color: white;
-  height: 70px;
+  height: auto;
   border-radius: 20px;
-  justify-content: space-around;
-  align-items: center;
+  // justify-content: space-around;
+  // align-items: center;
   margin-bottom: 15px;
   cursor: pointer;
 }
 
-.card_user.active{
-
-  color: blue;
-  border-color: blue;
+.user_infos_basic{
+  justify-content: space-around;
+  align-items: center;
 }
 
-
-.card_user:hover {
-  color: #52ACF4;
+.user_infos_complement{
+  // justify-content: space-around;
+  // align-items: center;
 }
 
 
 .titleboard{
-  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
   align-items: center;
   background-color: #CECECE;
   height: 50px;
@@ -44,16 +47,11 @@
   margin-top: 35px;
   margin-left: 20px;
   margin-right: 20px;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
 
 }
 
 .titleboard p{
   color: white;
-  padding-top: 10px;
 }
 
 #userlist{
