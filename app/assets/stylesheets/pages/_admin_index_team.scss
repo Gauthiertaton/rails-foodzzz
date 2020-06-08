@@ -19,7 +19,20 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 15px;
+  cursor: pointer;
 }
+
+.card_user.active{
+
+  color: blue;
+  border-color: blue;
+}
+
+
+.card_user:hover {
+  color: #52ACF4;
+}
+
 
 .titleboard{
   display: grid;
@@ -43,7 +56,7 @@
   padding-top: 10px;
 }
 
-.userlist{
+#userlist{
   display: grid;
   align-items: center;
   text-align: center;
@@ -75,7 +88,7 @@
   grid-row-end: 2;
 }
 
-.view-bloc{
+.view_bloc{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -248,7 +261,7 @@
     grid-row-end: 3;
   }
 
-  .view-bloc{
+  #view_bloc{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
@@ -340,7 +353,7 @@
     grid-row-end: 3;
   }
 
-  .view-bloc{
+  #view_bloc{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;

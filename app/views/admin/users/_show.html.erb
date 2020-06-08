@@ -1,0 +1,19 @@
+<div class="admin_index_user_view">
+  <div class="admin_index_user_view_icones">
+    <%= image_tag("edit.png", size: "20x20") %>
+    <%= image_tag("delete.png", size: "20x20") %>
+  </div>
+  <div class="admin_index_user_view_header d-flex">
+    <div class="current_user_avatar">
+      <p>avatar</p>
+    </div>
+    <div class="current_user_maininfos">
+      <p><strong> Name<%= @user.first_name %> <%= @user.last_name %></strong></p>
+    </div>
+  </div>
+  <div class="admin_index_user_view_infos">
+    <p><strong>Téléphone : </strong></p>
+    <p><strong>Mail :<%= @user.email %> </strong></p>
+    <p><strong>Restaurant : <%#= @user.restaurant.name %></strong></p>
+  </div>
+</div>
