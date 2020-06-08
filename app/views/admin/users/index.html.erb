@@ -1,4 +1,3 @@
-
 <div class="container-admin">
   <div class="navbar-admin">
     <%= image_tag("logo_foodzzz.png", size: "100x85", alt: "logo foodzzz") %>
@@ -36,22 +35,34 @@
         </div>
       </div>
     </div>
-    <div class="titleboard d-flex bd-highlight">
+    <div class="titleboard d-flex">
       <div class="title_photo"><p><strong>Photo</strong></p></div>
       <div class="title_nom"><p><strong>Nom</strong></p></div>
       <div class="title_restaurant"><strong></strong><p>Restaurant</p></div>
     </div>
     <div id="userlist">
       <% @users.each do |user| %>
-        <div class="card_user d-flex bd-highlight">
-          <div class= "admin_index_avatar_users">
-            <%= cl_image_tag user.photo.key, height: 50, width: 50, crop: :fill %>
+        <div class="card_user">
+          <div class="user_infos_basic d-flex">
+            <div class= "admin_index_avatar_users">
+              <%= cl_image_tag user.photo.key, height: 50, width: 50, crop: :fill %>
+            </div>
+            <div class= "user_name">
+              <p><%= user.first_name%> <%= user.last_name%></p>
+            </div>
+            <div class="user_restaurant">
+              <p><%= user.restaurant.name%></p>
+            </div>
           </div>
-          <div class= "user_name">
-            <p><%= user.first_name %> <%= user.last_name %></p>
-          </div>
-          <div class="user_restaurant">
-            <p><%= user.restaurant.name %></p>
+          <div class="user_infos_complement d-none">
+            <div class="d-flex justify-content-around">
+              <div class="user_phone">
+                <p><%= user.phone_number%></p>
+              </div>
+              <div class="user_email">
+                <p><%= user.email%></p>
+              </div>
+            </div>
           </div>
         </div>
       <% end %>
@@ -59,9 +70,9 @@
     <div class="admin_button">
       <p>Ajouter</p>
     </div>
-    <div class="view_bloc d-none">
-      <%= render 'admin/users/show'%>
-    </div>
+    <!-- <div class="view_bloc d-none">
+      <%#= render 'admin/users/show'%>
+    </div> -->
   </div>
   <div class="footer-admin">
     <%= render 'shared/adminfooter'%>
