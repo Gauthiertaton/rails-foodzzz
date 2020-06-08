@@ -3,7 +3,7 @@
   width: 100vw;
   display: grid;
   grid-template-columns: [line1] auto [line2] auto [line3] auto;
-  grid-template-rows: [row1-start] 90px [row2-start] auto [row3-start] auto [row4-start] 80px;
+  grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] 80px;
 }
 
 
@@ -18,7 +18,7 @@
 
 .navbar-admin{
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -41,7 +41,6 @@
 }
 
 .card-myresto{
-  display: grid;
   text-align: center;
   align-items: center;
   width: 350px;
@@ -68,7 +67,6 @@
 }
 
 .admin_all_menus{
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
   padding: 20px;
@@ -201,7 +199,8 @@ color: #06908F;
 
 .container-menus{
   background-color: #F1F1F1;
-  padding: 40px;
+  padding: 140px;
+  padding-bottom: 20px;
   padding-top: 20px;
   grid-column-start: 2;
   grid-column-end: 4;

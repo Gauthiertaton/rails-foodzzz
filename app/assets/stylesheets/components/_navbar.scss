@@ -1,118 +1,120 @@
-.Navbar {
-  display: flex;
-  padding-bottom: 30px;
-  color: black;
-  background-color: white;
-  align-items: right;
-}
+// .Navbar {
+//   display: flex;
+//   // padding-bottom: 30px;
+//   color: black;
+//   background-color: white;
+//   align-items: right;
+// }
 
-.Navbar__Link {
-  padding-right: 30px;
+// .Navbar__Link {
+//   padding-right: 30px;
 
-}
+// }
 
-.Navbar__Items {
-  display: flex;
-  align-items: center; // alignement items navbar mobile
+// .Navbar__Items {
+//   display: flex;
+//   align-items: center; // alignement items navbar mobile
 
-}
+// }
 
-.Navbar__Items--right {
-  margin-left:auto;
-}
+// .Navbar__Items--right {
+//   margin-left:auto;
+// }
 
-.Navbar__ToggleShow{
-  margin-left: 600px;
-}
+// .Navbar__ToggleShow{
+//   margin-left: 500px;
+// }
 
-.Navbar__Link-toggle {
-  display: none;
-}
-
-
- // Extra small devices (phones, 600px and down) / iphone 5 & SE et iphone 6 7 8
-@media only screen and (max-width: 600px) {
-  .Navbar__Items,
-  .Navbar {
-    flex-direction: column;
-  }
-
-  .Navbar {
-  padding-bottom: 30px;
-}
+// .Navbar__Link-toggle {
+//   display: none;
+// }
 
 
-.Navbar__ToggleShow {
-    display: none;
-  }
+//  // Extra small devices (phones, 600px and down) / iphone 5 & SE et iphone 6 7 8
+// @media only screen and (max-width: 600px) {
+//   .Navbar__Items,
+//   .Navbar {
+//     flex-direction: column;
+//     position: right;
+//   }
 
-.Navbar__Link-toggle {
-    align-self: flex-end;
-    display: initial;
-    // position: absolute;
-    cursor: pointer;
-    position: right;
-   }
-
-.Navbar__Link {
-    font-size: 20px;
-   }
-}
-
-// Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {
-
-}
-// Iphone X
-
-@media only screen
-    and (device-width : 375px)
-    and (device-height : 812px)
-    and (-webkit-device-pixel-ratio : 3) {
-
-    }
-
-//iphone 6 7 8 plus
-
-@media only screen
-    and (device-width : 414px)
-    and (device-height : 736px)
-    and (-webkit-device-pixel-ratio : 3) {
+//   .Navbar {
+//   // padding-bottom: 30px;
+//   // display: right;
+// }
 
 
-}
+// .Navbar__ToggleShow {
+//     display: none;
+//   }
+
+// .Navbar__Link-toggle {
+//     // align-self: flex-end;
+//     display: initial;
+//     // position: absolute;
+//     cursor: pointer;
+//     // position: right;
+//    }
+
+// .Navbar__Link {
+//     font-size: 20px;
+//    }
+// }
+
+// // Small devices (portrait tablets and large phones, 600px and up)
+// @media only screen and (min-width: 600px) {
+
+// }
+// // Iphone X
+
+// @media only screen
+//     and (device-width : 375px)
+//     and (device-height : 812px)
+//     and (-webkit-device-pixel-ratio : 3) {
+
+//     }
+
+// //iphone 6 7 8 plus
+
+// @media only screen
+//     and (device-width : 414px)
+//     and (device-height : 736px)
+//     and (-webkit-device-pixel-ratio : 3) {
+
+
+// }
 
 
 
-// Medium devices (landscape tablets, 768px and up)  ipads landscape + portrait, mcbook pro 13pouces
-@media only screen and (min-width: 768px) and (max-device-width : 1024px) {
-  .Navbar__Link {
-    font-size: 20px;
-   }
-  .Navbar__ToggleShow{
-  margin-left: 130px;
-}
+// // Medium devices (landscape tablets, 768px and up)  ipads landscape + portrait, mcbook pro 13pouces
+// @media only screen and (min-width: 768px) and (max-device-width : 1024px) {
+//   .Navbar__Link {
+//     font-size: 20px;
+//    }
+//   .Navbar__ToggleShow{
+//   margin-left: 130px;
+// }
 
 
-}
+// }
 
-// Large devices (laptops/desktops, 992px and up) / ipads pro landscape & portrait
-@media only screen and (min-width: 992px) and (max-device-width : 1151px) {
-.Navbar__Link {
-    font-size: 30px;
-  }
-  .Navbar__ToggleShow{
-  margin-left: 450px;
-  }
+// // Large devices (laptops/desktops, 992px and up) / ipads pro landscape & portrait
+// @media only screen and (min-width: 992px) and (max-device-width : 1151px) {
+// .Navbar__Link {
+//     font-size: 30px;
+//   }
+//   .Navbar__ToggleShow{
+//   margin-left: 450px;
+//   }
 
-}
+// }
 
 
-// Extra large devices (large laptops and desktops, 1151px and up)
-@media only screen and (min-width: 1151px) {
-.Navbar__Link {
-    font-size: 20px;
-   }
+// // Extra large devices (large laptops and desktops, 1151px and up)
+// @media only screen and (min-width: 1151px) {
+// .Navbar__Link {
+//     font-size: 20px;
+//    }
 
-}
+// }
 
