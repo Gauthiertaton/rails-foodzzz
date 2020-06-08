@@ -1,0 +1,77 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-toggler {
+  margin-left: 90px;
+
+}
+
+
+
+ // Extra small devices (phones, 600px and down) / iphone 5 & SE et iphone 6 7 8
+@media only screen and (max-width: 600px) {
+
+.navbar-toggler {
+  margin-left: 100px;
+  }
+}
+
+
+// Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+
+}
+// Iphone X
+
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
+
+.navbar-toggler {
+  margin-left: 120px;
+
+}
+    }
+
+//iphone 6 7 8 plus
+
+@media only screen
+    and (device-width : 414px)
+    and (device-height : 736px)
+    and (-webkit-device-pixel-ratio : 3) {
+
+  .navbar-toggler {
+    margin-left: 160px;
+
+}
+
+
+}
+
+
+
+// Medium devices (landscape tablets, 768px and up)  ipads landscape + portrait, mcbook pro 13pouces
+@media only screen and (min-width: 768px) and (max-device-width : 1024px) {
+
+}
+
+// Large devices (laptops/desktops, 992px and up) / ipads pro landscape & portrait
+@media only screen and (min-width: 992px) and (max-device-width : 1151px) {
+
+
+}
+
+
+// Extra large devices (large laptops and desktops, 1151px and up)
+@media only screen and (min-width: 1151px) {
+
+}
+
+
