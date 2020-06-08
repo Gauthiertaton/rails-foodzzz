@@ -1,11 +1,10 @@
 const cardsUser = document.querySelectorAll(".card_user");
-const userInfosComplement = document.querySelector(".user_infos_complement");
 
 
 cardsUser.forEach((cardUser) => {
+  const userInfosComplement = cardUser.querySelector(".user_infos_complement");
   cardUser.addEventListener("click", (event) => {
-
-    userInfosComplement.classList.remove("d-none");
+    userInfosComplement.classList.toggle("d-none");
   });
 });
 
