@@ -11,16 +11,24 @@
 
 }
 
-.nav-link{
+.navbar-link{
   color: $yellow;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 25px;
 }
+
+
 
 
  // Extra small devices (phones, 600px and down) / iphone 5 & SE et iphone 6 7 8
 @media only screen and (max-width: 600px) {
 
-.navbar-toggler {
-  margin-left: 100px;
+  .navbar-toggler {
+    margin-left: 100px;
+  }
+  .navbar-link{
+  color: $yellow;
   }
 }
 
@@ -28,6 +36,9 @@
 // Small devices (portrait tablets and large phones, 600px and up)
 @media only screen and (min-width: 600px) {
 
+  .navbar-link{
+  color: $yellow;
+  }
 }
 // Iphone X
 
@@ -36,11 +47,13 @@
     and (device-height : 812px)
     and (-webkit-device-pixel-ratio : 3) {
 
-.navbar-toggler {
-  margin-left: 120px;
-
+  .navbar-toggler {
+    margin-left: 120px;
+  }
+  .navbar-link{
+  color: $yellow;
+  }
 }
-    }
 
 //iphone 6 7 8 plus
 
@@ -51,28 +64,34 @@
 
   .navbar-toggler {
     margin-left: 160px;
-
+  }
+  .navbar-link{
+  color: $yellow;
   }
 
 }
 
-
-
 // Medium devices (landscape tablets, 768px and up)  ipads landscape + portrait, mcbook pro 13pouces
 @media only screen and (min-width: 768px) and (max-device-width : 1024px) {
-
+   .navbar-link{
+  color: $yellow;
+  }
 }
 
 // Large devices (laptops/desktops, 992px and up) / ipads pro landscape & portrait
 @media only screen and (min-width: 992px) and (max-device-width : 1151px) {
-
+  .navbar-link{
+  color: $yellow;
+  }
 
 }
 
 
 // Extra large devices (large laptops and desktops, 1151px and up)
 @media only screen and (min-width: 1151px) {
-
+  .navbar-link{
+  color: $yellow;
+  }
 }
 
 
