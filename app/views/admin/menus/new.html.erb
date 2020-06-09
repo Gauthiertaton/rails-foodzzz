@@ -1,9 +1,7 @@
 <div class="container-admin">
   <div class="navbar-admin">
+    <%= image_tag("logo_foodzzz.png", size: "100x85", alt: "logo foodzzz") %>
     <%= render 'shared/navbar'%>
-  </div>
-  <div class="sidebar-bar-admin">
-    <%= render 'shared/sidebar'%>
   </div>
   <div class="container-card-form">
     <div class="card-form-new">
@@ -18,11 +16,6 @@
           un SMS lui sera envoyé avec ses identifiants de connexion.
         </p>
       </div>
-      <!-- <form class="form">
-        <div class="file-upload-wrapper" data-text="Select your file!">
-          <input name="file-upload-field" type="file" class="file-upload-field" value="">
-        </div>
-      </form> -->
       <div class="form-new-menu">
         <%= simple_form_for @menu, url: admin_menus_path do |f| %>
           <div class="row">
@@ -39,10 +32,18 @@
                 <%= f.input :photo, as: :file, class: "file-upload-field", label: false%>
               </div>
               <div class="form-type">
-                <%= f.input :vegetarien, as: :boolean %>
-                <%= f.input :vegan, as: :boolean %>
-                <%= f.input :halal, as: :boolean %>
-                <%= f.input :sans_gluten, as: :boolean %>
+                <div class="form-vege">
+                  <%= f.input :vegetarien, as: :boolean %>
+                </div>
+                <div class="form-vegan">
+                  <%= f.input :vegan, as: :boolean %>
+                </div>
+                <div class="form-halal">
+                  <%= f.input :halal, as: :boolean %>
+                </div>
+                <div class="form-gluten">
+                  <%= f.input :sans_gluten, as: :boolean %>
+                </div>
               </div>
             </div>
           </div>

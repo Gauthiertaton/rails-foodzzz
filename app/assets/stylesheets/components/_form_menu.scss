@@ -119,3 +119,103 @@
   margin-top: 70px;
   padding-left: 10px;
 }
+
+// Extra small devices (phones, 600px and down) / iphone 5 & SE
+@media only screen and (max-width: 600px) {
+  .form-first-title{
+    margin-bottom: 10px;
+  }
+  .form-type{
+    margin-top: 10px;
+    display: inline-flex;
+    padding-left: 0;
+  }
+  .file-upload-wrapper{
+    margin-top: 10px;
+    height: 40px;
+  }
+  .form-check-label {
+    font-size: 13px;
+  }
+  .form-vege{
+    margin-right: 5px;
+  }
+  .form-vegan{
+    margin-right: 5px;
+  }
+  .form-halal{
+    margin-right: 5px;
+  }
+}
+
+// Small devices (portrait tablets and large phones, 600px and up) iphone 6 7 8
+@media only screen and (min-width: 600px) {
+  .form-first-title{
+    margin-bottom: 27px;
+  }
+  .form-type{
+    margin-top: 27px;
+    display: inline-flex;
+    padding-left: 0;
+  }
+  .file-upload-wrapper{
+    margin-top: 27px;
+    height: 40px;
+  }
+  .form-check-label {
+    font-size: 13px;
+  }
+  .form-vege{
+    margin-right: 25px;
+  }
+  .form-vegan{
+    margin-right: 25px;
+  }
+  .form-halal{
+    margin-right: 25px;
+  }
+}
+// Iphone X
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
+      .form-first-title{
+        margin-bottom: 30px;
+      }
+      .form-type{
+        margin-top: 30px;
+      }
+      .file-upload-wrapper{
+        margin-top: 30px;
+      }
+
+    }
+//iphone 6 7 8 plus
+@media only screen
+    and (device-width : 414px)
+    and (device-height : 736px)
+    and (-webkit-device-pixel-ratio : 3) {
+      .form-first-title{
+        margin-bottom: 20px;
+      }
+      .form-type{
+        margin-top: 20px;
+      }
+      .file-upload-wrapper{
+        margin-top: 20px;
+      }
+}
+// Medium devices (landscape tablets, 768px and up)  ipads landscape + portrait, mcbook pro 13pouces
+@media only screen and (min-width: 768px) and (max-device-width : 1024px) {
+}
+// Large devices (laptops/desktops, 992px and up) / ipads pro landscape & portrait
+@media only screen and (min-width: 992px) and (max-device-width : 1151px) {
+}
+// Extra large devices (large laptops and desktops, 1151px and up)
+@media only screen and (min-width: 1151px) {
+  .form-type{
+    margin-top: 50px;
+
+  }
+}

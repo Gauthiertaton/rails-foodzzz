@@ -1,6 +1,138 @@
 .admin_edit_menus_container{
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 4;
+}
+
+
+// Extra small devices (phones, 600px and down) / iphone 5 & SE et
+@media only screen and (max-width: 600px) {
+  .title-form h1{
+    font-size: 20px;
+  }
+  .instruction-form {
+    padding-top: 10px;
+    p{
+    font-size: 12px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    }
+
+  }
+  .container-card-form{
+    padding: 12px;
+  }
+  .card-form-new{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .container-admin{
+    height: auto;
+  }
+  .form-submit{
+    margin-top: 10px;
+    min-width: 100px;
+  }
+  .button {
+    height: 30px;
+  }
+}
+// Small devices (portrait tablets and large phones, 600px and up) iphone 6 7 8
+@media only screen and (min-width: 600px) {
+  .title-form h1{
+    font-size: 20px;
+  }
+  .instruction-form {
+    padding-top: 10px;
+    p{
+    font-size: 13px;
+    }
+  }
+  .container-card-form{
+    padding: 12px;
+  }
+  .card-form-new{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .container-admin{
+    height: auto;
+  }
+  .form-submit{
+    margin-top: 27px;
+    min-width: 200px;
+  }
+}
+// Iphone X
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
+      .title-form h1{
+        font-size: 25px;
+      }
+      .instruction-form p{
+        font-size: 13px;
+      }
+      .card-form-new{
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .container-admin{
+        height: auto;
+      }
+      .container-card-form{
+        padding: 22px;
+      }
+    }
+//iphone 6 7 8 plus
+@media only screen
+    and (device-width : 414px)
+    and (device-height : 736px)
+    and (-webkit-device-pixel-ratio : 3) {
+      .title-form h1{
+        font-size: 20px;
+      }
+      .instruction-form {
+        padding-top: 10px;
+        p{
+        font-size: 13px;
+        }
+      }
+      .container-card-form{
+        padding: 15px;
+      }
+      .card-form-new{
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .container-admin{
+        height: auto;
+      }
+      .container-card-form{
+        padding: 9px;
+      }
+}
+// Medium devices (landscape tablets, 768px and up)  ipads landscape + portrait, mcbook pro 13pouces
+@media only screen and (min-width: 768px) and (max-device-width : 1024px) {
+}
+// Large devices (laptops/desktops, 992px and up) / ipads pro landscape & portrait
+@media only screen and (min-width: 992px) and (max-device-width : 1151px) {
+}
+// Extra large devices (large laptops and desktops, 1151px and up)
+@media only screen and (min-width: 1151px) {
+  .title-form h1{
+    font-size: 30px;
+  }
+  .instruction-form {
+    padding-top: 10px;
+    p{
+    font-size: 20px;
+    }
+  }
 }
