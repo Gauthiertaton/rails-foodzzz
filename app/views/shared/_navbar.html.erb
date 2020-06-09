@@ -3,11 +3,11 @@
       <i class="fas fa-bars"></i>
     </div>
   <nav class="Navbar__Items">
-    <a class="Navbar__Link" href="#">Mes menus</a>
-    <a class="Navbar__Link" href="#">Mon équipe</a>
+    <%= link_to "Mes menus", admin_menus_path ,class: "Navbar__Link" %>
+    <%= link_to "Mon équipe", admin_users_path ,class: "Navbar__Link" %>
     <a class="Navbar__Link" href="#">Mon profil</a>
     <a class="Navbar__Link" href="#">Nous contacter</a>
-    <a class="Navbar__Link" href="#">Se déconnecter</a>
+    <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete, class: "Navbar__Link" %>
   </nav>
 </div> -->
 
