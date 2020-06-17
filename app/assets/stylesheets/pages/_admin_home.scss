@@ -134,6 +134,7 @@ color: #06908F;
   .container-resto-team {
     display: flex;
     flex-wrap: wrap;
+
   }
 
   .admin_all_menus{
@@ -148,7 +149,8 @@ color: #06908F;
 
   .card-myresto{
     margin-bottom: 20px;
-    width: 290px
+    width: 290px;
+
   }
 
   .card-myteam{
@@ -189,6 +191,7 @@ color: #06908F;
   height: 350px;
   border-radius: 20px;
   background-color: #9CD1D1;
+  margin-left: 80px;
 }
 
 .card-myteam{
@@ -196,11 +199,12 @@ color: #06908F;
   width: 350px;
   height: 350px;
   border-radius: 20px;
+  margin-right: 80px;
 }
 
 .container-menus{
   background-color: #F1F1F1;
-  padding: 140px;
+  padding: 180px;
   padding-bottom: 20px;
   padding-top: 20px;
   grid-column-start: 2;
