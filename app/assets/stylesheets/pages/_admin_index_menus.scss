@@ -3,26 +3,33 @@
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 4;
-
   display: grid;
-  grid-template-columns: [line1] 100%;
-  grid-template-rows: [row1-start] 10% [row2-start] auto [row3-start] auto [row4-start] auto;
-
   background: #e1e1e1;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-around;
 }
+
+// .admin_container{
+//   grid-column-start: 1;
+//   grid-column-end: 4;
+//   grid-row-start: 1;
+//   grid-row-end: 5;
+//   display: grid;
+//   grid-template-columns: [line1] 100%;
+//   grid-template-rows: [row1-start] 10% [row2-start] auto [row3-start] auto [row4-start] 80px;
+
+// }
 
 .instructions{
   display: grid;
   align-items: center;
   text-align: center;
-
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+.instructions p{
+  font-size: 20px;
 }
 
 .admin_index_container_menu{
@@ -62,12 +69,23 @@
 
 .dropbtn {
   background-color: #06908F;
-  color: white;
-  font-size: 10px;
   border: none;
   border-radius: 50%;
   height: 30px;
   width: 30px;
+}
+
+.dropbtn p{
+  color: white;
+  font-size: 15px;
+  padding-left: 3px;
+  padding-top: 4px;
+}
+
+.container-admin{
+  height: 100vh;
+  width: 100vw;
+
 }
 
 .dropdown {
@@ -100,16 +118,6 @@
 
 .dropdown:hover .dropbtn {background-color: #9CD1D1;}
 
-// .navbar-admin{
-//   display: flex;
-//   justify-content: space-between;
-//   grid-column-start: 1;
-//   grid-column-end: 4;
-//   grid-row-start: 1;
-//   grid-row-end: 2;
-// }
-
-
 
 
  /* Extra small devices (phones, 600px and down) */
@@ -120,6 +128,10 @@
   padding-bottom: 20px;
   padding-top: 29px;
 
+  }
+
+  .instructions p{
+  font-size: 20px;
   }
 
   .card_menu_admin{
@@ -165,6 +177,10 @@
 
   }
 
+  .instructions p{
+  font-size: 20px;
+  }
+
   .card_menu_admin{
     max-width: 350px;
     position: relative;
@@ -191,6 +207,11 @@
   .instructions{
     padding-top: 10px;
   }
+
+  .dropbtn p{
+  padding-left: 2px;
+
+  }
 }
 
 // Iphone X
@@ -207,6 +228,10 @@
   height: 500px;
 
   }
+
+  .instructions p{
+  font-size: 20px;
+}
 
   .card_menu_admin{
     max-width: 350px;
@@ -239,6 +264,7 @@
   }
     }
 
+
 //iphone 6 7 8 plus
 
 @media only screen
@@ -254,6 +280,9 @@
   .menu_description{
     width: 400px;
   }
+  .instructions p{
+  font-size: 20px;
+}
 
   .card_menu_admin{
     max-width: 600px;
@@ -279,6 +308,7 @@
     height: 800px;
 
   }
+
 }
 
 // Large devices (laptops/desktops, 992px and up) / ipads pro landscape & portrait
@@ -363,6 +393,11 @@
       display: flex;
       align-items: center;
       text-align: center;
+    }
+
+    .dropbtn p{
+      padding-top: 7px;
+      padding-left: 4px;
     }
   }
 }
