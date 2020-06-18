@@ -7,17 +7,6 @@
   background: #e1e1e1;
 }
 
-// .admin_container{
-//   grid-column-start: 1;
-//   grid-column-end: 4;
-//   grid-row-start: 1;
-//   grid-row-end: 5;
-//   display: grid;
-//   grid-template-columns: [line1] 100%;
-//   grid-template-rows: [row1-start] 10% [row2-start] auto [row3-start] auto [row4-start] 80px;
-
-// }
-
 .instructions{
   display: grid;
   align-items: center;
@@ -45,6 +34,7 @@
 
   .card_menu_admin{
     background-color: white;
+    border-radius: 10px;
     .menu_style{
       bottom: 2px;
       left: 2px;
