@@ -312,6 +312,10 @@ color: #06908F;
     flex-wrap: wrap;
   }
 
+  .container-dashbord {
+    height: 1290px;
+  }
+
   .admin_all_menus{
     display: grid;
     grid-template-columns: 1fr;
@@ -321,62 +325,70 @@ color: #06908F;
 
   .container-menus{
     padding: 15px;
+    height: 600px;
+    margin-top: 8px;
   }
 
   .card-myresto{
     margin-bottom: 20px;
-    height: 300px;
+    height: 280px;
   }
 
   .admin_resto_infos {
-  padding-top: 5px;
   line-height: 0.5em;
     p {
     font-size: 13px;
+    padding-left: 10px;
   }
 }
 
-.admin_resto_photo{
-  padding-top: 5px;
-  img {
-  height: 90px;
-  width: 150px;
-  }
-}
-
-.admin_myteam_title, .admin_restaurant_title, .admin_menu_title {
-  h2{
-  font-size: 20px;
-  }
-}
-
-.home_title h1 {
-  font-size: 30px;
-}
-
-.admin_menu_photo{
-  img {
-  height: 90px;
-  width: 150px;
-  }
-}
-
-.admin_avatar_users img{
-  height: 50px;
-  width: 50px;
-}
-
-.card-myteam {
-  width: 290px;
-  height: 250px;
+  .admin_resto_photo{
+    padding-top: 5px;
+    img {
+    padding-top: 10px;
+    height: 120px;
+    width: 200px;
+    }
   }
 
-.card-mymenus{
-  width: 290px;
-  height: 500px;
-  margin-left: 45px;
+  .admin_myteam_title, .admin_restaurant_title, .admin_menu_title {
+    h2{
+    font-size: 20px;
+    }
   }
-}
+
+  .home_title h1 {
+    font-size: 30px;
+  }
+
+  .admin_menu_photo{
+    img {
+    height: 120px;
+    width: 200px;
+    }
+  }
+
+  .admin_avatar_users {
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+
+  .admin_avatar_users img{
+    height: 50px;
+    width: 50px;
+  }
+
+  .card-myteam {
+    width: 290px;
+    height: 250px;
+    }
+
+  .card-mymenus{
+    width: 290px;
+    height: 600px;
+    margin-left: 45px;
+    }
+  }
 
 
 
